@@ -1,0 +1,22 @@
+# config/yaml/Growth.dcm.yml
+Growth:
+  type: entity
+  table: growths
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    percentage_high:
+      type: integer
+    percentage_low:
+      type: integer
+    through_year:
+      type: integer
+  manyToOne:
+    footnote:
+      targetEntity: Footnote
+    location:
+      targetEntity: Location
+        

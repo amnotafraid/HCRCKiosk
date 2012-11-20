@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <workweeks>
+        <workweek>
+            <text>standard five-day, 40-hour</text>
+        </workweek>
+        <workweek>
+            <text>35- or 40-hour</text>
+        </workweek>
+        <workweek>
+            <text>24-hours on followed by 48-hours off</text>
+        </workweek>
+        <workweek>
+            <text>shift work</text>
+        </workweek>
+        <workweek>
+            <text>rotating shift</text>
+        </workweek>
+        <workweek>
+            <text>part-time</text>
+        </workweek>
+        <workweek>
+            <text>weekends</text>
+        </workweek>
+        <workweek>
+            <text>evenings</text>
+        </workweek>
+        <workweek>
+            <text>holidays</text>
+        </workweek>
+        <workweek>
+            <text>nights</text>
+        </workweek>
+        <workweek>
+            <text>on-call</text>
+        </workweek>
+        <workweek>
+            <text>reporting to work on short notice</text>
+        </workweek>
+    </workweeks>
+</root>

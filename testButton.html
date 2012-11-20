@@ -1,0 +1,224 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<head>  
+	<meta charset="utf-8" />
+	<title>Test Button</title>
+   <style>
+div.centerbuttonbox {
+  margin: 2% 3px 2% 3px;
+  float: left;
+  text-align: center;
+  width: 15%;
+  height: 3em; }
+
+.centerbutton {
+  border-top: 1px solid #ffffff;
+  background: #127f45;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  zoom: 1;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-box-shadow: 0px 2px 4px #999999;
+  -webkit-box-shadow: 0px 2px 4px #999999;
+  box-shadow: 0px 2px 4px #999999;
+  font-weight: bold;
+  line-height: 3em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+  margin: 0 0 16px;
+  display: block;
+  padding: 0.5em;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start-color', endColorstr='$end-color');
+  background: -webkit-gradient(linear, left top, left bottom, from(#d3d3d3), to(#707070));
+  background: -webkit-linear-gradient(top, #d3d3d3, #707070);
+  background: -moz-linear-gradient(top, #d3d3d3, #707070);
+  background: -ms-linear-gradient(top, #d3d3d3, #707070);
+  background: -o-linear-gradient(top, #d3d3d3, #707070); }
+
+.centerbutton:active {
+  border-top-color: 1aba65;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  -moz-box-shadow: 0px 2px 4px #999999;
+  -webkit-box-shadow: 0px 2px 4px #999999;
+  box-shadow: 0px 2px 4px #999999;
+  background: 169e56;
+  background-repeat: repeat-x;
+  background-position: 0 10%;
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start-color', endColorstr='$end-color');
+  background: -webkit-gradient(linear, left top, left bottom, from(#707070), to(#d3d3d3));
+  background: -webkit-linear-gradient(top, #707070, #d3d3d3);
+  background: -moz-linear-gradient(top, #707070, #d3d3d3);
+  background: -ms-linear-gradient(top, #707070, #d3d3d3);
+  background: -o-linear-gradient(top, #707070, #d3d3d3); }
+
+
+div.leftbuttonbox {
+  margin: 2% 0% 2% 2%; /* top, right, bottom, left */
+  float: left;
+  text-align: center;
+  width: 10%;
+  height: 3em; }
+
+.leftbutton {
+  border-top: 1px solid #ffffff;
+  background: #127f45;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  zoom: 1;
+  -moz-border-radius: 2em 0em 0em 2em;  /* top left, top right, bottom right, bottom left */
+  -webkit-border-radius: 2em 0em 0em 2em;  /* top left, top right, bottom right, bottom left */
+  border-radius: 2em 0em 0em 2em;  /* top left, top right, bottom right, bottom left */
+  -moz-box-shadow: 0px 2px 4px #999999;
+  -webkit-box-shadow: 0px 2px 4px #999999;
+  box-shadow: 0px 2px 4px #999999;
+  font-weight: bold;
+  line-height: 3em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+  margin: 0 0 16px;
+  display: block;
+  padding: 0.5em;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start-color', endColorstr='$end-color');
+  background: -webkit-gradient(linear, left top, left bottom, from(#d3d3d3), to(#707070));
+  background: -webkit-linear-gradient(top, #d3d3d3, #707070);
+  background: -moz-linear-gradient(top, #d3d3d3, #707070);
+  background: -ms-linear-gradient(top, #d3d3d3, #707070);
+  background: -o-linear-gradient(top, #d3d3d3, #707070); }
+
+.leftbutton:active {
+  border-top-color: 1aba65;
+  -moz-border-radius: 2em 0em 0em 2em;  /* top left, top right, bottom right, bottom left */
+  -webkit-border-radius: 2em 0em 0em 2em;  /* top left, top right, bottom right, bottom left */
+  border-radius: 2em 0em 0em 2em;  /* top left, top right, bottom right, bottom left */
+  -moz-box-shadow: 0px 2px 4px #999999;
+  -webkit-box-shadow: 0px 2px 4px #999999;
+  box-shadow: 0px 2px 4px #999999;
+  background: 169e56;
+  background-repeat: repeat-x;
+  background-position: 0 10%;
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start-color', endColorstr='$end-color');
+  background: -webkit-gradient(linear, left top, left bottom, from(#707070), to(#d3d3d3));
+  background: -webkit-linear-gradient(top, #707070, #d3d3d3);
+  background: -moz-linear-gradient(top, #707070, #d3d3d3);
+  background: -ms-linear-gradient(top, #707070, #d3d3d3);
+  background: -o-linear-gradient(top, #707070, #d3d3d3); }
+
+div.rightbuttonbox {
+  margin: 2% 2% 2% 0%; /* top, right, bottom, left */
+  float: left;
+  text-align: center;
+  width: 10%;
+  height: 3em; }
+
+.rightbutton {
+  border-top: 1px solid #ffffff;
+  background: #127f45;
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  zoom: 1;
+  -moz-border-radius: 0em 2em 2em 0em;  /* top left, top right, bottom right, bottom left */
+  -webkit-border-radius: 0em 2em 2em 0em;  /* top left, top right, bottom right, bottom left */
+  border-radius: 0em 2em 2em 0em;  /* top left, top right, bottom right, bottom left */
+  -moz-box-shadow: 0px 2px 4px #999999;
+  -webkit-box-shadow: 0px 2px 4px #999999;
+  box-shadow: 0px 2px 4px #999999;
+  font-weight: bold;
+  line-height: 3em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
+  vertical-align: middle;
+  margin: 0 0 16px;
+  display: block;
+  padding: 0.5em;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start-color', endColorstr='$end-color');
+  background: -webkit-gradient(linear, left top, left bottom, from(#d3d3d3), to(#707070));
+  background: -webkit-linear-gradient(top, #d3d3d3, #707070);
+  background: -moz-linear-gradient(top, #d3d3d3, #707070);
+  background: -ms-linear-gradient(top, #d3d3d3, #707070);
+  background: -o-linear-gradient(top, #d3d3d3, #707070); }
+
+.rightbutton:active {
+  border-top-color: 1aba65;
+  -moz-border-radius: 0em 2em 2em 0em;  /* top left, top right, bottom right, bottom left */
+  -webkit-border-radius: 0em 2em 2em 0em;  /* top left, top right, bottom right, bottom left */
+  border-radius: 0em 2em 2em 0em;  /* top left, top right, bottom right, bottom left */
+  -moz-box-shadow: 0px 2px 4px #999999;
+  -webkit-box-shadow: 0px 2px 4px #999999;
+  box-shadow: 0px 2px 4px #999999;
+  background: 169e56;
+  background-repeat: repeat-x;
+  background-position: 0 10%;
+  zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start-color', endColorstr='$end-color');
+  background: -webkit-gradient(linear, left top, left bottom, from(#707070), to(#d3d3d3));
+  background: -webkit-linear-gradient(top, #707070, #d3d3d3);
+  background: -moz-linear-gradient(top, #707070, #d3d3d3);
+  background: -ms-linear-gradient(top, #707070, #d3d3d3);
+  background: -o-linear-gradient(top, #707070, #d3d3d3); }
+
+.centerbuttonbox a, .leftbuttonbox a, .rightbuttonbox a {
+  color: white;
+  text-decoration: none; }
+
+.centerbuttonbox a:active, .centerbuttonbox a:focus, .leftbuttonbox a:active, .leftbuttonbox a:focus, .rightbuttonbox a:active, .rightbuttonbox a:focus {
+  outline: none; }
+
+   </style>
+<!--[if  ie 9]>
+<style type="text/css" media="screen">
+        .centerbutton, .centerbutton:active
+        {
+                filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+                background-image: url(images/gradients.svg);
+                background-size: 100% 1100%;
+                zoom: 1;
+        }
+        .leftbutton, .leftbutton:active
+        {
+                filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+                background-image: url(images/gradients.svg);
+                background-size: 100% 1100%;
+                zoom: 1;
+        }
+        .rightbutton, .rightbutton:active
+        {
+                filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+                background-image: url(images/gradients.svg);
+                background-size: 100% 1100%;
+                zoom: 1;
+        }
+</style>
+<![endif]-->
+</head>
+
+<body id="home">
+   <!--[if IE]>
+   <div id="IEroot">
+   <![endif]-->
+    <div class="leftbuttonbox">
+        <a href="#" class="leftbutton">Previous</a>
+    </div>
+    <div class="centerbuttonbox">
+        <a href="#" class="centerbutton">Main</a>
+    </div>
+    <div class="rightbuttonbox">
+        <a href="#" class="rightbutton">Next&nbsp;&nbsp;&nbsp;</a>
+    </div>
+   <!--[if IE]>
+   </div>
+   <![endif]-->	
+</body>
+</html>

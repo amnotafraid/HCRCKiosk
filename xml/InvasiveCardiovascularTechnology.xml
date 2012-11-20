@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Invasive Cardiovascular Technology</career_name>
+        <practicer_name>invasive cardiovascular technologist</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>standard five-day, 40-hour</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>true</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>70-71</credit_hours>
+                <name>Invasive Cardiovascular Technology Associate in Applied Sciences Degree</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>95</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>95.83</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>43-44</credit_hours>
+                <name>Invasive Cardiovascular Technology Advanced Technical Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>95</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>95.83</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Assists physicians in diagnosing and treating cardiac and vascular diseases</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Helps doctors conduct invasive cardiac catheterization procedures in which a small tube, or catheter, is used to help determine blockages or monitor abnormal electrical impulses</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Prepares and positions patients for procedures, administers anesthesia, monitors blood pressure and heart rates during procedures, may perform EKGs and other tests, and may help doctors during surgeries</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Has direct patient contact, often with critically ill patients during tests or surgery, and interacts with doctors and medical staff</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>37</percentage_low>
+                <percentage_high>37</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for cardiovascular technicians</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>cardiovascular technologist giving an injection</alt_text>
+                <height>160</height>
+                <path>images/Cardiovascular.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>cardiovascular technologist giving an injection</alt_text>
+                <height>160</height>
+                <path>images/CardiovascularBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>cardiovascular technologist giving an injection</alt_text>
+                <height>80</height>
+                <path>images/CardiovascularThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Acceptance to the Invasive Cardiovascular Technology program is by a competitive selection process based on a weighted point system.</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>Although certification or licensure isn’t required to work as an invasive cardiovascular technologist in the state of Texas, many employers prefer to hire those that obtain the Limited Medical Radiologic Technologist (LMRT) certification offered through the Texas Department of State Health Services.  In order to be eligible for certification, applicants must first successfully pass the Registered Cardiovascular Invasive Specialist (RCIS) written examination offered through Cardiovascular Credentialing International (CCI).</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Most work in hospitals, clinics and doctors’ offices</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Those who work in heart catheterization labs tend to work longer hours and evenings</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Will be in increasingly high demand with aging population and higher incidence of heart disease with necessary procedures to diagnose and correct</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Those with multiple credentials, trained to perform a wide variety of procedures, will have best job prospects</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+            <workweek>
+                <text>weekends</text>
+            </workweek>
+            <workweek>
+                <text>nights</text>
+            </workweek>
+            <workweek>
+                <text>on-call</text>
+            </workweek>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for cardiovascular technicians</text>
+                </footnote>
+                <hourly_low>25.67</hourly_low>
+                <hourly_high>25.67</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>53400</yearly_low>
+                <yearly_high>53400</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for cardiovascular technicians</text>
+                </footnote>
+                <hourly_low>27.31</hourly_low>
+                <hourly_high>27.31</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>56800</yearly_low>
+                <yearly_high>56800</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

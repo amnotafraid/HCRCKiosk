@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Respiratory Care</career_name>
+        <practicer_name>respiratory therapist or technician</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>35- or 40-hour</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>72</credit_hours>
+                <name>Associate in Applied Sciences Degree in Respiratory Care</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>100</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>87.5</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Respiratory therapists assume primary responsibility for patients with breathing disorders, conducting procedures, maintaining records, operating equipment, and evaluating and treating patients</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Respiratory care technicians perform specific procedures under the direction of respiratory therapists and doctors, helping to evaluate, treat and care for patients</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Both work with treatment, evaluation and rehabilitation of patients with breathing problems stemming from disease or trauma</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Respiratory therapists and technicians have hands-on jobs with direct patient contact, in both routine and emergency situations, as well as extensive communication with medical staff</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>10</percentage_low>
+                <percentage_high>34</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for respiratory therapists and respiratory therapy technicians</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>human body with lungs highlighted</alt_text>
+                <height>160</height>
+                <path>images/Respitory.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>human body with lungs highlighted</alt_text>
+                <height>160</height>
+                <path>images/RespitoryBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>human body with lungs highlighted</alt_text>
+                <height>80</height>
+                <path>images/RespitoryThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Acceptance to the Respiratory Care program is by a competitive selection process based on a weighted point system.</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>To work as a respiratory therapist or technician in the state of Texas, you are required to pass the Certified Respiratory Therapist (CRT) entry-level exam and apply for state license through the Texas Department of State Health Services (TDSHS). </text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Jobs available in virtually all health-care services: hospitals, clinics, critical care units, diagnostic labs, nursing homes and home care</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+            <workweek>
+                <text>weekends</text>
+            </workweek>
+            <workweek>
+                <text>nights</text>
+            </workweek>
+            <workweek>
+                <text>evenings</text>
+            </workweek>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for respiratory therapists and respiratory therapy technicians</text>
+                </footnote>
+                <hourly_low>21.88</hourly_low>
+                <hourly_high>26.30</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>45500</yearly_low>
+                <yearly_high>54700</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for respiratory therapists and respiratory therapy technicians</text>
+                </footnote>
+                <hourly_low>25.06</hourly_low>
+                <hourly_high>25.23</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>52100</yearly_low>
+                <yearly_high>52500</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

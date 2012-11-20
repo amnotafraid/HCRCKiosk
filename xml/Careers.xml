@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <careers>
+        <career>
+            <career_name>Biotechnology</career_name>
+        </career>
+        <career>
+            <career_name>Diagnostic Medical Sonography</career_name>
+        </career>
+        <career>
+            <career_name>Echocardiology Technology</career_name>
+        </career>
+        <career>
+            <career_name>Emergency Medical Services (EMS) and Paramedic</career_name>
+        </career>
+        <career>
+            <career_name>Invasive Cardiovascular Technology</career_name>
+        </career>
+        <career>
+            <career_name>Magnetic Resonance Imaging (MRI)</career_name>
+        </career>
+        <career>
+            <career_name>Medical Assisting</career_name>
+        </career>
+        <career>
+            <career_name>Medical Front Office</career_name>
+        </career>
+        <career>
+            <career_name>Medical Laboratory Technology</career_name>
+        </career>
+        <career>
+            <career_name>Medical Practice Manager</career_name>
+        </career>
+        <career>
+            <career_name>Medical Staff Services</career_name>
+        </career>
+        <career>
+            <career_name>Nursing</career_name>
+        </career>
+        <career>
+            <career_name>Pharmacy Technician</career_name>
+        </career>
+        <career>
+            <career_name>Radiologic Sciences</career_name>
+        </career>
+        <career>
+            <career_name>Respiratory Care</career_name>
+        </career>
+        <career>
+            <career_name>Social Work</career_name>
+        </career>
+        <career>
+            <career_name>Substance Abuse Counseling</career_name>
+        </career>
+        <career>
+            <career_name>Surgical Technology</career_name>
+        </career>
+        <career>
+            <career_name>Veterinary Technology</career_name>
+        </career>
+    </careers>
+</root>

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Radiologic Sciences</career_name>
+        <practicer_name>radiologic technologist</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>standard five-day, 40-hour</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>false</clinical>
+        <diagnostic>true</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>72</credit_hours>
+                <name>Radiologic Sciences Associate in Applied Sciences Degree</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <brookhaven_effectives>
+                    <brookhaven_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>100</percentage>
+                    </brookhaven_effective>
+                    <brookhaven_effective>
+                        <footnote>
+                            <text>Texas Higher Education Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD </measure>
+                        <percentage>96.51</percentage>
+                    </brookhaven_effective>
+                </brookhaven_effectives>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>95</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD </measure>
+                        <percentage>96.97</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>24</credit_hours>
+                <name>Computed Tomography Advanced Technical Certificate</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>31</credit_hours>
+                <name>Vascular Intervention Advanced Technical Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>varied</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Continuing Education coursework for specific skills training</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Uses X-rays to create images of the body for diagnostic purposes, occasionally using a contrast material to enhance particular anatomic structures</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Combines the science of analyzing diagnostic images with the art of patient care and communication</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Can specialize in areas such as mammography, computed tomography (CT), magnetic resonance imaging (MRI), cardiovascular-interventional technology and nuclear medicine</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Has direct contact with both patients and physicians, who use images for diagnosis and treatment</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>26</percentage_low>
+                <percentage_high>26</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2009 data for radiologic technologists</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>radiologic technologist looking at x-ray of hand</alt_text>
+                <height>160</height>
+                <path>images/Radiology.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>radiologic technologist looking at x-ray of hand</alt_text>
+                <height>160</height>
+                <path>images/RadiologyBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>radiologic technologist looking at x-ray of hand</alt_text>
+                <height>80</height>
+                <path>images/RadiologyThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Acceptance to the credit Radiologic Sciences program is by a competitive selection process based on a weighted point system.</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Additional specializations such as MRI or CT provide best job opportunities with higher salaries</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Most jobs in hospitals, also in diagnostic imaging centers and doctors' offices</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+            <workweek>
+                <text>weekends</text>
+            </workweek>
+            <workweek>
+                <text>evenings</text>
+            </workweek>
+            <workweek>
+                <text>on-call</text>
+            </workweek>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2009 data for radiologic technologists</text>
+                </footnote>
+                <hourly_low>25.79</hourly_low>
+                <hourly_high>25.79</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>53600</yearly_low>
+                <yearly_high>53600</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2009 data for radiologic technologists</text>
+                </footnote>
+                <hourly_low>29.01</hourly_low>
+                <hourly_high>29.01</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>60300</yearly_low>
+                <yearly_high>60300</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

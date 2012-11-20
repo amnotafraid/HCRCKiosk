@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Surgical Technology</career_name>
+        <practicer_name>surgical technologist</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>standard five-day, 40-hour</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>50</credit_hours>
+                <name>Surgical Technologist Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Certification exam pass rates for DCCCD students</measure>
+                        <percentage>80</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>95.83</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>10</credit_hours>
+                <name>Perioperative Nursing Enhanced Skills Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Certification exam pass rates for DCCCD students</measure>
+                        <percentage>80</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>95.83</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Assists surgeons in the operating room as a key player making a difference in the lives of patients</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Prepares the operating room for surgery</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Performs scrubbing, gowning and gloving in preparation for surgery</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Creates and maintains the sterile field for passing instruments and handling specimens</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Assists the surgeon with retracting patients’ tissues and wound closure</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Works closely with instruments, operating physicians and medical support team in the operating room, but has limited direct verbal contact with patients who are under anesthesia</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>35</percentage_low>
+                <percentage_high>35</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for surgical technologists</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>sugery instruments</alt_text>
+                <height>160</height>
+                <path>images/Surgical.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>sugery instruments</alt_text>
+                <height>160</height>
+                <path>images/SurgicalBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>sugery instruments</alt_text>
+                <height>80</height>
+                <path>images/SurgicalThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Acceptance to the Surgical Technology program is by a competitive selection process based on a weighted point system.</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>To work as a surgical technologist in the state of Texas, you are required to pass the Surgical Technologist Certification exam through the National Board of Surgical Technologist and Surgical Assistants. For more information, visit the Association of Surgical Technologists website.</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>Certification through the National Board of Surgical Technologist and Surgical Assistants</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>National certification for surgical technologists is required in the state of Texas effective September 2010.</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Job opportunities available in hospitals, ambulatory surgery centers, doctors' offices, veterinarians' offices, transplant services, community colleges and technical schools</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+            <workweek>
+                <text>rotating shift</text>
+            </workweek>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for surgical technologists</text>
+                </footnote>
+                <hourly_low>19.32</hourly_low>
+                <hourly_high>19.32</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>40200</yearly_low>
+                <yearly_high>40200</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for surgical technologists</text>
+                </footnote>
+                <hourly_low>18.56</hourly_low>
+                <hourly_high>18.56</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>38600</yearly_low>
+                <yearly_high>38600</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

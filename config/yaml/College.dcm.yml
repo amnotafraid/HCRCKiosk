@@ -1,0 +1,24 @@
+# config/yaml/College.dcm.yml
+College:
+  type: entity
+  table: colleges
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    name:
+      type: text
+  manyToMany:
+    certificates:
+      targetEntity: Certificate
+      inversedBy: colleges
+      joinTable:
+        name: colleges_certificates
+        joinColumns:
+          college_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          certificate_id:
+            referencedColumnName: id

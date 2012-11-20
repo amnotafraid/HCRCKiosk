@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Medical Front Office</career_name>
+        <practicer_name>medical front office assistant</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>standard five-day, 40-hour</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>true</administrative>
+        <clinical>false</clinical>
+        <diagnostic>false</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>26</credit_hours>
+                <name>Medical Front Office Assistant Certificate</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>12</credit_hours>
+                <name>Medical Front Office Assistant Marketable Skills Achievement Award</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>varied</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Continuing Education coursework for specific skills training</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>true</cedar_valley>
+                <eastfield>true</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Practices information technology skills in the "front office" of a health-care facility so that the "back office" medical staff, including care providers such as doctors and nurses, can function efficiently</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Performs administrative duties such as working with incoming and outgoing patients, scheduling and monitoring appointments, applying standardized codes to patient records, and insurance billing</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Works in a medical facility, primarily in computer and communication skills, without medically-related patient contact</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>32.5</percentage_low>
+                <percentage_high>32.5</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for medical assistants-administrative and medical secretaries</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>medical front office assistant talking on phone</alt_text>
+                <height>160</height>
+                <path>images/MedicalFrontOffice.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>medical front office assistant talking on phone</alt_text>
+                <height>160</height>
+                <path>images/MedicalFrontOfficeBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>medical front office assistant talking on phone</alt_text>
+                <height>80</height>
+                <path>images/MedicalFrontOfficeThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Acceptance into the credit Medical Front Office program is through the general admission process to Brookhaven College. The Medical Front Office Assistant Certificate is for individuals who have at least one year of office experience, are new to a medical setting, can demonstrate proficiency in document formatting and who have successfully completed the courses in the Medical Front Office Marketable Skills Achievement Award.</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Jobs available in doctors’ offices, clinics, health-care agencies, medical insurance companies, primary health-care organizations, surgical centers and long-term or extended home care settings</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for medical assistants-administrative and medical secretaries</text>
+                </footnote>
+                <hourly_low>13.37</hourly_low>
+                <hourly_high>13.37</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>27800</yearly_low>
+                <yearly_high>27800</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for medical assistants-administrative and medical secretaries</text>
+                </footnote>
+                <hourly_low>14.72</hourly_low>
+                <hourly_high>14.72</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>30600</yearly_low>
+                <yearly_high>30600</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

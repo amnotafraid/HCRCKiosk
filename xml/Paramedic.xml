@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Emergency Medical Services (EMS) and Paramedic</career_name>
+        <practicer_name>EMT or paramedic</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>24-hours on followed by 48-hours off</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>true</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>40</credit_hours>
+                <name>EMS: Paramedicine Associate in Applied Sciences Degree</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <brookhaven_effectives>
+                    <brookhaven_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>72</percentage>
+                    </brookhaven_effective>
+                    <brookhaven_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>97</percentage>
+                    </brookhaven_effective>
+                </brookhaven_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>768</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>EMS: Emergency Medical Technician Basic Certificate</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <brookhaven_effectives>
+                    <brookhaven_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>72</percentage>
+                    </brookhaven_effective>
+                    <brookhaven_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>97</percentage>
+                    </brookhaven_effective>
+                </brookhaven_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>768</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>EMS: Paramedicine Level I Certificate</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <brookhaven_effectives>
+                    <brookhaven_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>72</percentage>
+                    </brookhaven_effective>
+                    <brookhaven_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>97</percentage>
+                    </brookhaven_effective>
+                </brookhaven_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>768</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Paramedic: Paramedic Level I Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>97</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>97.4</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>varied</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Continuing Education coursework for specific skills training</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>true</cedar_valley>
+                <eastfield>true</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>true</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Both emergency medical technicians (EMTs) and paramedics work in emergency settings to assess patients’ injuries, provide immediate medical care and transport sick or injured patients to medical facilities</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>EMTs receive training of 150-200 hours, depending on basic or intermediate level of certification</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Paramedics, who must earn EMT certification first, receive training of at least 1,000 hours and provide more extensive care, including administering medications, interpreting EKGs, performing intubations and using other complex equipment</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>26</percentage_low>
+                <percentage_high>26</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>Salary.com and America's Career Infonet 2011 data for emergency medical technicians and paramedics</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>paramedics working on a patient</alt_text>
+                <height>160</height>
+                <path>images/Paramedic.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>paramedics working on a patient</alt_text>
+                <height>160</height>
+                <path>images/ParamedicBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>paramedics working on a patient</alt_text>
+                <height>80</height>
+                <path>images/ParamedicThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>The EMS program is located at Brookhaven College. The Paramedic program is offered by El Centro College in cooperation with UT-Southwestern Medical Center on its site.</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>Acceptance to the EMS program at Brookhaven is on a first-come, first-served basis without regards to professional affiliation, through open admission to the college with other requirements such as proof of immunization and insurance coverage. Priority acceptance to the El Centro's Paramedic program is given to area EMS agency personnel, with non-agency applicants accepted as space is available. All applicants to either Paramedic program must have completed EMT training.</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>To be a paramedic in the state of Texas, you must already be certified and have successfully completed an emergency medical technician (EMT) certificate program.  In order to perform specific job duties and responsibilities, the National Registry of Emergency Medical Technicians (NREMT) registers emergency medical service (EMS) providers at four levels.  Some states, including Texas, also offer their own certifications.</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Work is both indoors and outdoors in all types of weather, in fast-paced and physically demanding conditions</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Jobs available in fire and police departments, private ambulance services, hospitals and emergency 911 services</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>Salary.com and America's Career Infonet 2011 data for emergency medical technicians and paramedics</text>
+                </footnote>
+                <hourly_low>14.10</hourly_low>
+                <hourly_high>14.10</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>29300</yearly_low>
+                <yearly_high>29300</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>Salary.com and America's Career Infonet 2011 data for emergency medical technicians and paramedics</text>
+                </footnote>
+                <hourly_low>13.84</hourly_low>
+                <hourly_high>13.84</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>28800</yearly_low>
+                <yearly_high>28800</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

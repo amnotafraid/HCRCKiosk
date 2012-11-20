@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <locations>
+        <location>
+            <text>United States</text>
+        </location>
+        <location>
+            <text>Texas</text>
+        </location>
+        <location>
+            <text>Dallas County</text>
+        </location>
+    </locations>
+</root>

@@ -1,0 +1,29 @@
+# config/yaml/Salary.dcm.yml
+Salary:
+  type: entity
+  table: salarys
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    hourly_high:
+      type: decimal
+      scale: 2
+      nullable: true
+    hourly_low:
+      type: decimal
+      scale: 2
+      nullable: true
+    yearly_high:
+      type: integer
+      nullable: true
+    yearly_low:
+      type: integer
+      nullable: true
+  manyToOne:
+    footnote:
+      targetEntity: Footnote
+    location:
+      targetEntity: Location

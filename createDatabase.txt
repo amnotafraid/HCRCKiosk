@@ -1,0 +1,69 @@
+ATTENTION: This operation should not be executed in a production environment.
+
+Creating database schema...
+CREATE TABLE careers (id INT AUTO_INCREMENT NOT NULL, typical_workweek_id INT DEFAULT NULL, career_name LONGTEXT NOT NULL, practicer_name LONGTEXT DEFAULT NULL, administrative TINYINT(1) DEFAULT NULL, clinical TINYINT(1) DEFAULT NULL, diagnostic TINYINT(1) DEFAULT NULL, INDEX IDX_F169D35E935EE84B (typical_workweek_id), PRIMARY KEY(id)) ENGINE = InnoDB
+CREATE TABLE careers_certificates (career_id INT NOT NULL, certificate_id INT NOT NULL, INDEX IDX_DB240A31B58CDA09 (career_id), UNIQUE INDEX UNIQ_DB240A3199223FFD (certificate_id), PRIMARY KEY(career_id, certificate_id)) ENGINE = InnoDB
+CREATE TABLE careers_dutys (career_id INT NOT NULL, info_id INT NOT NULL, INDEX IDX_12B97577B58CDA09 (career_id), UNIQUE INDEX UNIQ_12B975775D8BC1F8 (info_id), PRIMARY KEY(career_id, info_id)) ENGINE = InnoDB
+CREATE TABLE careers_footnotes (career_id INT NOT NULL, footnote_id INT NOT NULL, INDEX IDX_20A99C3AB58CDA09 (career_id), UNIQUE INDEX UNIQ_20A99C3AE34BB45E (footnote_id), PRIMARY KEY(career_id, footnote_id)) ENGINE = InnoDB
+CREATE TABLE careers_growths (career_id INT NOT NULL, growth_id INT NOT NULL, INDEX IDX_BBAD46EDB58CDA09 (career_id), UNIQUE INDEX UNIQ_BBAD46ED3067EA9A (growth_id), PRIMARY KEY(career_id, growth_id)) ENGINE = InnoDB
+CREATE TABLE careers_medias (career_id INT NOT NULL, media_id INT NOT NULL, INDEX IDX_A659D097B58CDA09 (career_id), UNIQUE INDEX UNIQ_A659D097EA9FDD75 (media_id), PRIMARY KEY(career_id, media_id)) ENGINE = InnoDB
+CREATE TABLE careers_more_infos (career_id INT NOT NULL, more_info_id INT NOT NULL, INDEX IDX_98268205B58CDA09 (career_id), UNIQUE INDEX UNIQ_98268205A6ADA7D5 (more_info_id), PRIMARY KEY(career_id, more_info_id)) ENGINE = InnoDB
+CREATE TABLE careers_outlooks (career_id INT NOT NULL, outlook_id INT NOT NULL, INDEX IDX_AD21D33AB58CDA09 (career_id), UNIQUE INDEX UNIQ_AD21D33A8AB939D9 (outlook_id), PRIMARY KEY(career_id, outlook_id)) ENGINE = InnoDB
+CREATE TABLE careers_possible_workweeks (career_id INT NOT NULL, possible_workweek_id INT NOT NULL, INDEX IDX_B5375EBBB58CDA09 (career_id), INDEX IDX_B5375EBBF87F7EE7 (possible_workweek_id), PRIMARY KEY(career_id, possible_workweek_id)) ENGINE = InnoDB
+CREATE TABLE careers_salarys (career_id INT NOT NULL, salary_id INT NOT NULL, INDEX IDX_C8F8A334B58CDA09 (career_id), UNIQUE INDEX UNIQ_C8F8A334B0FDF16E (salary_id), PRIMARY KEY(career_id, salary_id)) ENGINE = InnoDB
+CREATE TABLE certificates (id INT AUTO_INCREMENT NOT NULL, continuing_education_hours LONGTEXT DEFAULT NULL, credit_hours LONGTEXT DEFAULT NULL, name LONGTEXT NOT NULL, brookhaven TINYINT(1) NOT NULL, cedar_valley TINYINT(1) NOT NULL, eastfield TINYINT(1) NOT NULL, el_centro TINYINT(1) NOT NULL, mountain_view TINYINT(1) NOT NULL, north_lake TINYINT(1) NOT NULL, richland TINYINT(1) NOT NULL, PRIMARY KEY(id)) ENGINE = InnoDB
+CREATE TABLE mountain_view_effectives (certificate_id INT NOT NULL, effective_id INT NOT NULL, INDEX IDX_4A46561899223FFD (certificate_id), UNIQUE INDEX UNIQ_4A465618339A325E (effective_id), PRIMARY KEY(certificate_id, effective_id)) ENGINE = InnoDB
+CREATE TABLE cedar_valley_effectives (certificate_id INT NOT NULL, effective_id INT NOT NULL, INDEX IDX_79C27F3F99223FFD (certificate_id), UNIQUE INDEX UNIQ_79C27F3F339A325E (effective_id), PRIMARY KEY(certificate_id, effective_id)) ENGINE = InnoDB
+CREATE TABLE eastfield_effectives (certificate_id INT NOT NULL, effective_id INT NOT NULL, INDEX IDX_13859E7699223FFD (certificate_id), UNIQUE INDEX UNIQ_13859E76339A325E (effective_id), PRIMARY KEY(certificate_id, effective_id)) ENGINE = InnoDB
+CREATE TABLE el_centro_effectives (certificate_id INT NOT NULL, effective_id INT NOT NULL, INDEX IDX_24D542D399223FFD (certificate_id), UNIQUE INDEX UNIQ_24D542D3339A325E (effective_id), PRIMARY KEY(certificate_id, effective_id)) ENGINE = InnoDB
+CREATE TABLE north_lake_effectives (certificate_id INT NOT NULL, effective_id INT NOT NULL, INDEX IDX_894A72A699223FFD (certificate_id), UNIQUE INDEX UNIQ_894A72A6339A325E (effective_id), PRIMARY KEY(certificate_id, effective_id)) ENGINE = InnoDB
+CREATE TABLE richland_effectives (certificate_id INT NOT NULL, effective_id INT NOT NULL, INDEX IDX_13D25FE499223FFD (certificate_id), UNIQUE INDEX UNIQ_13D25FE4339A325E (effective_id), PRIMARY KEY(certificate_id, effective_id)) ENGINE = InnoDB
+CREATE TABLE colleges (id INT AUTO_INCREMENT NOT NULL, name LONGTEXT NOT NULL, PRIMARY KEY(id)) ENGINE = InnoDB
+CREATE TABLE colleges_certificates (college_id INT NOT NULL, certificate_id INT NOT NULL, INDEX IDX_692E88E770124B2 (college_id), INDEX IDX_692E88E99223FFD (certificate_id), PRIMARY KEY(college_id, certificate_id)) ENGINE = InnoDB
+CREATE TABLE effectives (id INT AUTO_INCREMENT NOT NULL, footnote_id INT DEFAULT NULL, measure LONGTEXT NOT NULL, percentage NUMERIC(10, 2) NOT NULL, INDEX IDX_71D1BDE6E34BB45E (footnote_id), PRIMARY KEY(id)) ENGINE = InnoDB
+CREATE TABLE footnotes (id INT AUTO_INCREMENT NOT NULL, symbol VARCHAR(255) DEFAULT NULL, text VARCHAR(255) NOT NULL, PRIMARY KEY(id)) ENGINE = InnoDB
+CREATE TABLE growths (id INT AUTO_INCREMENT NOT NULL, footnote_id INT DEFAULT NULL, location_id INT DEFAULT NULL, percentage_high INT NOT NULL, percentage_low INT NOT NULL, through_year INT NOT NULL, INDEX IDX_4FCD78C3E34BB45E (footnote_id), INDEX IDX_4FCD78C364D218E (location_id), PRIMARY KEY(id)) ENGINE = InnoDB
+CREATE TABLE infos (id INT AUTO_INCREMENT NOT NULL, text VARCHAR(500) NOT NULL, PRIMARY KEY(id)) ENGINE = InnoDB
+CREATE TABLE locations (id INT AUTO_INCREMENT NOT NULL, text VARCHAR(255) NOT NULL, PRIMARY KEY(id)) ENGINE = InnoDB
+CREATE TABLE medias (id INT AUTO_INCREMENT NOT NULL, alt_text LONGTEXT NOT NULL, height LONGTEXT NOT NULL, path LONGTEXT NOT NULL, width LONGTEXT NOT NULL, corner LONGTEXT DEFAULT NULL, type LONGTEXT NOT NULL, PRIMARY KEY(id)) ENGINE = InnoDB
+CREATE TABLE salarys (id INT AUTO_INCREMENT NOT NULL, footnote_id INT DEFAULT NULL, location_id INT DEFAULT NULL, hourly_high NUMERIC(10, 2) DEFAULT NULL, hourly_low NUMERIC(10, 2) DEFAULT NULL, yearly_high INT DEFAULT NULL, yearly_low INT DEFAULT NULL, INDEX IDX_3C989D1AE34BB45E (footnote_id), INDEX IDX_3C989D1A64D218E (location_id), PRIMARY KEY(id)) ENGINE = InnoDB
+CREATE TABLE workweeks (id INT AUTO_INCREMENT NOT NULL, text VARCHAR(255) NOT NULL, PRIMARY KEY(id)) ENGINE = InnoDB
+ALTER TABLE careers ADD CONSTRAINT FK_F169D35E935EE84B FOREIGN KEY (typical_workweek_id) REFERENCES workweeks (id)
+ALTER TABLE careers_certificates ADD CONSTRAINT FK_DB240A31B58CDA09 FOREIGN KEY (career_id) REFERENCES careers (id)
+ALTER TABLE careers_certificates ADD CONSTRAINT FK_DB240A3199223FFD FOREIGN KEY (certificate_id) REFERENCES certificates (id)
+ALTER TABLE careers_dutys ADD CONSTRAINT FK_12B97577B58CDA09 FOREIGN KEY (career_id) REFERENCES careers (id)
+ALTER TABLE careers_dutys ADD CONSTRAINT FK_12B975775D8BC1F8 FOREIGN KEY (info_id) REFERENCES infos (id)
+ALTER TABLE careers_footnotes ADD CONSTRAINT FK_20A99C3AB58CDA09 FOREIGN KEY (career_id) REFERENCES careers (id)
+ALTER TABLE careers_footnotes ADD CONSTRAINT FK_20A99C3AE34BB45E FOREIGN KEY (footnote_id) REFERENCES footnotes (id)
+ALTER TABLE careers_growths ADD CONSTRAINT FK_BBAD46EDB58CDA09 FOREIGN KEY (career_id) REFERENCES careers (id)
+ALTER TABLE careers_growths ADD CONSTRAINT FK_BBAD46ED3067EA9A FOREIGN KEY (growth_id) REFERENCES growths (id)
+ALTER TABLE careers_medias ADD CONSTRAINT FK_A659D097B58CDA09 FOREIGN KEY (career_id) REFERENCES careers (id)
+ALTER TABLE careers_medias ADD CONSTRAINT FK_A659D097EA9FDD75 FOREIGN KEY (media_id) REFERENCES medias (id)
+ALTER TABLE careers_more_infos ADD CONSTRAINT FK_98268205B58CDA09 FOREIGN KEY (career_id) REFERENCES careers (id)
+ALTER TABLE careers_more_infos ADD CONSTRAINT FK_98268205A6ADA7D5 FOREIGN KEY (more_info_id) REFERENCES infos (id)
+ALTER TABLE careers_outlooks ADD CONSTRAINT FK_AD21D33AB58CDA09 FOREIGN KEY (career_id) REFERENCES careers (id)
+ALTER TABLE careers_outlooks ADD CONSTRAINT FK_AD21D33A8AB939D9 FOREIGN KEY (outlook_id) REFERENCES infos (id)
+ALTER TABLE careers_possible_workweeks ADD CONSTRAINT FK_B5375EBBB58CDA09 FOREIGN KEY (career_id) REFERENCES careers (id)
+ALTER TABLE careers_possible_workweeks ADD CONSTRAINT FK_B5375EBBF87F7EE7 FOREIGN KEY (possible_workweek_id) REFERENCES workweeks (id)
+ALTER TABLE careers_salarys ADD CONSTRAINT FK_C8F8A334B58CDA09 FOREIGN KEY (career_id) REFERENCES careers (id)
+ALTER TABLE careers_salarys ADD CONSTRAINT FK_C8F8A334B0FDF16E FOREIGN KEY (salary_id) REFERENCES salarys (id)
+ALTER TABLE mountain_view_effectives ADD CONSTRAINT FK_4A46561899223FFD FOREIGN KEY (certificate_id) REFERENCES certificates (id)
+ALTER TABLE mountain_view_effectives ADD CONSTRAINT FK_4A465618339A325E FOREIGN KEY (effective_id) REFERENCES effectives (id)
+ALTER TABLE cedar_valley_effectives ADD CONSTRAINT FK_79C27F3F99223FFD FOREIGN KEY (certificate_id) REFERENCES certificates (id)
+ALTER TABLE cedar_valley_effectives ADD CONSTRAINT FK_79C27F3F339A325E FOREIGN KEY (effective_id) REFERENCES effectives (id)
+ALTER TABLE eastfield_effectives ADD CONSTRAINT FK_13859E7699223FFD FOREIGN KEY (certificate_id) REFERENCES certificates (id)
+ALTER TABLE eastfield_effectives ADD CONSTRAINT FK_13859E76339A325E FOREIGN KEY (effective_id) REFERENCES effectives (id)
+ALTER TABLE el_centro_effectives ADD CONSTRAINT FK_24D542D399223FFD FOREIGN KEY (certificate_id) REFERENCES certificates (id)
+ALTER TABLE el_centro_effectives ADD CONSTRAINT FK_24D542D3339A325E FOREIGN KEY (effective_id) REFERENCES effectives (id)
+ALTER TABLE north_lake_effectives ADD CONSTRAINT FK_894A72A699223FFD FOREIGN KEY (certificate_id) REFERENCES certificates (id)
+ALTER TABLE north_lake_effectives ADD CONSTRAINT FK_894A72A6339A325E FOREIGN KEY (effective_id) REFERENCES effectives (id)
+ALTER TABLE richland_effectives ADD CONSTRAINT FK_13D25FE499223FFD FOREIGN KEY (certificate_id) REFERENCES certificates (id)
+ALTER TABLE richland_effectives ADD CONSTRAINT FK_13D25FE4339A325E FOREIGN KEY (effective_id) REFERENCES effectives (id)
+ALTER TABLE colleges_certificates ADD CONSTRAINT FK_692E88E770124B2 FOREIGN KEY (college_id) REFERENCES colleges (id)
+ALTER TABLE colleges_certificates ADD CONSTRAINT FK_692E88E99223FFD FOREIGN KEY (certificate_id) REFERENCES certificates (id)
+ALTER TABLE effectives ADD CONSTRAINT FK_71D1BDE6E34BB45E FOREIGN KEY (footnote_id) REFERENCES footnotes (id)
+ALTER TABLE growths ADD CONSTRAINT FK_4FCD78C3E34BB45E FOREIGN KEY (footnote_id) REFERENCES footnotes (id)
+ALTER TABLE growths ADD CONSTRAINT FK_4FCD78C364D218E FOREIGN KEY (location_id) REFERENCES locations (id)
+ALTER TABLE salarys ADD CONSTRAINT FK_3C989D1AE34BB45E FOREIGN KEY (footnote_id) REFERENCES footnotes (id)
+ALTER TABLE salarys ADD CONSTRAINT FK_3C989D1A64D218E FOREIGN KEY (location_id) REFERENCES locations (id)
+Database schema created successfully!

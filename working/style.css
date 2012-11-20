@@ -1,0 +1,413 @@
+/*
+Project:        Overhead kiosk website
+Organization:   Dallas County Community College District
+                Health Careers Resource Center
+Author:         amnotafraid
+Published on:   
+*/
+/* In a command window run sass --watch style.scss:style.css
+*  This will generate style.css from this file.
+*/
+/*------------------------------------*\
+  MIXINS
+\*------------------------------------*/
+/*------------------------------------*\
+  SASS VARIABLES
+\*------------------------------------*/
+/*------------------------------------*\
+  GENERIC
+\*------------------------------------*/
+::-moz-selection {
+  background-color: #21515d;
+  color: white; }
+
+::selection {
+  background-color: #21515d;
+  color: white; }
+
+a {
+  outline: 0;
+  color: #222;
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+p a:hover {
+  color: #27B3CF; }
+
+a:active {
+  outline: none;
+  position: relative;
+  top: 2px; }
+
+.clearfix {
+  clear: both; }
+
+p.center, h1.center, h2.center, h3.center, h4.center, h5.center {
+  text-align: center; }
+
+.underscore {
+  text-decoration: underline; }
+
+@font-face {
+  font-family: 'pulsarjs';
+  src: url("../fonts/pulsarjs-webfont.eot"), url("../fonts/pulsarjs-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/pulsarjs-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon {
+  font-family: 'pulsarjs';
+  font-size: 22px;
+  display: inline-block; }
+
+.green {
+  color: #06b421; }
+
+.red {
+  color: #ef2b31; }
+
+.blue {
+  color: #0054fd; }
+
+/* OTHERS */
+.bold {
+  font-weight: bold; }
+
+.italic {
+  font-style: italic; }
+
+.underline {
+  text-decoration: underline; }
+
+/*------------------------------------*\
+  MAIN
+\*------------------------------------*/
+body {
+  background: #21515d;
+  color: #222;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 16px;
+  -webkit-transition: font-size 0.5s ease-in-out;
+  -moz-transition: font-size 0.5s ease-in-out;
+  -ms-transition: font-size 0.5s ease-in-out;
+  -o-transition: font-size 0.5s ease-in-out;
+  transition: font-size 0.5s ease-in-out; }
+
+#wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1152px;
+  width: 90%;
+  background: #f6f7f3;
+  border: solid 1px #7e7e7e;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; }
+
+header {
+  padding: 3px;
+  text-align: center;
+  margin: 0px;
+  background: #f6f7f3 url(../images/whitebkgnd.gif) top left repeat; }
+
+h1 {
+  font-size: 90px;
+  font-family: "Droid Sans", sans-serif;
+  line-height: 75px;
+  padding: 10px;
+  -webkit-transition: font-size 0.5s ease-in-out;
+  -moz-transition: font-size 0.5s ease-in-out;
+  -ms-transition: font-size 0.5s ease-in-out;
+  -o-transition: font-size 0.5s ease-in-out;
+  transition: font-size 0.5s ease-in-out; }
+
+h1 a:hover {
+  text-decoration: none;
+  color: #27B3CF; }
+
+h2 {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  -webkit-transition: font-size 0.5s ease-in-out;
+  -moz-transition: font-size 0.5s ease-in-out;
+  -ms-transition: font-size 0.5s ease-in-out;
+  -o-transition: font-size 0.5s ease-in-out;
+  transition: font-size 0.5s ease-in-out; }
+
+h3 {
+  font-family: "Droid Sans", sans-serif;
+  font-size: 30px; }
+
+h4 {
+  font-family: "Droid Sans", sans-serif;
+  padding: 3px;
+  margin: 5px 0 0 0; }
+
+h4 a {
+  text-decoration: underline; }
+
+nav {
+  background: #222;
+  padding: 0;
+  margin: 10px 0; }
+
+nav a {
+  color: #F9F9F9;
+  display: block;
+  float: left;
+  padding: 10px; }
+
+nav a:visited {
+  color: #f9f9f9; }
+
+nav a:hover {
+  text-decoration: none;
+  background: #27B3CF; }
+
+nav a:active {
+  position: relative;
+  top: 0; }
+
+.left-col {
+  width: 70%;
+  float: left; }
+
+.folding-col {
+  width: 33%;
+  float: left;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -ms-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out; }
+
+.sidebar {
+  width: 20%;
+  float: right;
+  margin-bottom: 10px;
+  -webkit-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -ms-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-in-out; }
+
+#featured {
+  padding: 20px; }
+
+#latest {
+  padding: 20px; }
+
+#about {
+  padding: 20px; }
+
+p {
+  padding: 0 5px 0 5px; }
+
+ul {
+  list-style: disc;
+  list-style-position: outside;
+  padding-left: 20px; }
+
+ul li {
+  margin: 5px;
+  padding-left: 5px; }
+
+hr {
+  color: #7e7e7e;
+  background-color: #7e7e7e;
+  height: 1px; }
+
+footer {
+  padding: 5px;
+  text-align: center;
+  background: #f6f7f3 url(../images/whitebkgnd.gif) top left repeat; }
+
+pre {
+  overflow: scroll;
+  font-size: 10px; }
+
+.prop {
+  float: right;
+  width: 10px; }
+
+/*------------------------------------*\
+  TABLE
+\*------------------------------------*/
+table {
+  *border-collapse: collapse;
+  /* IE7 and lower */
+  border-spacing: 0;
+  margin: 2%;
+  font-family: "Droid Sans", sans-serif;
+  text-align: center;
+  border: 1px solid #0f0f0f;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -moz-box-shadow: 3px, 3px, 5px, 6px, #cccccc;
+  -webkit-box-shadow: 3px, 3px, 5px, 6px, #cccccc;
+  box-shadow: 3px, 3px, 5px, 6px, #cccccc; }
+
+tbody th, td {
+  font-size: 0.8em;
+  line-height: 1.4em;
+  font-family: 'Droid Sans', sans-serif;
+  color: #0f0f0f;
+  padding: 10px 7px;
+  border-right: 1px solid #cfe2e8;
+  text-align: center; }
+
+td {
+  border-top: 1px solid #cfe2e8; }
+
+tr:nth-of-type(odd) {
+  background: #eee; }
+
+th {
+  background: #cfe2e8; }
+
+th:first-child {
+  -moz-border-top-left-radius: 10px;
+  -webkit-border-top-left-radius: 10px;
+  border-top-left-radius: 10px; }
+
+th:last-child {
+  -moz-border-top-right-radius: 10px;
+  -webkit-border-top-right-radius: 10px;
+  border-top-right-radius: 10px; }
+
+caption {
+  text-align: left;
+  line-height: 3em;
+  text-indent: 10px;
+  height: 3em;
+  color: #5d2f17;
+  /*    border-top:1px solid $medium;
+      border-right:1px solid $medium;
+      border-left:1px solid $medium; */
+  -moz-border-top-left-radius: 5px;
+  -webkit-border-top-left-radius: 5px;
+  border-top-left-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  border-top-right-radius: 5px; }
+
+thead th {
+  height: 47px;
+  font-size: 0.8em;
+  font-weight: bold;
+  padding: 0px 7px;
+  margin: 20px 0px 0px;
+  text-align: center;
+  border-right: 1px solid #cfe2e8; }
+
+/*------------------------------------*\
+  BUTTON
+\*------------------------------------*/
+.main_button {
+  border: 1px solid #b7b7b7;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: 1% 2%;
+  padding: 0.5em;
+  float: left;
+  text-align: center;
+  color: white;
+  background-color: #7e7e7e;
+  width: 27%;
+  height: 3em;
+  behavior: url(PIE.htc);
+  background-image: -webkit-linear-gradient(top, #d3d3d3, #707070);
+  background-image: -moz-linear-gradient(top, #d3d3d3, #707070);
+  -pie-background: linear-gradient(top, #d3d3d3, #707070); }
+
+.main_button:active {
+  border: 1px solid #a0a0a0;
+  background-color: #707070;
+  behavior: url(PIE.htc);
+  background-image: -webkit-linear-gradient(top, #707070, #d3d3d3);
+  background-image: -moz-linear-gradient(top, #707070, #d3d3d3);
+  -pie-background: linear-gradient(top, #707070, #d3d3d3); }
+
+.main_button a {
+  color: white;
+  text-decoration: none; }
+
+.main_button a:active {
+  outline: none; }
+
+div.button_text {
+  font-weight: bold;
+  line-height: 3em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3); }
+
+#IEroot div.button_text {
+  font-weight: normal;
+  line-height: 3em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  zoom: 1;
+  background-color: #cccccc;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Chroma(Color=#cccccc) progid:DXImageTransform.Microsoft.DropShadow(Color='#60000000', OffX=-1, OffY=-1)";
+  filter: progid:DXImageTransform.Microsoft.Chroma(Color=#cccccc) progid:DXImageTransform.Microsoft.DropShadow(OffX=-1, OffY=-1, Color='#60000000'); }
+
+/*------------------------------------*\
+  SLIDER
+\*------------------------------------*/
+#slider {
+  position: relative;
+  margin: 45px 45px 0px 45px;
+  /*	max-width: 1152px; */ }
+
+#slider .viewer {
+  /*        max-width: 1152px;
+          max-height: 920px;*/
+  border: solid 1px #7e7e7e;
+  border-radius: 3px;
+  background: white; }
+
+#slider .slide {
+  /*	max-width: 1152px;
+  	max-height: 920px; */
+  padding: 10px; }
+
+#slider .slide .slide-portrait {
+  /*        max-width: 556px;
+          max-height:900px; */
+  margin-right: 10px;
+  border: solid 1px red;
+  padding: 10px;
+  float: left; }
+
+#slider .slide .slide-landscape {
+  /*        max-width: 1112px;
+          max-height:430px;*/
+  padding: 10px;
+  border: solid 1px red;
+  margin-bottom: 10px; }
+
+#slider .indicator {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  margin: 20px 0 0 0;
+  background: #f6f7f3; }
+
+#slider .indicator span {
+  display: inline-block;
+  text-indent: -9999em;
+  width: 12px;
+  height: 12px;
+  background: #7e7e7e;
+  border-radius: 6px;
+  margin: 0 2px 0 2px; }
+
+#slider .indicator span.active {
+  background: #5d2f17; }

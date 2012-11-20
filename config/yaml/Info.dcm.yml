@@ -1,0 +1,12 @@
+# config/yaml/Info.dcm.yml
+Info:
+  type: entity
+  table: infos
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    text:
+      length: 500

@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Echocardiology Technology</career_name>
+        <practicer_name>echocardiology technologist</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>standard five-day, 40-hour</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>false</clinical>
+        <diagnostic>true</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>70-71</credit_hours>
+                <name>Echocardiology Technology Associate in Applied Sciences Degree</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>80</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>92.31</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>45-46</credit_hours>
+                <name>Echocardiology Technology Advanced Technical Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>80</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>92.31</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>70-71</credit_hours>
+                <name>Pediatric Echocardiology Technology Associate in Applied Sciences Degree</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>80</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>92.31</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>45-46</credit_hours>
+                <name>Pediatric Echocardiology Technology Advanced Technical Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>80</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>92.31</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>varied</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Continuing Education coursework for specific skills training</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Uses ultrasound to create images of patients’ cardiac systems called echocardiograms, used by doctors to diagnose cardiovascular problems</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Presents summary of findings to doctors to use in patient diagnosis, explains test procedures and may assist physicians in performing other procedures</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Has hands-on work conducting non-invasive procedures, sometimes with critically ill patients, interacting with both patients and medical staff</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_high>37</percentage_high>
+                <percentage_low>37</percentage_low>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for cardiovascular technologists and technicians</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>echocardiogram display</alt_text>
+                <height>160</height>
+                <path>images/Echocardiology.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>echocardiogram display</alt_text>
+                <height>160</height>
+                <path>images/EchocardiologyBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>echocardiogram display</alt_text>
+                <height>80</height>
+                <path>images/EchocardiologyThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Acceptance to the credit Echocardiology Technology program is by a competitive selection process based on a weighted point system.</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>Although certification or licensure isn’t required to work as an echocardiology technologist in the state of Texas, many employers prefer to hire those who’ve obtained voluntary certification through  Cardiovascular Credentialing International (CCI) or the American Registry of Diagnostic Medical Sonographers (ARDMS).  Certification can be obtained by successful completion of either the Registered Cardiac Sonographer (RCS) or the Registered Diagnostic Cardiac Sonographer (RDCS) board examinations.</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Echocardiology technologists, or cardiographers, usually work in hospitals, clinics and doctors’ offices</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+            <workweek>
+                <text>weekends</text>
+            </workweek>
+            <workweek>
+                <text>nights</text>
+            </workweek>
+            <workweek>
+                <text>on-call</text>
+            </workweek>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for medical assistants</text>
+                </footnote>
+                <hourly_low>24.70</hourly_low>
+                <hourly_high>24.70</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>51400</yearly_low>
+                <yearly_high>51400</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for medical assistants</text>
+                </footnote>
+                <hourly_low>25.02</hourly_low>
+                <hourly_high>25.02</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>52000</yearly_low>
+                <yearly_high>52000</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

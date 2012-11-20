@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Medical Practice Manager</career_name>
+        <practicer_name>medical practice manager</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>Fulltime with a varying schedule</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>true</administrative>
+        <clinical>false</clinical>
+        <diagnostic>false</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours>752</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Medical Practice Manager Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Plans, directs, coordinates and supervises the delivery of health care</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Manages personnel, conducts marketing relations, oversees accounting services, ensures compliance with regulatory agencies, directs billing and coding, develops policies and procedures, and performs administrative duties</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>25</percentage_low>
+                <percentage_high>25</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>medical practice manager working with staff</alt_text>
+                <height>160</height>
+                <path>images/Management.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>medical practice manager working with staff</alt_text>
+                <height>160</height>
+                <path>images/ManagementBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>medical practice manager working with staff</alt_text>
+                <height>80</height>
+                <path>images/ManagementThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Acceptance into the Medical Practice Manager program is by proof of previous college experience or assessment of college level academic and computer skills and a minimum of three years professional business experience. </text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>Certification is not required to work as a Medical Practice Manager in the State of Texas.  After completion of the program, students will be eligible to take the Certified Medical Manager Apprentice examination</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>Medical Practice Manager is a Continuing Education/non-credit program</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Most jobs available in physician offices, urgent care centers, surgery centers, nursing homes and related health-care organizations</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+            <workweek>
+                <text>weekends</text>
+            </workweek>
+            <workweek>
+                <text>nights</text>
+            </workweek>
+            <workweek>
+                <text>holidays</text>
+            </workweek>
+        </possible_workweeks>
+        <salarys>
+        </salarys>
+    </career>
+</root>

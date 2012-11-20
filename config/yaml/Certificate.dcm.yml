@@ -1,0 +1,111 @@
+# config/yaml/Certificate.dcm.yml
+Certificate:
+  type: entity
+  table: certificates
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    continuing_education_hours:
+      type: text
+      nullable: true
+    credit_hours:
+      type: text
+      nullable: true
+    name:
+      type: text
+    brookhaven:
+      type: boolean
+    cedar_valley:
+      type: boolean
+    eastfield:
+      type: boolean
+    el_centro:
+      type: boolean
+    mountain_view:
+      type: boolean
+    north_lake:
+      type: boolean
+    richland:
+      type: boolean
+  manyToMany:
+    mountain_view_effectives:
+      targetEntity: Effective
+      joinTable:
+        name: mountain_view_effectives
+        joinColumns:
+          certificate_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          effective_id:
+            referencedColumnName: id
+            unique: true
+    cedar_valley_effectives:
+      targetEntity: Effective
+      joinTable:
+        name: cedar_valley_effectives
+        joinColumns:
+          certificate_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          effective_id:
+            referencedColumnName: id
+            unique: true
+    eastfield_effectives:
+      targetEntity: Effective
+      joinTable:
+        name: eastfield_effectives
+        joinColumns:
+          certificate_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          effective_id:
+            referencedColumnName: id
+            unique: true
+    el_centro_effectives:
+      targetEntity: Effective
+      joinTable:
+        name: el_centro_effectives
+        joinColumns:
+          certificate_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          effective_id:
+            referencedColumnName: id
+            unique: true
+    mountain_view_effectives:
+      targetEntity: Effective
+      joinTable:
+        name: mountain_view_effectives
+        joinColumns:
+          certificate_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          effective_id:
+            referencedColumnName: id
+            unique: true
+    north_lake_effectives:
+      targetEntity: Effective
+      joinTable:
+        name: north_lake_effectives
+        joinColumns:
+          certificate_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          effective_id:
+            referencedColumnName: id
+            unique: true
+    richland_effectives:
+      targetEntity: Effective
+      joinTable:
+        name: richland_effectives
+        joinColumns:
+          certificate_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          effective_id:
+            referencedColumnName: id
+            unique: true
+            

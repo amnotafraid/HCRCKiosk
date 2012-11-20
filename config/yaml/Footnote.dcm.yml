@@ -1,0 +1,15 @@
+# config/yaml/Footnote.dcm.yml
+Footnote:
+  type: entity
+  table: footnotes
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    symbol:
+      type: string
+      nullable: true
+    text:
+      type: string

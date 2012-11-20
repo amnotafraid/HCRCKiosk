@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <colleges>
+        <college>
+            <name>Brookhaven</name>
+        </college>
+        <college>
+            <name>Cedar Valley</name>
+        </college>
+        <college>
+            <name>Eastfield</name>
+        </college>
+        <college>
+            <name>El Centro</name>
+        </college>
+        <college>
+            <name>Mountain View</name>
+        </college>
+        <college>
+            <name>North Lake</name>
+        </college>
+        <college>
+            <name>Richland</name>
+        </college>
+    </colleges>
+</root>

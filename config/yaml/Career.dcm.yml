@@ -1,0 +1,126 @@
+# config/yaml/Career.dcm.yml
+Career:
+  type: entity
+  table: careers
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    career_name:
+      type: text
+    practicer_name:
+      type: text
+      nullable: true
+    administrative:
+      type: boolean
+      nullable: true
+    clinical:
+      type: boolean
+      nullable: true
+    diagnostic:
+      type: boolean
+      nullable: true
+  manyToMany:
+    certificates:
+      targetEntity: Certificate
+      joinTable:
+        name: careers_certificates
+        joinColumns:
+          career_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          certificate_id:
+            referencedColumnName: id
+            unique: true
+    dutys:
+      targetEntity: Info
+      joinTable:
+        name: careers_dutys
+        joinColumns:
+          career_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          info_id:
+            referencedColumnName: id
+            unique: true
+    footnotes:
+      targetEntity: Footnote
+      joinTable:
+        name: careers_footnotes
+        joinColumns:
+          career_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          footnote_id:
+            referencedColumnName: id
+            unique: true
+    growths:
+      targetEntity: Growth
+      joinTable:
+        name: careers_growths
+        joinColumns:
+          career_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          growth_id:
+            referencedColumnName: id
+            unique: true
+    medias:
+      targetEntity: Media
+      joinTable:
+        name: careers_medias
+        joinColumns:
+          career_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          media_id:
+            referencedColumnName: id
+            unique: true
+    more_infos:
+      targetEntity: Info
+      joinTable:
+        name: careers_more_infos
+        joinColumns:
+          career_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          more_info_id:
+            referencedColumnName: id
+            unique: true
+    outlooks:
+      targetEntity: Info
+      joinTable:
+        name: careers_outlooks
+        joinColumns:
+          career_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          outlook_id:
+            referencedColumnName: id
+            unique: true
+    possible_workweeks:
+      targetEntity: Workweek
+      joinTable:
+        name: careers_possible_workweeks
+        joinColumns:
+          career_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          possible_workweek_id:
+            referencedColumnName: id
+    salarys:
+      targetEntity: Salary
+      joinTable:
+        name: careers_salarys
+        joinColumns:
+          career_id:
+            referencedColumnName: id
+        inverseJoinColumns:
+          salary_id:
+            referencedColumnName: id
+            unique: true
+  manyToOne:
+    typical_workweek:
+      targetEntity: Workweek

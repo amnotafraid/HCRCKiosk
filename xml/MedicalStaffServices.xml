@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Medical Staff Services</career_name>
+        <practicer_name>medical staff services coordinator</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>standard five-day, 40-hour</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>true</administrative>
+        <clinical>false</clinical>
+        <diagnostic>false</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>64</credit_hours>
+                <name>Medical Staff Services Associate in Applied Sciences Degree</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>85.71</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>varied</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Continuing Education coursework for specific skills training</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Monitors the verification process for medical staff to ensure compliance with standard credentialing procedures</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Performs administrative duties such as ensuring state medical licenses are up-to-date, checking status on new license applications, maintaining an information database for physicians and allied health professionals, managing credentialing and assisting with accreditation standards and regulatory compliance</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Works in an office setting monitoring medical credentialing, which will benefit patients but has no hands-on or direct patient contact; generally reports to top management </text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>medical staffing services coordinator at work</alt_text>
+                <height>160</height>
+                <path>images/Staffing.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>medical staffing services coordinator at work</alt_text>
+                <height>160</height>
+                <path>images/StaffingBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>medical staffing services coordinator at work</alt_text>
+                <height>80</height>
+                <path>images/StaffingThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>This is a completely online program offered through El Centro College. The program is no longer accepting applicants to complete the associate degree, though individual credit courses may be taken. As each credit course is phased out it will be replaced with a Continuing Education course.</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Jobs available in health-care settings that include hospitals, managed care organizations, large physician groups and credentialing organizations</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>The top 75 percent of workers in the field making more than $80,000</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>Salary.com: medical staff credentialing manager</text>
+                </footnote>
+                <hourly_low></hourly_low>
+                <hourly_high></hourly_high>
+                <location>
+                    <text>United States</text>
+                </location>
+                <yearly_low>63387</yearly_low>
+                <yearly_high>63387</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>Salary.com: medical staff credentialing manager</text>
+                </footnote>
+                <hourly_low></hourly_low>
+                <hourly_high></hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>66956</yearly_low>
+                <yearly_high>66956</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

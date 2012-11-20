@@ -1,0 +1,23 @@
+# config/yaml/Media.dcm.yml
+Media:
+  type: entity
+  table: medias
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    alt_text:
+      type: text
+    height:
+      type: text
+    path:
+      type: text
+    width:
+      type: text
+    corner:
+      type: text
+      nullable: true
+    type:
+      type: text

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Medical Assisting</career_name>
+        <practicer_name>Medical Assistant</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>standard five-day, 40-hour</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>true</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>40</credit_hours>
+                <name>Medical Assisting Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2007-08</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>98.73</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>768</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Medical Assisting Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>varied</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Continuing Education coursework for specific skills training</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Performs administrative and clinical tasks that help the offices of doctors and other health practitioners run smoothly</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Schedules appointments, maintains medical records, bills and codes for insurance purposes, takes and records vital signs and medical hitories, prepares patients for examination, draws blood and gives medication as directed by a physician</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Has direct patient contact withhands-on medical procedures, but also does office work and communicates with medicl staff (Note: medical assistants are different than physican's assistants, who examine and diagnose patients under the direct supervision of a physician)</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>35</percentage_low>
+                <percentage_high>35</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for medical assistants</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>medical assistant caring for patient</alt_text>
+                <height>160</height>
+                <path>images/MedicalAssisting.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>medical assistant caring for patient</alt_text>
+                <height>160</height>
+                <path>images/MedicalAssistingBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>medical assistant caring for patient</alt_text>
+                <height>80</height>
+                <path>images/MedicalAssistingThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Acceptance to the credit Medical Assisting program is by a competitive selection process based on a weighted point system.</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>One of the fastest-growing careers in the nation, as health-care facilities need support personnel who can handle both administrative and clicical duties.</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Job opportunities most plentiful for medical assistants with certification.</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Work is available in doctor's offices, hopitals, nursing homes, emergency clinics and outpatient care facilities.</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+            <workweek>
+                <text>weekends</text>
+            </workweek>
+            <workweek>
+                <text>nights</text>
+            </workweek>
+            <workweek>
+                <text>on-call</text>
+            </workweek>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for medical assistants</text>
+                </footnote>
+                <hourly_low>12.66</hourly_low>
+                <hourly_high>12.66</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>26300</yearly_low>
+                <yearly_high>26300</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for medical assistants</text>
+                </footnote>
+                <hourly_low>14.31</hourly_low>
+                <hourly_high>14.31</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>29800</yearly_low>
+                <yearly_high>29800</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

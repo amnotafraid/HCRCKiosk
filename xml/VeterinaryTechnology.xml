@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Veterinary Technology</career_name>
+        <practicer_name>Veterinary Technician</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text></text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>72</credit_hours>
+                <name>Veterinary Technology Associate in Applied Sciences Degree</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>true</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <cedar_valley_effectives>
+                    <cedar_valley_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCCD students</measure>
+                        <percentage>70</percentage>
+                    </cedar_valley_effective>
+                    <cedar_valley_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>100</percentage>
+                    </cedar_valley_effective>
+                </cedar_valley_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>20-22</credit_hours>
+                <name>Small Animal Assisting Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>true</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>16</credit_hours>
+                <name>Large Animal Assisting Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>true</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>varied</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Continuing Education coursework for specific skills training</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>true</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Executes lab tests such as blood counts and clinical procedures such as taking blood samples or giving injections</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>May specialize in small animals such as pet dogs and cats or large animals such as cattle and horses</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Works in laboratory conditions, performs medical tests to treat and diagnose animals, interacts with veterinary staff and pet owners and has some direct contact with animals</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>37</percentage_low>
+                <percentage_high>37</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2010 data for veterinary technologists and technicians</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>veterinary technician with a puppy</alt_text>
+                <height>160</height>
+                <path>images/Veterinary.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>veterinary technician with a puppy</alt_text>
+                <height>160</height>
+                <path>images/VeterinaryBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>veterinary technician with a puppy</alt_text>
+                <height>80</height>
+                <path>images/VeterinaryThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Admission to the campus-based Vet Tech associate degree program is based on GPA ranking of completed prerequisite courses. Admission to the certificate programs is based on space available.</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>Although registration is not required to work as a Veterinary Technician in the state of Texas, employers may prefer to hire registered veterinary technicians.  To become registered you must pass the State Regulatory Exam and the Veterinary Technician National Exam.</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Most vet techs work in private veterinary clinics or animal hospitals, though opportunities are also available in research facilities, wildlife medicine, livestock management, pharmaceutical sales or increasingly in biosecurity and disaster preparedness</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Registered veterinary technicians (RVTs) are in demand across the nation with jobs readily available in Texas</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2010 data for veterinary technologists and technicians</text>
+                </footnote>
+                <hourly_low>12.69</hourly_low>
+                <hourly_high>12.69</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>26400</yearly_low>
+                <yearly_high>26400</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2010 data for veterinary technologists and technicians</text>
+                </footnote>
+                <hourly_low>14.31</hourly_low>
+                <hourly_high>14.31</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>29800</yearly_low>
+                <yearly_high>29800</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

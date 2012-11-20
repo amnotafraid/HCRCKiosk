@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Biotechnology</career_name>
+        <practicer_name>biological or clinical lab technician</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>standard five-day, 40-hour</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>71-72</credit_hours>
+                <name>Biotechnology Associate in Applied Sciences Degree</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>85.71</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>29-30</credit_hours>
+                <name>Biotechnology Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>85.71</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Uses the tools of biotechnology in tests and experiments that can make medical diagnoses, create genetically altered agricultural strains, develop pollution-fighting microbes for environmental and industrial applications and use DNA fingerprinting in forensic investigations.</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>A biological technician, often requiring a bachelor’s degree, helps laboratory scientists set up, operate and maintain laboratory instruments; monitor experiments; calculate and record results; and analyze organic substances such as blood, food and drugs</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>A clinical laboratory technician, for which an associate degree usually qualifies, performs routine laboratory tests under supervision of lab professionals</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Almost all biotechnology-related positions work in a lab setting and require communication with scientists and medical staff, often for the benefit of patients but with no hands-on patient contact</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>22</percentage_low>
+                <percentage_high>23</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for biological technicians and medical and clinical laboratory technicians</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>gloved hands using biotechnology tools</alt_text>
+                <height>160</height>
+                <path>images/Biotechnology.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>gloved hands using biotechnology tools</alt_text>
+                <height>160</height>
+                <path>images/BiotechnologyBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>gloved hands using biotechnology tools</alt_text>
+                <height>80</height>
+                <path>images/BiotechnologyThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Acceptance to the Biotechnology program is by acceptance to El Centro or other DCCCD college and completion of prerequisite courses with a minimum cumulative GPA of 2.5 or higher.</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>Although licensure is not required to work as a laboratory technician in the state of Texas, almost all lab tech employers require the appropriate level of education from an accredited institution and certification from the American Society for Clinical Pathology (ASCP).</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Extremely diverse job opportunities, especially when combined with additional training; employers include agricultural companies, colleges and universities, food processing industries, industrial companies, medical schools, pharmaceutical companies and large research institutions, both public and private</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Job settings are in a laboratory setting</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for biological technicians and medical and clinical laboratory technicians</text>
+                </footnote>
+                <hourly_low>16.02</hourly_low>
+                <hourly_high>16.03</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>33300</yearly_low>
+                <yearly_high>33300</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for biological technicians and medical and clinical laboratory technicians</text>
+                </footnote>
+                <hourly_low>16.45</hourly_low>
+                <hourly_low>21.59</hourly_low>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>34200</yearly_low>
+                <yearly_high>44000</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

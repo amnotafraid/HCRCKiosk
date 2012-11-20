@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Magnetic Resonance Imaging (MRI)</career_name>
+        <practicer_name>MRI technologist</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>standard five-day, 40-hour</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>true</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>71-72</credit_hours>
+                <name>Magnetic Resonance Imaging (MRI) Associate in Applied Sciences Degree</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2007-08</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>100</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>96.51</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>38-39</credit_hours>
+                <name>Magnetic Resonance Imaging Advanced Technical Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>704</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Magnetic Resonance Imaging Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Performs noninvasive patient examinations using magnetism and radio frequency energy to visualize a wide variety of internal body structures, helping doctors to diagnose conditions that may not be possible with other imaging methods</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Follows physicians' orders precisely, operates sophisticated machinery, explains procedures to patients and may keep records, prepare work schedules or manage a department</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Has extensive direct contact with medical staff and patients, but within a medical context performs only the noninvasive MRI procedure</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>30</percentage_low>
+                <percentage_high>30</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for magnetic resonance imaging technologist</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>magnetic image of a human head</alt_text>
+                <height>160</height>
+                <path>images/MRI.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>magnetic image of a human head</alt_text>
+                <height>160</height>
+                <path>images/MRIBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>magnetic image of a human head</alt_text>
+                <height>80</height>
+                <path>images/MRIThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Acceptance to the MRI associate degree program is by a competitive selection process based on a weighted point system. The Advanced Technical Certificate is for students who have earned at least an associate degree in a designated allied health field or a bachelor’s degree with a major in a science discipline and who have current registry in radiography, nuclear medicine technology, radiation therapy or sonography.</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>Licensure/Certification through the American Registry of Radiologic Technologists</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>Statistics are included only as guidelines and will vary with fluctuations in the economy and job market. More specific local hiring and salary information can be obtained at college information sessions.</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Adding MRI as an imaging specialty can improve job opportunities for all kinds of radiologic technologists</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Work is available in hospitals, medical centers, diagnostic imaging centers or physicians' offices</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+            <workweek>
+                <text>weekends</text>
+            </workweek>
+            <workweek>
+                <text>evenings</text>
+            </workweek>
+            <workweek>
+                <text>on-call</text>
+            </workweek>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for magnetic resonance imaging technologist </text>
+                </footnote>
+                <hourly_low>25.79</hourly_low>
+                <hourly_high>25.79</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>53600</yearly_low>
+                <yearly_high>53600</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2010 data for veterinary technologists and technicians</text>
+                </footnote>
+                <hourly_low>29.01</hourly_low>
+                <hourly_high>29.01</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>60300</yearly_low>
+                <yearly_high>60300</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

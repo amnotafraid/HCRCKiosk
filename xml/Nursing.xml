@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Nursing</career_name>
+        <practicer_name>nurse</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>varies widely</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>true</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>71-72</credit_hours>
+                <name>Associate Degree Nursing AAS</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>true</north_lake>
+                <richland>false</richland>
+                <brookhaven_effectives>
+                    <brookhaven_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>88</percentage>
+                    </brookhaven_effective>
+                    <brookhaven_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>92.73</percentage>
+                    </brookhaven_effective>
+                </brookhaven_effectives>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>87</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>96.95</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>71</credit_hours>
+                <name>LVN to RN bridge option</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>10</credit_hours>
+                <name>Perioperative Nursing Enhanced Skills Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>51</credit_hours>
+                <name>Vocational Nursing Certificate</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+                <el_centro_effectives>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Licensure Data Reporting System from the Texas Higher Education Coordinating Board 2009-2010</text>
+                        </footnote>
+                        <measure>Licensure exam pass rates for DCCCD students</measure>
+                        <percentage>100</percentage>
+                    </el_centro_effective>
+                    <el_centro_effective>
+                        <footnote>
+                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
+                        </footnote>
+                        <measure>Employment rates for DCCCD graduates</measure>
+                        <percentage>96.55</percentage>
+                    </el_centro_effective>
+                </el_centro_effectives>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>varied</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Continuing Education coursework for specific skills training</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>true</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Registered nurses (RNs) administer medication, perform diagnostic tests, operate medical machinery, develop and carry out health-care plans and educate patients and the public</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Licensed vocational nurses (LVNs) care for patients under the direction of doctors and registered nurses, taking vital signs, giving injections and dressing wounds, assisting with personal hygiene, collecting lab samples and monitoring medication or treatment</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Most nursing jobs are hands-on medical work that helps to diagnose and treat patients; there are exceptions</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>26</percentage_low>
+                <percentage_high>32</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for registered nurses and licensed and practical nurses</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>nurse working with a patient</alt_text>
+                <height>160</height>
+                <path>images/Nursing.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>nurse working with a patient</alt_text>
+                <height>160</height>
+                <path>images/NursingBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>nurse working with a patient</alt_text>
+                <height>80</height>
+                <path>images/NursingThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Acceptance to all Nursing programs is by a competitive selection process based on a weighted point system.</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>El Centro’s Associate Degree Nursing program has an extension campus at North Lake College.</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Diverse job settings for both LVNs and RNs include hospitals, clinics, doctors’ offices, home health care, nursing care facilities and schools. Highest job growth expected in geriatric health-care services</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Nationwide nursing shortage ensures high employability, especially for those with multiple specialties or certifications</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+            <workweek>
+                <text>weekends</text>
+            </workweek>
+            <workweek>
+                <text>nights</text>
+            </workweek>
+            <workweek>
+                <text>holidays</text>
+            </workweek>
+            <workweek>
+                <text>part-time</text>
+            </workweek>
+        <workweek>
+            <text>shift work</text>
+        </workweek>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for registered nurses and licensed and practical nurses</text>
+                </footnote>
+                <hourly_low>20.11</hourly_low>
+                <hourly_high>31.54</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>41800</yearly_low>
+                <yearly_high>65600</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for registered nurses and licensed and practical nurses</text>
+                </footnote>
+                <hourly_low>21.55</hourly_low>
+                <hourly_high>32.73</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>44800</yearly_low>
+                <yearly_high>68100</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

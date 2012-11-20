@@ -1,0 +1,476 @@
+/*
+Project:        Overhead kiosk website
+Organization:   Dallas County Community College District
+                Health Careers Resource Center
+Author:         amnotafraid
+Published on:   
+*/
+
+/* In a command window run sass --watch style.scss:style.css
+*  This will generate style.css from this file.
+*/
+
+/*------------------------------------*\
+  MIXINS
+\*------------------------------------*/
+
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-ms-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+@mixin roundcorners($radius) {
+    -moz-border-radius: $radius;    // firefox
+    -webkit-border-radius: $radius; // safari/chrome
+    border-radius: $radius;         // CSS3, works in IE9
+}
+
+@mixin roundcorner1($radius, $corner: "top-left") {
+    -moz-border-#{$corner}-radius:    $radius ; // firefox
+    -webkit-border-#{$corner}-radius: $radius;  // safari/chrome
+    border-#{$corner}-radius:         $radius;  // CSS3, works in IE9
+}
+@mixin squarecorner1($corner: "top-left") {
+    @include roundcorner1(0px, $corner);
+}
+@mixin roundcornerTL($radius:5px) { @include roundcorner1($radius, "top-left");     }
+@mixin roundcornerTR($radius:5px) { @include roundcorner1($radius, "top-right");    }
+@mixin roundcornerBL($radius:5px) { @include roundcorner1($radius, "bottom-left");  }
+@mixin roundcornerBR($radius:5px) { @include roundcorner1($radius, "bottom-right"); }
+@mixin squarecornerTL()           { @include roundcornerTL(0px);     }
+@mixin squarecornerTR()           { @include roundcornerTR(0px);     }
+@mixin squarecornerBL()           { @include roundcornerBL(0px);     }
+@mixin squarecornerBR()           { @include roundcornerBR(0px);     }
+
+@mixin shadow ($horizontal:3px, $vertical:3px, $blur-radius:5px, $spread-radius:6px, $color:#ccc) {
+  -moz-box-shadow:    $horizontal, $vertical, $blur-radius, $spread-radius, $color;
+  -webkit-box-shadow: $horizontal, $vertical, $blur-radius, $spread-radius, $color;
+  box-shadow:         $horizontal, $vertical, $blur-radius, $spread-radius, $color;
+}
+
+@mixin rule ($hr-color, $hr-height) {
+    color: $hr-color;
+    background-color: $hr-color;
+    height: $hr-height;
+}
+/*------------------------------------*\
+  SASS VARIABLES
+\*------------------------------------*/
+
+$transition-property:   font-size;
+$transition-time:       0.5s;
+$method:                ease-in-out;
+
+$font-serif:            'Droid Serif', serif;
+$font-sans:             'Droid Sans', sans-serif;
+
+$body-color:            #DCE5E8;
+$dark:                  #21515D;
+$dark-contrast:         #5D2F17;
+$cool-contrast:         #A97DDE;
+$warm-contrast:         #CB1C23;
+$neutral:               #7E7E7E;
+$medium:                #CFE2E8;
+$bright:                #91D8f7;
+$light:                 #C4D8BD;
+$white:                 #FFFFFF;
+$dark-neutral:          #0F0F0F;
+$light-neutral:         #F6F7F3;
+$check-mark-color:      #06B421;
+$red:                   #EF2B31;
+$green:                 #06B421;
+$blue:                  #0054FD;
+
+
+/*------------------------------------*\
+  GENERIC
+\*------------------------------------*/
+
+::-moz-selection {
+    background-color: $dark;
+    color: $white;
+}
+::selection {
+    background-color: $dark;
+    color: $white;
+}
+a {
+    outline: 0;
+    color: #222;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+p a:hover {
+    color: #27B3CF;
+}
+a:active {
+    outline: none;
+    position: relative;
+    top: 2px;
+}
+.clearfix {
+    clear: both;
+}
+p.center, h1.center, h2.center, h3.center, h4.center, h5.center {
+        text-align:center;
+}
+.underscore {
+        text-decoration: underline;
+}
+@font-face {
+    font-family: 'pulsarjs';
+    src: url('../fonts/pulsarjs-webfont.eot'),
+         url('../fonts/pulsarjs-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pulsarjs-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.icon {
+    font-family: 'pulsarjs';
+    font-size: 22px;
+    display: inline-block;
+}
+.green {
+    color: $green;
+}
+.red {
+    color: $red;
+}
+.blue {
+    color: $blue;
+}
+
+/* OTHERS */
+.bold {
+    font-weight: bold
+}
+.italic {
+    font-style: italic
+}
+.underline {
+    text-decoration:underline;
+}
+
+/*------------------------------------*\
+  MAIN
+\*------------------------------------*/
+
+body {
+    background: $dark;
+    color: #222;
+    font-family: $font-sans;
+    font-size: 16px; 
+    @include transition($transition-property, $transition-time, $method);
+}
+#wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1152px;
+    width: 90%;
+    background: $light-neutral;
+    border: solid 1px $neutral;
+    @include roundcorners(5px);
+}
+header {
+    padding: 3px;
+    text-align: center;
+    margin:0px;
+    background: $light-neutral url(../images/whitebkgnd.gif) top left repeat;
+}
+h1 {
+    font-size: 90px;
+    font-family: $font-sans;
+    line-height: 75px;
+    padding: 10px; 
+    @include transition($transition-property, $transition-time, $method);
+}
+h1 a:hover {
+    text-decoration: none;
+    color: #27B3CF;
+}
+h2 {
+    font-family: $font-sans;
+    font-size: 18px;
+    padding: 10px; 
+    @include transition($transition-property, $transition-time, $method);
+}
+h3 {
+    font-family: $font-sans;
+    font-size: 30px;
+}
+h4 {
+    font-family: $font-sans;
+    padding: 3px;
+    margin: 5px 0 0 0;
+}
+h4 a {
+    text-decoration: underline;
+}
+h4 a:hover {
+}
+nav {
+    background: #222;
+    padding: 0;
+    margin: 10px 0;
+}
+nav a {
+    color: #F9F9F9;
+    display: block;
+    float: left;
+    padding: 10px;
+}
+nav a:visited {
+    color: #f9f9f9;
+}
+nav a:hover {
+    text-decoration: none;
+    background: #27B3CF;
+}
+nav a:active {
+    position: relative;
+    top: 0;
+}
+.left-col {
+    width: 70%;
+    float: left;
+}
+.folding-col {
+    width:33%;
+    float: left;
+    @include transition(width, $transition-time, $method);
+}
+.sidebar {
+    width: 20%;
+    float: right;
+    margin-bottom: 10px; 
+    @include transition(width, $transition-time, $method);
+}
+#featured {
+    padding: 20px;
+}
+#latest	{
+    padding: 20px;
+}
+#about {
+    padding: 20px;
+}
+p {
+    padding: 0 5px 0 5px;
+}
+ul {
+    list-style: disc;
+    list-style-position: outside;
+    padding-left: 20px;
+}
+ul li {
+    margin: 5px;
+    padding-left: 5px;
+}
+hr {
+    @include rule($neutral, 1px);
+}
+footer {
+    padding: 5px;
+    text-align: center;
+    background: $light-neutral url(../images/whitebkgnd.gif) top left repeat;
+}
+pre {
+    overflow: scroll;
+    font-size: 10px;
+}
+
+.prop {
+    float:right;
+    width: 10px;
+}
+
+/*------------------------------------*\
+  TABLE
+\*------------------------------------*/
+
+table {
+    *border-collapse:collapse; /* IE7 and lower */
+    border-spacing: 0;
+    margin:2%;
+    font-family: $font-sans;
+    text-align: center;
+    border:1px solid $dark-neutral;
+    @include roundcorners(10px);
+    @include shadow();
+}
+
+tbody th,td {
+    font-size: 0.8em;
+    line-height: 1.4em;
+    font-family: 'Droid Sans', sans-serif;
+    color: $dark-neutral;
+    padding: 10px 7px;
+    border-right: 1px solid $medium;
+    text-align: center;
+}
+td {
+    border-top: 1px solid $medium;
+}
+tr:nth-of-type(odd) { 
+    background: #eee; 
+}
+th {
+    background: $medium;
+}
+th:first-child {
+    @include roundcornerTL(10px);
+}
+th:last-child {
+    @include roundcornerTR(10px);
+}
+caption {
+    text-align: left;
+    line-height: 3em;
+    text-indent: 10px;
+    height: 3em;
+    color: $dark-contrast;
+/*    border-top:1px solid $medium;
+    border-right:1px solid $medium;
+    border-left:1px solid $medium; */
+    @include roundcornerTL(5px);
+    @include roundcornerTR(5px);
+}
+
+thead th {
+    height: 47px;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 0px 7px;
+    margin: 20px 0px 0px;
+    text-align: center;
+    border-right: 1px solid $medium;
+}
+
+/*------------------------------------*\
+  BUTTON
+\*------------------------------------*/
+
+.main_button{
+    border:1px solid #b7b7b7;
+    @include roundcorners(10px);
+    margin: 1% 2%;
+    padding: 0.5em;
+    float: left;
+    text-align: center;
+    color: $white;
+    background-color: $neutral;
+    width: 27%;
+    height: 3em;
+    behavior: url(PIE.htc);
+    background-image: -webkit-linear-gradient(top, #d3d3d3, #707070);
+    background-image: -moz-linear-gradient(top, #d3d3d3, #707070);
+    -pie-background: linear-gradient(top, #d3d3d3, #707070);
+}
+
+.main_button:active{
+    border:1px solid #a0a0a0;
+    background-color: #707070;
+    behavior: url(PIE.htc);
+    background-image: -webkit-linear-gradient(top, #707070, #d3d3d3);
+    background-image: -moz-linear-gradient(top, #707070, #d3d3d3);
+    -pie-background: linear-gradient(top, #707070, #d3d3d3);
+}
+
+.main_button a {
+    color:white;
+    text-decoration:none; 
+}
+       
+.main_button a:active {
+    outline:none;
+}
+
+div.button_text {
+    font-weight: bold;
+    line-height: 3em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+}
+
+#IEroot div.button_text {
+    font-weight: normal;
+    line-height: 3em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    zoom: 1;
+    background-color: #cccccc;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Chroma(Color=#cccccc) progid:DXImageTransform.Microsoft.DropShadow(Color='#60000000', OffX=-1, OffY=-1)";
+    filter: progid:DXImageTransform.Microsoft.Chroma(Color=#cccccc)
+            progid:DXImageTransform.Microsoft.DropShadow(OffX=-1, OffY=-1, Color='#60000000');
+}
+
+/*------------------------------------*\
+  SLIDER
+\*------------------------------------*/
+
+#slider {
+	position: relative;
+	margin: 45px 45px 0px 45px;
+/*	max-width: 1152px; */
+}
+
+#slider .viewer {
+/*        max-width: 1152px;
+        max-height: 920px;*/
+	border: solid 1px $neutral;
+	border-radius: 3px;
+        background: $white;
+}
+
+#slider .slide {
+/*	max-width: 1152px;
+	max-height: 920px; */
+	padding: 10px;
+}
+
+#slider .slide .slide-portrait {
+/*        max-width: 556px;
+        max-height:900px; */
+        margin-right:10px;
+        border:solid 1px red;
+        padding: 10px;
+        float:left;
+}
+
+#slider .slide .slide-landscape {
+/*        max-width: 1112px;
+        max-height:430px;*/
+        padding: 10px;
+        border:solid 1px red;
+        margin-bottom:10px;
+}
+
+#slider .indicator {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	margin: 20px 0 0 0;
+	background: #f6f7f3;
+}
+
+#slider .indicator span {
+	display: inline-block;
+	text-indent: -9999em;
+	width: 12px;
+	height: 12px;
+	background: $neutral;
+	border-radius: 6px;
+	margin: 0 2px 0 2px;
+}
+
+#slider .indicator span.active {
+	background: $dark-contrast;
+}

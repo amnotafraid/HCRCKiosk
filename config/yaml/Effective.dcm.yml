@@ -1,0 +1,18 @@
+# config/yaml/Effective.dcm.yml
+Effective:
+  type: entity
+  table: effectives
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    measure:
+      type: text
+    percentage:
+      type: decimal
+      scale: 2
+  manyToOne:
+    footnote:
+      targetEntity: Footnote

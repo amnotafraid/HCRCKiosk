@@ -1,0 +1,12 @@
+# config/yaml/Location.dcm.yml
+Location:
+  type: entity
+  table: locations
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  fields:
+    text:
+      type: string

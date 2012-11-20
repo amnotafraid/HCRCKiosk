@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Pharmacy Technician</career_name>
+        <practicer_name>pharmacy technician</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>standard five-day, 40-hour</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <certificates>
+            <certificate>
+                <continuing_education_hours>352</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Community Pharmacy Technician</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>400</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Institutional Pharmacy Technician</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>752</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Combined Institutional Pharmacy Technician + Community Pharmacy Technician</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>56</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>PTCB Approved Admixture Technician (Aseptic Techniques for Pharmacy Technicians)</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>varied</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Continuing Education coursework for specific skills training</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>true</cedar_valley>
+                <eastfield>true</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Helps licensed pharmacists prepare prescription medications, provides customer service and performs administrative duties in a pharmacy, which may be in a community or institutional setting</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>May receive prescription requests, measure and mix medications, label bottles and sometimes perform administrative functions such as answering phones, stocking shelves and operating cash registers, depending on the size of the company</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Works with medications and usually has extended contact with customers and licensed pharmacists, but has no hands-on medical contact with patients</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>34</percentage_low>
+                <percentage_high>34</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2009 data for pharmacy technicians</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>pharmacy technician at work</alt_text>
+                <height>160</height>
+                <path>images/Pharmacy.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>pharmacy technician at work</alt_text>
+                <height>160</height>
+                <path>images/PharmacyBackground.jpg</path>
+                <width>200</width>
+                <corner>background</corner>
+                <type>image</type>
+            </media>
+            <media>
+                <alt_text>pharmacy technician at work</alt_text>
+                <height>80</height>
+                <path>images/PharmacyThumbnail.jpg</path>
+                <width>100</width>
+                <corner>thumbnail</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+            <more_info>
+                <info>
+                    <text>Acceptance to the Community and Institutional Pharmacy Technician programs is by proof of high school diploma or equivalency, assessment of academic and computer skills and personal interview.</text>
+                </info>
+            </more_info>
+            <more_info>
+                <info>
+                    <text>To work as a pharmacy technician in the state of Texas, you are required to pass the Pharmacy Technician Certification exam and complete registration through the Texas State Board of Pharmacy.  For more information, visit the Texas State Board of Pharmacy website</text>
+                </info>
+            </more_info>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Work is available in pharmacies of all types, including retail and mail-order pharmacies, hospitals, clinics, nursing homes and assisted-living facilities</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+            <workweek>
+                <text>weekends</text>
+            </workweek>
+            <workweek>
+                <text>nights</text>
+            </workweek>
+            <workweek>
+                <text>holidays</text>
+            </workweek>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2009 data for pharmacy technicians</text>
+                </footnote>
+                <hourly_low>14.66</hourly_low>
+                <hourly_high>14.66</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>30500</yearly_low>
+                <yearly_high>30500</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2009 data for pharmacy technicians</text>
+                </footnote>
+                <hourly_low>15.81</hourly_low>
+                <hourly_high>15.81</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>32900</yearly_low>
+                <yearly_high>32900</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>
