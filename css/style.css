@@ -60,9 +60,20 @@ p.center, h1.center, h2.center, h3.center, h4.center, h5.center {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'sosa';
+  src: url("../fonts/sosa.eot"), url("../fonts/sosa.eot?#iefix") format("embedded-opentype"), url("../fonts/sosa.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 .icon {
   font-family: 'pulsarjs';
   font-size: 22px;
+  display: inline-block; }
+
+.graphic {
+  font-family: 'sosa';
+  font-size: 48px;
   display: inline-block; }
 
 .green {
@@ -83,6 +94,10 @@ p.center, h1.center, h2.center, h3.center, h4.center, h5.center {
 
 .underline {
   text-decoration: underline; }
+
+sup {
+  font-size: x-small;
+  vertical-align: super; }
 
 /*------------------------------------*\
   MAIN

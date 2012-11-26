@@ -369,10 +369,10 @@ Published on:
 
             $growths = $career->getGrowths();
             if (count($growths) > 0) {
-              echo "<h2>Growth</h2>";
+              echo "<h2><span class=\"graphic\">G</span>Growth</h2>";
 
               foreach ($growths AS $growth) {
-                echo "<p class=\"underscore\">".$growth->getLocation()->getText();
+                echo "<p><span class=\"underscore\">".$growth->getLocation()->getText()."</span>";
                 $footnote = $growth->getFootnote();
                 if (!is_null($footnote)) {
                   echo generate_footnote_symbol($footnote);
@@ -389,10 +389,10 @@ Published on:
             
             $salarys = $career->getSalarys();
             if (count($salarys) > 0) {
-              echo "<h2>Salary</h2>";
+              echo "<h2><span class=\"graphic\">$</span>Salary</h2>";
               
               foreach ($salarys AS $salary) {
-                echo "<p class=\"underscore\">".$salary->getLocation()->getText();
+                echo "<p><span class=\"underscore\">".$salary->getLocation()->getText();
                 $footnote = $salary->getFootnote();
                 if (!is_null($footnote)) {
                   echo generate_footnote_symbol($footnote);
@@ -417,7 +417,7 @@ Published on:
             if ($career->getTypicalWorkweek() != ""
                 && count($career->getPossibleWorkweeks()) != 0) {
 
-              echo "<h2>Work schedule</h2>";
+              echo "<h2><span class=\"graphic\">[</span>Work schedule</h2>";
                 
               if ($career->getTypicalWorkweek() != "") {
                 echo "<p class=\"underscore\">Typical Workweek</p>";
@@ -457,15 +457,15 @@ Published on:
           switch( $footnote->getSymbol() ){
               case '1':
               {
-                return "<span class=\"icon red\">J</span>";
+                return "<sup>1</sup>";/* "<span class=\"icon red\">J</span>";*/
               }
               case '2':
               {
-                return "<span class=\"icon blue\">J</span>";
+                return "<sup>2</sup>";/* "<span class=\"icon blue\">J</span>";*/
               }
               default:
               {
-                return "<span class=\"icon green\">J</span>";
+                return "<sup>3</sup>";/* "<span class=\"icon green\">J</span>";*/
               }
           }
       }
