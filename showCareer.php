@@ -21,48 +21,32 @@ Published on:
    <script type="text/javascript" src="js/jquery.slidertron-1.1.js"></script>
    <script type="text/javascript">//<![CDATA[
       $(document).ready(function() {
-        resizeWrapper();
+        styleContent();
 
         $(window).resize(function() {
-          resizeWrapper();
+          styleContent();
         });
         
         });
         
-      function resizeWrapper() {
-        // calculate wrapper height and top-margin
-        var contentHeight = $("div#main-content").height()
-                            + $("header").height()
-                            + $("footer").height();
-        var contentWidth = $("body").width();
-        // To accommodate content, the wrapper may be taller.
-        // We set the minimum height.
-        var wrapperMinHeight = Math.min(1024, contentHeight * 0.9);
-        var wrapperTopMargin = (contentHeight - wrapperMinHeight) / 2;
+      function styleContent() {
+        // calculate content padding
+        var headerHeight = $("header").height();
+        var footerHeight = $("footer").height();
+        var contentHeight = getViewportHeight();
+        var mainContentHeight = contentHeight
+                                - headerHeight
+                                - footerHeight;
 
-        // div#wrapper set margin-top and height
+        // div#main-content set margin-top and height
         // width is taken care of by width:90% in stylesheet
-        $('div#wrapper').css({
-          "margin-top" : 0,
-          "margin-left" : 0,
-          "margin-right" : 0,
-          "width" : "100%",
-          "max-width" : contentWidth,
-          "height" : contentHeight
+        $('div#main-content').css({
+          "padding-top" : headerHeight,
+          "padding-left" : 0,
+          "padding-right" : 0,
+          "padding-bottom" : footerHeight
         });
       }
-
-      function getViewportWidth() {
-        if (window.innerWidth) {
-          return window.innerWidth;
-          }
-        else if (document.body && document.body.offsetWidth) {
-          return document.body.offsetWidth;
-          }
-        else {
-          return 0;
-          }
-        }
 
       function getViewportHeight() {
         if (window.innerHeight) {
@@ -132,46 +116,14 @@ Published on:
    ?>
 		
 		<header>
-          <?
-          $href_prev = "showCareer.php?id=".$prev."&max_id=".$max_id;
-          $href_next = "showCareer.php?id=".$next."&max_id=".$max_id;
-          ?>
-          <div class="leftbuttonbox">
-              <a href="<?echo $href_prev?>" class="leftbutton">Previous</a>
-          </div>
-          <div class="centerbuttonbox">
-              <a href="index.php" class="centerbutton">Main</a>
-          </div>
-          <div class="rightbuttonbox">
-              <a href="<?echo $href_next?>" class="rightbutton">Next&nbsp;&nbsp;&nbsp;</a>
-          </div>
           <h1><?echo $career->getCareerName();?></h1>
 		</header>
 				
 		<div id="main-content">
-			<hr/>
           <?
           $href_prev = "showCareer.php?id=".$prev."&max_id=".$max_id;
           $href_next = "showCareer.php?id=".$next."&max_id=".$max_id;
           ?>
-<!--          <div class="folding-col">
-            <div class="triangle-left"><div class="button-text">Previous</div></div>
-            <!--<div class="navbuttonbox">
-              <a href="<?/*echo $href_prev*/?>" class="navbutton">Previous</a>
-            </div>
-          </div>
-          <div class="folding-col">
-            <div class="triangle-up"></div>
-            <!--<div class="navbuttonbox">
-                <a href="index.php" class="navbutton">Main</a>
-            </div>
-          </div>
-          <div class="folding-col">
-            <div class="triangle-right"></div>
-            <!--<div class="navbuttonbox">
-              <a href="<?/*echo $href_next*/?>" class="navbutton">Next</a>
-            </div>
-          </div>-->
            <section class="left-col"">
               <h2>What does a <?echo $career->getPracticerName();?> do?</h2>
               <?php
@@ -443,12 +395,26 @@ Published on:
             ?>
             </aside>
          <div class="clearfix">
-           <?
-           ?>
          </div>
 		</div>
-		<hr/>
 		<footer>
+          <?
+          $href_prev = "showCareer.php?id=".$prev."&max_id=".$max_id;
+          $href_next = "showCareer.php?id=".$next."&max_id=".$max_id;
+          ?>
+          <div style="width:40%;height:4em;left:50%;margin:1% 0 1% -20%;position:relative;">
+            <div class="leftbuttonbox">
+                <a href="<?echo $href_prev?>" class="leftbutton">Previous</a>
+            </div>
+            <div class="centerbuttonbox">
+                <a href="index.php" class="centerbutton">Main</a>
+            </div>
+            <div class="rightbuttonbox">
+                <a href="<?echo $href_next?>" class="rightbutton">Next&nbsp;&nbsp;&nbsp;</a>
+            </div>
+          </div>
+         <div class="clearfix">
+         </div>
 			<p>Copyright &copy; 2012 Health Careers Resource Center | DCCCD</p>
 		</footer>		
 		<?

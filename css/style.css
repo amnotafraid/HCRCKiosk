@@ -95,6 +95,17 @@ p.center, h1.center, h2.center, h3.center, h4.center, h5.center {
 .underline {
   text-decoration: underline; }
 
+.dark-background {
+  background: #21515d;
+  display: block;
+  /*set the div in the top-left corner of the screen*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*set the width and height to 100% of the screen*/
+  width: 100%;
+  height: 100%; }
+
 sup {
   font-size: x-small;
   vertical-align: super; }
@@ -103,7 +114,7 @@ sup {
   MAIN
 \*------------------------------------*/
 body {
-  background: #21515d;
+  background: #f6f7f3;
   color: #222;
   font-family: "Droid Sans", sans-serif;
   font-size: 16px;
@@ -133,18 +144,12 @@ header {
   padding: 3px;
   text-align: center;
   margin: 0px;
-  background: #f6f7f3 url(../images/whitebkgnd.gif) top left repeat; }
-
-header-left {
-  width: 15%;
-  float: left; }
-
-header-center {
-  width: 70%;
-  float: left; }
-
-header-right {
-  width: 15%; }
+  background: #f6f7f3 url(../images/whitebkgnd.gif) top left repeat;
+  border-bottom: 1px solid #7e7e7e;
+  left: 0;
+  top: 0;
+  width: 100%;
+  position: fixed; }
 
 h1 {
   font-size: 90px;
@@ -257,7 +262,12 @@ hr {
 footer {
   padding: 5px;
   text-align: center;
-  background: #f6f7f3 url(../images/whitebkgnd.gif) top left repeat; }
+  background: #f6f7f3 url(../images/whitebkgnd.gif) top left repeat;
+  border-top: 1px solid #7e7e7e;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%; }
 
 pre {
   overflow: scroll;
@@ -265,41 +275,8 @@ pre {
 
 .prop {
   float: right;
-  width: 10px;
-  color: #21515d; }
-
-.triangle-left {
-  height: 90px;
-  width: 45px;
-  border-radius: 90px 0 0 90px;
-  -moz-border-radius: 90px 0 0 90px;
-  -webkit-border-radius: 90px 0 0 90px;
-  background: #21515d;
-  /*width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-right: 100px solid $dark;
-  border-bottom: 50px solid transparent;*/ }
-
-.triangle-right {
-  /*width: 0;
-  height: 0;
-  border-top: 50px solid transparent;
-  border-left: 100px solid $dark;
-  border-bottom: 50px solid transparent;*/
-  height: 90px;
-  width: 45px;
-  border-radius: 0 90px 90px 0;
-  -moz-border-radius: 0 90px 90px 0;
-  -webkit-border-radius: 0 90px 90px 0;
-  background: #21515d; }
-
-.triangle-up {
-  width: 0;
-  height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 100px solid #21515d; }
+  width: 1px;
+  background-color: #f6f7f3; }
 
 /*------------------------------------*\
   TABLE
@@ -385,7 +362,7 @@ div.mainbuttonbox {
   overflow: hidden;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
   vertical-align: middle;
-  margin: 0 0 16px;
+  /*margin: 0 0 16px;*/
   display: block;
   padding: 0.5em;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start-color', endColorstr='$end-color');
@@ -415,11 +392,11 @@ div.mainbuttonbox {
   background: -o-linear-gradient(top, #707070, #d3d3d3); }
 
 div.centerbuttonbox {
-  margin: 2% 3px 2% 3px;
   float: left;
   text-align: center;
-  width: 15%;
-  height: 3em; }
+  width: 32.33%;
+  height: 3em;
+  margin: 0 0.5%; }
 
 .centerbutton {
   border-top: 1px solid #ffffff;
@@ -440,7 +417,6 @@ div.centerbuttonbox {
   overflow: hidden;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
   vertical-align: middle;
-  margin: 0 0 16px;
   display: block;
   padding: 0.5em;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start-color', endColorstr='$end-color');
@@ -470,11 +446,9 @@ div.centerbuttonbox {
   background: -o-linear-gradient(top, #707070, #d3d3d3); }
 
 div.leftbuttonbox {
-  margin: 2% 0% 2% 2%;
-  /* top, right, bottom, left */
   float: left;
   text-align: center;
-  width: 10%;
+  width: 33.33%;
   height: 3em; }
 
 .leftbutton {
@@ -499,7 +473,6 @@ div.leftbuttonbox {
   overflow: hidden;
   text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);
   vertical-align: middle;
-  margin: 0 0 16px;
   display: block;
   padding: 0.5em;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start-color', endColorstr='$end-color');
@@ -532,11 +505,9 @@ div.leftbuttonbox {
   background: -o-linear-gradient(top, #707070, #d3d3d3); }
 
 div.rightbuttonbox {
-  margin: 2% 2% 2% 0%;
-  /* top, right, bottom, left */
   float: left;
   text-align: center;
-  width: 10%;
+  width: 33.33%;
   height: 3em; }
 
 .rightbutton {
