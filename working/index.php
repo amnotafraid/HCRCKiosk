@@ -32,26 +32,32 @@ Published on:
       function resizeWrapper() {
         // calculate wrapper height and top-margin
         var contentHeight = getViewportHeight();
+        var headerHeight = $("header").height();
+        var footerHeight = $("footer").height();
+        var areaHeight = contentHeight
+                         - headerHeight
+                         - footerHeight;
+
         // To accommodate content, the wrapper may be taller.
         // We set the minimum height.
-        var wrapperMinHeight = Math.min(1024, contentHeight * 0.9);
-        var wrapperTopMargin = (contentHeight - wrapperMinHeight) / 2;
+        var wrapperMinHeight = Math.min(1024, areaHeight * 0.9);
+        $('div.prop').css({
+          "height": wrapperMinHeight
+        });
+                         
+        var wrapperTopMargin = ((areaHeight - wrapperMinHeight) / 2) + headerHeight;
 
         // div#wrapper set margin-top and height
         // width is taken care of by width:90% in stylesheet
         $('div#wrapper').css({
           "margin-top" : wrapperTopMargin,
-          "min-height": wrapperMinHeight
+          "min-height" : wrapperMinHeight
         });
 
         var mainContentMinHeight = wrapperMinHeight
                                 - $("header").height()
                                 - $("footer").height();
                               
-        $('div.prop').css({
-          "min-height": mainContentMinHeight
-        });
-                         
       }
 
       function getViewportWidth() {
@@ -102,47 +108,44 @@ Published on:
 </head>
 
 <body id="home">
+  <div class="dark-background">
    <!--[if IE]>
    <div id="IEroot">
    <![endif]-->
    
-	<div id="wrapper">
-		
-		<header>
-			<h1>Health Careers</h1>
-		</header>
+    <header>
+        <h1>Health Careers</h1>
+    </header>
 				
-		<div id="main-content">
-			<hr/>
-           <div class="prop"></div> <!-- this is to set a minimum height -->
-            <?php
-            // List the careers and give a link
-            require_once "bootstrap.php";
+	<div id="wrapper">
+      <!-- <div class="prop"></div> this is to set a minimum height -->
+      <?php
+      // List the careers and give a link
+      require_once "bootstrap.php";
 
-            $query = $entityManager->createQuery('SELECT c FROM Career c');
-            $careers = $query->getResult();
-            $count = count($careers);
+      $query = $entityManager->createQuery('SELECT c FROM Career c');
+      $careers = $query->getResult();
+      $count = count($careers);
 
-            for ($i = 0; $i < $count; $i++) {
-              $career = $careers[$i];
-              $href = "showCareer.php?id=".$career->getId();
-              ?>
-              <div class="mainbuttonbox">
-                  <a href="<?echo $href?>" class="mainbutton"><?echo $career->getCareerName()?></a>
-              </div>
-              <?  
-            }
-            ?>
-         <div class="clearfix"></div>
-    		<hr/>
-		</div>
-		<footer>
-			<p>Copyright &copy; 2012 Health Careers Resource Center | DCCCD</p>
-		</footer>		
-		
+      for ($i = 0; $i < $count; $i++) {
+        $career = $careers[$i];
+        $href = "showCareer.php?id=".$career->getId()."&max_id=".$count;
+        ?>
+        <div class="mainbuttonbox">
+            <a href="<?echo $href?>" class="mainbutton"><?echo $career->getCareerName()?></a>
+        </div>
+        <?  
+      }
+      ?>
+      <!--<div class="clearfix"></div-->
 	</div> <!-- END Wrapper -->
+   
+   <footer>
+       <p>&copy; 2012 - Dallas County Community College District</p>
+   </footer>		
    <!--[if IE]>
    </div>
    <![endif]-->	
+</div>
 </body>
 </html>

@@ -42,8 +42,8 @@
                 </brookhaven_effectives>
             </certificate>
             <certificate>
-                <continuing_education_hours>768</continuing_education_hours>
-                <credit_hours></credit_hours>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>17-18</credit_hours>
                 <name>EMS: Emergency Medical Technician Basic Certificate</name>
                 <brookhaven>true</brookhaven>
                 <cedar_valley>false</cedar_valley>
@@ -70,8 +70,8 @@
                 </brookhaven_effectives>
             </certificate>
             <certificate>
-                <continuing_education_hours>768</continuing_education_hours>
-                <credit_hours></credit_hours>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>37-38</credit_hours>
                 <name>EMS: Paramedicine Level I Certificate</name>
                 <brookhaven>true</brookhaven>
                 <cedar_valley>false</cedar_valley>
@@ -98,8 +98,8 @@
                 </brookhaven_effectives>
             </certificate>
             <certificate>
-                <continuing_education_hours>768</continuing_education_hours>
-                <credit_hours></credit_hours>
+                <continuing_education_hours></continuing_education_hours>
+                <credit_hours>42</credit_hours>
                 <name>Paramedic: Paramedic Level I Certificate</name>
                 <brookhaven>false</brookhaven>
                 <cedar_valley>false</cedar_valley>

@@ -58,7 +58,8 @@ Published on:
 }
 
 @mixin background-gradient ($start-color:#707070, $end-color:#d3d3d3) {
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start-color', endColorstr='$end-color');
+    background-color: $start-color;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{$start-color}, endColorstr=#{$end-color});
     background: -webkit-gradient(linear, left top, left bottom, from($start-color), to($end-color));
     background: -webkit-linear-gradient(top, $start-color, $end-color);
     background: -moz-linear-gradient(top, $start-color, $end-color);
@@ -218,7 +219,7 @@ body {
     width: 90%;
     background: $light-neutral;
     border: solid 1px $neutral;
-    @include roundcorners(5px);
+    /*@include roundcorners(5px);*/
 }
 #content {
     background: $light-neutral;
@@ -240,7 +241,8 @@ h1 {
     font-size: 90px;
     font-family: $font-sans;
     line-height: 75px;
-    padding: 10px; 
+    padding: 10px;
+    color: $dark;
     @include transition($transition-property, $transition-time, $method);
 }
 h1 a:hover {
@@ -250,7 +252,8 @@ h1 a:hover {
 h2 {
     font-family: $font-sans;
     font-size: 18px;
-    padding: 10px; 
+    padding: 10px;
+    color: $dark-contrast;
     @include transition($transition-property, $transition-time, $method);
 }
 h3 {
@@ -292,6 +295,7 @@ nav a:active {
 .left-col {
     width: 70%;
     float: left;
+    margin-bottom: 10px; 
 }
 .sidebar {
     width: 20%;
@@ -299,10 +303,9 @@ nav a:active {
     margin-bottom: 10px; 
     @include transition(width, $transition-time, $method);
 }
-.folding-col {
-    width:33%;
-    float: left;
-    @include transition(width, $transition-time, $method);
+div.popup {
+    float:left;
+    padding-right: 2%;
 }
 #featured {
     padding: 20px;
@@ -343,17 +346,11 @@ pre {
     font-size: 10px;
 }
 
-.prop {
-    float:right;
-    width: 1px;
-    background-color: $light-neutral;
-}
-
 /*------------------------------------*\
   TABLE
 \*------------------------------------*/
 
-table {
+.certificate-table {
     *border-collapse:collapse; /* IE7 and lower */
     border-spacing: 0;
     margin:2%;
@@ -363,7 +360,7 @@ table {
     @include shadow();
 }
 
-tbody th,td {
+.certificate-table tbody th,td {
     font-size: 0.8em;
     line-height: 1.4em;
     font-family: 'Droid Sans', sans-serif;
@@ -372,26 +369,23 @@ tbody th,td {
     border-right: 1px solid $medium;
     text-align: center;
 }
-td {
+.certificate-table td {
     border-top: 1px solid $medium;
 }
-tr:nth-of-type(odd) { 
+.certificate-shaded-row {
     background: #eee; 
 }
-th {
+.certificate-table th {
     background: $medium;
 }
-caption {
+.certificate-table caption {
     text-align: left;
     line-height: 3em;
     text-indent: 10px;
     height: 3em;
     color: $dark-contrast;
-    @include roundcornerTL(5px);
-    @include roundcornerTR(5px);
 }
-
-thead th {
+.certificate-table thead th {
     height: 47px;
     font-size: 0.8em;
     font-weight: bold;
@@ -399,6 +393,71 @@ thead th {
     margin: 20px 0px 0px;
     text-align: center;
     border-right: 1px solid $medium;
+}
+.certificate-table div.arrow {
+    background:transparent url(../images/arrows.png) no-repeat scroll 0px -16px;
+    width:16px; height:16px;
+    display:block;
+}
+.certificate-table div.up {
+    background-position:0px 0px;
+}
+.certificate-table {
+    *border-collapse:collapse; /* IE7 and lower */
+    border-spacing: 0;
+    margin:2%;
+    font-family: $font-sans;
+    text-align: center;
+    border:1px solid $dark-neutral;
+    @include shadow();
+}
+
+.certificate-table tbody th,td {
+    font-size: 0.8em;
+    line-height: 1.4em;
+    font-family: 'Droid Sans', sans-serif;
+    color: $dark-neutral;
+    padding: 10px 7px;
+    border-right: 1px solid $medium;
+    text-align: center;
+}
+.certificate-table td {
+    border-top: 1px solid $medium;
+}
+.certificate-shaded-row {
+    background: #eee; 
+}
+.certificate-table th {
+    background: $medium;
+}
+.certificate-table caption {
+    text-align: left;
+    line-height: 3em;
+    text-indent: 10px;
+    height: 3em;
+    color: $dark-contrast;
+}
+.certificate-table thead th {
+    height: 47px;
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 0px 7px;
+    margin: 20px 0px 0px;
+    text-align: center;
+    border-right: 1px solid $medium;
+}
+.certificate-table div.arrow {
+    background:transparent url(../images/arrows.png) no-repeat scroll 0px -16px;
+    width:16px; height:16px;
+    display:block;
+}
+.certificate-table div.up {
+    background-position:0px 0px;
+}
+
+.table tbody th,td {
+    *border-collapse:collapse; /* IE7 and lower */
+    border-spacing: 0;
 }
 
 /*------------------------------------*\
@@ -427,7 +486,7 @@ div.mainbuttonbox {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    /*text-shadow: -1px -1px 0 rgba(0,0,0,0.3); this only works for non-IE */
 
     vertical-align: middle;
     /*margin: 0 0 16px;*/
@@ -435,7 +494,15 @@ div.mainbuttonbox {
     padding: 0.5em;
 
     @include background-gradient(#d3d3d3, #707070);
-    }
+}
+
+div.buttonset { 
+    width: 40%;
+    height: 4em;
+    left: 50%;              // center the left edge
+    margin:1% 0 1% -20%;    // move left edge so entire div is centered
+    position:relative;
+}
 
 .mainbutton:active {
     border-top-color: 1aba65;
@@ -448,7 +515,7 @@ div.mainbuttonbox {
     background-position: 0 10%;
     zoom: 1;
     @include background-gradient(#707070, #d3d3d3);
-    }
+}
 
 div.centerbuttonbox {
     float: left;
@@ -473,14 +540,14 @@ div.centerbuttonbox {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    /*text-shadow: -1px -1px 0 rgba(0,0,0,0.3); this only works for non-IE */
 
     vertical-align: middle;
     display: block;
     padding: 0.5em;
 
     @include background-gradient(#d3d3d3, #707070);
-    }
+}
 
 .centerbutton:active {
     border-top-color: 1aba65;
@@ -493,7 +560,7 @@ div.centerbuttonbox {
     background-position: 0 10%;
     zoom: 1;
     @include background-gradient(#707070, #d3d3d3);
-    }
+}
 
 div.leftbuttonbox {
     float: left;
@@ -518,14 +585,14 @@ div.leftbuttonbox {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    /*text-shadow: -1px -1px 0 rgba(0,0,0,0.3); this only works for non-IE */
 
     vertical-align: middle;
     display: block;
     padding: 0.5em;
 
     @include background-gradient(#d3d3d3, #707070);
-    }
+}
 
 .leftbutton:active {
     border-top-color: 1aba65;
@@ -539,7 +606,7 @@ div.leftbuttonbox {
     background-position: 0 10%;
     zoom: 1;
     @include background-gradient(#707070, #d3d3d3);
-    }
+}
 
 div.rightbuttonbox {
     float: left;
@@ -564,7 +631,7 @@ div.rightbuttonbox {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    /*text-shadow: -1px -1px 0 rgba(0,0,0,0.3); this only works for non-IE */
 
     vertical-align: middle;
     margin: 0 0 16px;
@@ -572,7 +639,7 @@ div.rightbuttonbox {
     padding: 0.5em;
 
     @include background-gradient(#d3d3d3, #707070);
-    }
+}
 
 .rightbutton:active {
     border-top-color: 1aba65;
@@ -586,15 +653,15 @@ div.rightbuttonbox {
     background-position: 0 10%;
     zoom: 1;
     @include background-gradient(#707070, #d3d3d3);
-    }
+}
 
 .mainbuttonbox a, .centerbuttonbox a, .leftbuttonbox a, .rightbuttonbox a {
-    color:white;
+    color:$dark;
     text-decoration:none; 
-    }
+}
 .mainbuttonbox a:active, .mainbuttonbox a:focus, .centerbuttonbox a:active, .centerbuttonbox a:focus, .leftbuttonbox a:active, .leftbuttonbox a:focus, .rightbuttonbox a:active, .rightbuttonbox a:focus {
     outline:none;
-    }
+}
 
 div.button_text {
     font-weight: bold;
@@ -625,38 +692,81 @@ div.button_text {
 #slider {
 	position: relative;
 	margin: 45px 45px 0px 45px;
-/*	max-width: 1152px; */
 }
 
 #slider .viewer {
-/*        max-width: 1152px;
-        max-height: 920px;*/
 	border: solid 1px $neutral;
-	border-radius: 3px;
         background: $white;
 }
 
 #slider .slide {
-/*	max-width: 1152px;
-	max-height: 920px; */
-	padding: 10px;
+        padding: 2%;
+        width: 100%;
 }
 
-#slider .slide .slide-portrait {
-/*        max-width: 556px;
-        max-height:900px; */
-        margin-right:10px;
-        border:solid 1px red;
-        padding: 10px;
+#slider .slide-double-portrait {
+        padding: 2%;
+        width: 50%;
         float:left;
 }
 
+.temperature-box {
+        width: 100%;
+        @include roundcorners(15px);
+        background-color: black;
+        float:left;
+}
+
+.temperature-p {
+        text-align: center;
+        vertical-align: middle;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+}
+
+.embed-box {
+    position: relative;
+    padding-bottom: 100%; /* 1/1 ratio */
+    padding-top: 30px; /* IE6 workaround*/
+    height: 0;
+    overflow: hidden;
+    border: 1px solid red;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+}
+.date-box {
+        width: 100%;
+        left: 50%;
+        margin: 0 0 0 -50%;
+        position: relative;
+}
+
+.date-p {
+        text-align:center;
+        font-size:50px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:black;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+}
+
+#slider .slide .slide-double-landscape {
+        padding: 2%;
+        width: 100%;
+}
+
 #slider .slide .slide-landscape {
-/*        max-width: 1112px;
-        max-height:430px;*/
-        padding: 10px;
-        border:solid 1px red;
-        margin-bottom:10px;
+        padding: 2%;
+        width: 100%;
 }
 
 #slider .indicator {

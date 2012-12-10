@@ -23,6 +23,15 @@ Published on:
       $(document).ready(function() {
         styleContent();
 
+        $(".certificate-table tr:odd").addClass("odd");
+        $(".certificate-table tr.hidden-col").hide();
+        $(".certificate-table tr:first-child").show();
+
+        $(".certificate-table tr.expandable-row").click(function(){
+            $(this).next("tr").toggle();
+            $(this).find(".arrow").toggleClass("up");
+        });
+
         $(window).resize(function() {
           styleContent();
         });
@@ -44,7 +53,8 @@ Published on:
           "padding-top" : headerHeight,
           "padding-left" : 0,
           "padding-right" : 0,
-          "padding-bottom" : footerHeight
+          "padding-bottom" : footerHeight,
+          "margin-bottom" : "10px"
         });
       }
 
@@ -196,7 +206,7 @@ Published on:
               }
               reset($certificates);
               
-              echo "<table>";
+              echo "<table class=\"certificate-table\">";
               echo "<caption>Certificates</caption>";
               echo "<tr>";
               echo "<th>Awards and Coursework</th>";
@@ -211,85 +221,159 @@ Published on:
               echo "<th>Continuing Education contact hours</th>";
               echo "<th>Effectiveness</th>";
               echo "</tr>";
-              
+
+              $shaded_row = 0; // if zero, not shaded
+              $effective_begin = 0;
+              $effective_end = 0;
               foreach ($certificates AS $certificate) {
                 $effective = 0;
-                echo "<tr>";
-                echo "<td>".$certificate->getName()."</td>";
+                $columns_cnt = 0;
+                
+                $cell_string = "<td>".$certificate->getName()."</td>";
+                $columns_cnt++;
                 if ($columns["Brookhaven"] > 0) {
-                  echo "<td>";
+                  $cell_string .= "<td>";
                   if ($certificate->getBrookhaven()) {
-                    echo "<span class=\"icon green\">Q</span>";
-                    $effective += generate_popop ($certificate->getBrookhavenEffectives(), $popups, "Brookhaven");
+                    $cell_string .= "<span class=\"icon green\">Q</span>";
+                    $new_popup_cnt = generate_popop ($certificate->getBrookhavenEffectives(), $popups, "Brookhaven");
+                    $effective += $new_popup_cnt;
+                    if ($new_popup_cnt != 0) {
+                      $effective_end++;
+                    }
                   }
-                  echo "</td>";
+                  $cell_string .= "</td>";
+                  $columns_cnt++;
                 }
                 if ($columns["Cedar Valley"] > 0) {
-                  echo "<td>";
+                  $cell_string .= "<td>";
                   if ($certificate->getCedarValley()) {
-                      echo "<span class=\"icon green\">Q</span>";
-                      $effective += generate_popop ($certificate->getCedarValleyEffectives(), $popups, "Cedar Valley");
+                    $cell_string .= "<span class=\"icon green\">Q</span>";
+                    $new_popup_cnt = generate_popop ($certificate->getCedarValleyEffectives(), $popups, "Cedar Valley");
+                    $effective += $new_popup_cnt;
+                    if ($new_popup_cnt != 0) {
+                      $effective_end++;
+                    }
                   }
-                  echo "</td>";
+                  $cell_string .= "</td>";
+                  $columns_cnt++;
                 }
                 if ($columns["Eastfield"] > 0) {
-                  echo "<td>";
+                  $cell_string .= "<td>";
                   if ($certificate->getEastfield()) {
-                    echo "<span class=\"icon green\">Q</span>";
-                    $effective += generate_popop ($certificate->getEastfieldEffectives(), $popups, "Eastfield");
+                    $cell_string .= "<span class=\"icon green\">Q</span>";
+                    $new_popup_cnt = generate_popop ($certificate->getEastfieldEffectives(), $popups, "Eastfield");
+                    $effective += $new_popup_cnt;
+                    if ($new_popup_cnt != 0) {
+                      $effective_end++;
+                    }
                   }
-                  echo "</td>";
+                  $cell_string .= "</td>";
+                  $columns_cnt++;
                 }
                 if ($columns["El Centro"] > 0) {
-                  echo "<td>";
+                  $cell_string .= "<td>";
                   if ($certificate->getElCentro()) {
-                    echo "<span class=\"icon green\">Q</span>";
-                    $effective += generate_popop ($certificate->getElCentroEffectives(), $popups, "El Centro");
+                    $cell_string .= "<span class=\"icon green\">Q</span>";
+                    $new_popup_cnt = generate_popop ($certificate->getElCentroEffectives(), $popups, "El Centro");
+                    $effective += $new_popup_cnt;
+                    if ($new_popup_cnt != 0) {
+                      $effective_end++;
+                    }
                   }
-                  echo "</td>";
+                  $cell_string .= "</td>";
+                  $columns_cnt++;
                 }
                 if ($columns["Mountain View"] > 0) {
-                  echo "<td>";
+                  $cell_string .= "<td>";
                   if ($certificate->getMountainView()) {
-                    echo "<span class=\"icon green\">Q</span>";
-                    $effective += generate_popop ($certificate->getMountainViewEffectives(), $popups, "Mountain View");
+                    $cell_string .= "<span class=\"icon green\">Q</span>";
+                    $new_popup_cnt = generate_popop ($certificate->getMountainViewEffectives(), $popups, "Mountain View");
+                    $effective += $new_popup_cnt;
+                    if ($new_popup_cnt != 0) {
+                      $effective_end++;
+                    }
                   }
-                  echo "</td>";
+                  $cell_string .= "</td>";
+                  $columns_cnt++;
                 }
                 if ($columns["North Lake"]) {
-                  echo "<td>";
+                  $cell_string .= "<td>";
                   if ($certificate->getNorthLake()) {
-                    echo "<span class=\"icon green\">Q</span>";
-                    $effective += generate_popop ($certificate->getNorthLakeEffectives(), $popups, "North Lake");
+                    $cell_string .= "<span class=\"icon green\">Q</span>";
+                    $new_popup_cnt = generate_popop ($certificate->getNorthLakeEffectives(), $popups, "North Lake");
+                    $effective += $new_popup_cnt;
+                    if ($new_popup_cnt != 0) {
+                      $effective_end++;
+                    }
                   }
-                  echo "</td>";
+                  $cell_string .= "</td>";
+                  $columns_cnt++;
                 }
                 if ($columns["Richland"]) {
-                  echo "<td>";
+                  $cell_string .= "<td>";
                   if ($certificate->getRichland()) {
-                    echo "<span class=\"icon green\">Q</span>";
-                    $effective += generate_popop ($certificate->getRichlandEffectives(), $popups, "Richland");
+                    $cell_string .= "<span class=\"icon green\">Q</span>";
+                    $new_popup_cnt = generate_popop ($certificate->getRichlandEffectives(), $popups, "Richland");
+                    $effective += $new_popup_cnt;
+                    if ($new_popup_cnt != 0) {
+                      $effective_end++;
+                    }
                   }
+                  $cell_string .= "</td>";
+                  $columns_cnt++;
+                }
+                $cell_string .= "<td>".$certificate->getCreditHours()."</td>";
+                $columns_cnt++;
+                $cell_string .= "<td>".$certificate->getContinuingEducationHours()."</td>";
+                $columns_cnt++;
+
+                if ($effective == 0){
+                  $cell_string .= "<td></td>";
+                } else {
+                  $cell_string .= "<td><div class=\"arrow\"></div></td>";
+                }
+                
+                $columns_cnt++;
+                // $cell_string is the string that appears between <tr></tr>
+                // $effective is a count of how many effectives tables there are
+                // $effective_begin is an index of $popups where this rows effectives begin
+                // $effective_end is an index of $popups where this rows effectives end
+                // the following is to put classes on the rows.
+                
+                switch ($shaded_row) {
+                  case 0:
+                    if ($effective == 0) {
+                      echo "<tr>";
+                    } else {
+                      echo "<tr class=\"expandable-row\">";
+                    }
+                    $shaded_row = 1;
+                    break;
+                  case 1:
+                    if ($effective == 0) {
+                      echo "<tr class=\"certificate-shaded-row\">";
+                    } else {
+                      echo "<tr class=\"certificate-shaded-row expandable-row\">";
+                    }
+                    $shaded_row = 0;
+                    break;
+                }
+
+                echo $cell_string."</tr>";
+                if ($effective > 0) {
+                  echo "<tr class=\"hidden-col\">";
+                  
+                  echo "<td colspan=\"$columns_cnt\">";
+/*                  echo "<h4>Additional information</h4>";*/
+                  for ($i = $effective_begin; $i < $effective_end; $i++) {
+                    echo $popups[$i];
+                  }
+                  $effective_begin = $effective_end;
                   echo "</td>";
+                  echo "</tr>";
                 }
-                echo "<td>".$certificate->getCreditHours()."</td>";
-                echo "<td>".$certificate->getContinuingEducationHours()."</td>";
-                echo "<td>";
-                if (!is_null($effective)){
-                  echo "<a href='#'>".$effective."</a>";
-                }
-                echo "</td>";
-                echo "</tr>";
-              
               }
               echo "</table>";
-
-              if (count($popups) > 0) {
-                echo "<h2>Measures of Effectiveness</h2>";
-                foreach ($popups AS $popup) {
-                  echo $popup;
-                }
-              }
               ?>
               <h2>What more do I need to know?</h2>
               <?php
@@ -402,7 +486,7 @@ Published on:
           $href_prev = "showCareer.php?id=".$prev."&max_id=".$max_id;
           $href_next = "showCareer.php?id=".$next."&max_id=".$max_id;
           ?>
-          <div style="width:40%;height:4em;left:50%;margin:1% 0 1% -20%;position:relative;">
+          <div class="buttonset">
             <div class="leftbuttonbox">
                 <a href="<?echo $href_prev?>" class="leftbutton">Previous</a>
             </div>
@@ -436,10 +520,11 @@ Published on:
           }
       }
       function generate_popop ($effectives, $popups, $college) {
-        if (count($effectives) == 0) {
+        if (is_null($effectives)) {
           return 0;
-        } else {
-          $str  = "<div id=\"popup".(count($popups) + 1)."\">";
+        }
+        if (count($effectives) != 0) {
+          $str  = "<div id=\"popup".(count($popups) + 1)."\" class=\"popup\">";
           $str .= "<table>";
           $str .= "<tr>";
           $str .= "<th>Measures of Effectiveness</th>";
@@ -455,6 +540,7 @@ Published on:
             $str .= "</td><td>";
             $str .= $effective->getPercentage()."%";
             $str .= "</td>";
+            $str .= "</tr>";
           }
           $str .= "</table>";
           $str .= "</div>";

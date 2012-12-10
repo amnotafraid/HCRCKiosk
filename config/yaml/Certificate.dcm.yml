@@ -31,10 +31,10 @@ Certificate:
     richland:
       type: boolean
   manyToMany:
-    mountain_view_effectives:
+    brookhaven_effectives:
       targetEntity: Effective
       joinTable:
-        name: mountain_view_effectives
+        name: brookhaven_effectives
         joinColumns:
           certificate_id:
             referencedColumnName: id

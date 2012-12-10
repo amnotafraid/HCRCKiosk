@@ -16,7 +16,7 @@ Published on:
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:700,400,400italic,700italic' rel='stylesheet' type='text/css'>
-   <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400,400italic,700italic' rel='stylesheet' type='text/css'>
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
    <script type="text/javascript" src="js/jquery.slidertron-1.1.js"></script>
    <script type="text/javascript">//<![CDATA[
@@ -41,10 +41,6 @@ Published on:
         // To accommodate content, the wrapper may be taller.
         // We set the minimum height.
         var wrapperMinHeight = Math.min(1024, areaHeight * 0.9);
-        $('div.prop').css({
-          "height": wrapperMinHeight
-        });
-                         
         var wrapperTopMargin = ((areaHeight - wrapperMinHeight) / 2) + headerHeight;
 
         // div#wrapper set margin-top and height
@@ -141,7 +137,7 @@ Published on:
 	</div> <!-- END Wrapper -->
    
    <footer>
-       <p>&copy; 2012 - Dallas County Community College District</p>
+       <p>Copyright &copy; <? print(Date("Y")); ?> Health Careers Resource Center | DCCCD</p>
    </footer>		
    <!--[if IE]>
    </div>
