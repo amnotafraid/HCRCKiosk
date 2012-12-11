@@ -182,8 +182,13 @@ h3 {
 
 h4 {
   font-family: "Droid Sans", sans-serif;
-  padding: 3px;
-  margin: 5px 0 0 0; }
+  font-size: 4em;
+  color: #5d2f17;
+  -webkit-transition: font-size 0.5s ease-in-out;
+  -moz-transition: font-size 0.5s ease-in-out;
+  -ms-transition: font-size 0.5s ease-in-out;
+  -o-transition: font-size 0.5s ease-in-out;
+  transition: font-size 0.5s ease-in-out; }
 
 h4 a {
   text-decoration: underline; }
@@ -700,8 +705,7 @@ div.button_text {
   padding-top: 30px;
   /* IE6 workaround*/
   height: 0;
-  overflow: hidden;
-  border: 1px solid red; }
+  overflow: hidden; }
 
 .embed-container iframe,
 .embed-container object,

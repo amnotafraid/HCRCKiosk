@@ -262,8 +262,9 @@ h3 {
 }
 h4 {
     font-family: $font-sans;
-    padding: 3px;
-    margin: 5px 0 0 0;
+    font-size: 4em;
+    color: $dark-contrast;
+    @include transition($transition-property, $transition-time, $method);
 }
 h4 a {
     text-decoration: underline;
@@ -730,7 +731,6 @@ div.button_text {
     padding-top: 30px; /* IE6 workaround*/
     height: 0;
     overflow: hidden;
-    border: 1px solid red;
 }
 
 .embed-container iframe,
