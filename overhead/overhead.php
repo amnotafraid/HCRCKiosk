@@ -8,7 +8,7 @@ Published on:
 -->
 <head>
 	<meta charset="utf-8" />
-	<title>Overhead</title>
+	<title>Overhead HCRC Kiosk</title>
 	<link rel="stylesheet" type="text/css" href="../css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="../css/style.css" />
 	<link rel="stylesheet" type="text/css" href="../css/media-queries.css" />
