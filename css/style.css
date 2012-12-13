@@ -85,6 +85,9 @@ p.center, h1.center, h2.center, h3.center, h4.center, h5.center {
 .blue {
   color: #0054fd; }
 
+.dark {
+  color: #21515d; }
+
 /* OTHERS */
 .bold {
   font-weight: bold; }
@@ -153,7 +156,7 @@ header {
   padding: 3px;
   text-align: center;
   margin: 0px;
-  background: #f6f7f3 url(../images/whitebkgnd.gif) top left repeat;
+  background: #f6f7f3 url(../images/metallicbackground.gif) top left repeat;
   border-bottom: 1px solid #7e7e7e;
   left: 0;
   top: 0;
@@ -216,6 +219,15 @@ h5 span {
   display: block;
   width: 100%;
   height: 45px; }
+
+div.shadow_text {
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3); }
+
+#IEroot div.shadow_text {
+  zoom: 1;
+  background-color: #cc0000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Chroma(Color=#cccccc) progid:DXImageTransform.Microsoft.DropShadow(Color='#60000000', OffX=-1, OffY=-1)";
+  filter: progid:DXImageTransform.Microsoft.Chroma(Color=#cccccc) progid:DXImageTransform.Microsoft.DropShadow(OffX=-1, OffY=-1, Color='#60000000'); }
 
 nav {
   background: #222;
@@ -287,8 +299,10 @@ hr {
 footer {
   padding: 5px;
   text-align: center;
-  background: #f6f7f3 url(../images/whitebkgnd.gif) top left repeat;
+  background: #f6f7f3 url(../images/metallicbackground.gif) top left repeat;
   border-top: 1px solid #7e7e7e;
+  color: #21515d;
+  font-weight: bold;
   left: 0;
   bottom: 0;
   position: fixed;
@@ -722,25 +736,6 @@ div.rightbuttonbox {
 
 .mainbuttonbox a:active, .startbuttonbox a:focus, .mainbuttonbox a:focus, .centerbuttonbox a:active, .centerbuttonbox a:focus, .leftbuttonbox a:active, .leftbuttonbox a:focus, .rightbuttonbox a:active, .rightbuttonbox a:focus {
   outline: none; }
-
-div.button_text {
-  font-weight: bold;
-  line-height: 3em;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3); }
-
-#IEroot div.button_text {
-  font-weight: normal;
-  line-height: 3em;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-  zoom: 1;
-  background-color: #cc0000;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Chroma(Color=#cccccc) progid:DXImageTransform.Microsoft.DropShadow(Color='#60000000', OffX=-1, OffY=-1)";
-  filter: progid:DXImageTransform.Microsoft.Chroma(Color=#cccccc) progid:DXImageTransform.Microsoft.DropShadow(OffX=-1, OffY=-1, Color='#60000000'); }
 
 /*------------------------------------*\
   jQUERY CIRCULATE

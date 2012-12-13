@@ -110,7 +110,7 @@ Published on:
    <![endif]-->
    
     <header>
-        <h1>Health Careers</h1>
+        <h1 class="shadow_text">Health Careers</h1>
     </header>
 				
 	<div id="wrapper">
