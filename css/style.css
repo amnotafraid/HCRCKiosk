@@ -14,15 +14,16 @@ Published on:
 /*------------------------------------*\
   SASS VARIABLES
 \*------------------------------------*/
+/*#21515D;*/
 /*------------------------------------*\
   GENERIC
 \*------------------------------------*/
 ::-moz-selection {
-  background-color: #21515d;
+  background-color: #1b4f6d;
   color: white; }
 
 ::selection {
-  background-color: #21515d;
+  background-color: #1b4f6d;
   color: white; }
 
 a {
@@ -66,6 +67,14 @@ p.center, h1.center, h2.center, h3.center, h4.center, h5.center {
   font-weight: normal;
   font-style: normal; }
 
+/* Regular */
+@font-face {
+  font-family: 'League Gothic';
+  src: url("../fonts/leaguegothic-regular-webfont.eot");
+  src: url("../fonts/leaguegothic-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/leaguegothic-regular-webfont.woff") format("woff"), url("../fonts/leaguegothic-regular-webfont.ttf") format("truetype"), url("../fonts/leaguegothic-regular-webfont.svg#league_gothicregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
 .icon {
   font-family: 'pulsarjs';
   font-size: 22px;
@@ -86,7 +95,7 @@ p.center, h1.center, h2.center, h3.center, h4.center, h5.center {
   color: #0054fd; }
 
 .dark {
-  color: #21515d; }
+  color: #1b4f6d; }
 
 /* OTHERS */
 .bold {
@@ -99,7 +108,18 @@ p.center, h1.center, h2.center, h3.center, h4.center, h5.center {
   text-decoration: underline; }
 
 .dark-background {
-  background: #21515d;
+  background: #203344;
+  display: block;
+  /*set the div in the top-left corner of the screen*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*set the width and height to 100% of the screen*/
+  width: 100%;
+  height: 100%; }
+
+.start-background {
+  background: #203344 url(../images/20x20-tile.png) top left repeat;
   display: block;
   /*set the div in the top-left corner of the screen*/
   position: absolute;
@@ -156,7 +176,7 @@ header {
   padding: 3px;
   text-align: center;
   margin: 0px;
-  background: #f6f7f3 url(../images/metallicbackground.gif) top left repeat;
+  background: #203344 url(../images/20x20-tile.png) top left repeat;
   border-bottom: 1px solid #7e7e7e;
   left: 0;
   top: 0;
@@ -165,10 +185,10 @@ header {
 
 h1 {
   font-size: 90px;
-  font-family: "Droid Sans", sans-serif;
+  font-family: 'League Gothic';
   line-height: 75px;
   padding: 10px;
-  color: #21515d;
+  color: white;
   -webkit-transition: font-size 0.5s ease-in-out;
   -moz-transition: font-size 0.5s ease-in-out;
   -ms-transition: font-size 0.5s ease-in-out;
@@ -183,7 +203,7 @@ h2 {
   font-family: "Droid Sans", sans-serif;
   font-size: 18px;
   padding: 10px;
-  color: #5d2f17;
+  color: #203344;
   -webkit-transition: font-size 0.5s ease-in-out;
   -moz-transition: font-size 0.5s ease-in-out;
   -ms-transition: font-size 0.5s ease-in-out;
@@ -197,7 +217,7 @@ h3 {
 h4 {
   font-family: "Droid Sans", sans-serif;
   font-size: 4em;
-  color: #5d2f17;
+  color: #203344;
   -webkit-transition: font-size 0.5s ease-in-out;
   -moz-transition: font-size 0.5s ease-in-out;
   -ms-transition: font-size 0.5s ease-in-out;
@@ -299,9 +319,9 @@ hr {
 footer {
   padding: 5px;
   text-align: center;
-  background: #f6f7f3 url(../images/metallicbackground.gif) top left repeat;
+  background: #f6f7f3 url(../images/20x20-tile.png) top left repeat;
   border-top: 1px solid #7e7e7e;
-  color: #21515d;
+  color: white;
   font-weight: bold;
   left: 0;
   bottom: 0;
@@ -350,7 +370,7 @@ pre {
   line-height: 3em;
   text-indent: 10px;
   height: 3em;
-  color: #5d2f17; }
+  color: #203344; }
 
 .certificate-table thead th {
   height: 47px;
@@ -405,7 +425,7 @@ pre {
   line-height: 3em;
   text-indent: 10px;
   height: 3em;
-  color: #5d2f17; }
+  color: #203344; }
 
 .certificate-table thead th {
   height: 47px;
@@ -731,7 +751,7 @@ div.rightbuttonbox {
   background: -o-linear-gradient(top, #707070, #d3d3d3); }
 
 .mainbuttonbox a, .startbuttonbox a, .centerbuttonbox a, .leftbuttonbox a, .rightbuttonbox a {
-  color: #21515d;
+  color: #203344;
   text-decoration: none; }
 
 .mainbuttonbox a:active, .startbuttonbox a:focus, .mainbuttonbox a:focus, .centerbuttonbox a:active, .centerbuttonbox a:focus, .leftbuttonbox a:active, .leftbuttonbox a:focus, .rightbuttonbox a:active, .rightbuttonbox a:focus {
@@ -743,8 +763,7 @@ div.rightbuttonbox {
 #swirl-wrap {
   z-index: 20;
   width: 570px;
-  margin: 100px auto;
-  background: #21515d;
+  margin: 50px auto;
   padding: 20px;
   position: relative; }
 
@@ -777,6 +796,9 @@ div.rightbuttonbox {
 #slider .slide {
   padding: 2%;
   width: 100%; }
+
+#slider .slide-background {
+  background: #f6f7f3 url(../images/20x20-tile.png) top left repeat; }
 
 #slider .slide-double-portrait {
   padding: 2%;
@@ -855,4 +877,4 @@ div.rightbuttonbox {
   margin: 0 2px 0 2px; }
 
 #slider .indicator span.active {
-  background: #5d2f17; }
+  background: #203344; }

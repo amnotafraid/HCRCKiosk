@@ -123,6 +123,13 @@ Published on:
           width: (slideWidth - paddingTotal)
         });
         
+        /*$('div.slide').html("<p>" +
+                            "slideHeight = " + slideHeight + "</p><p>" +
+                            "slideWidth = " + (slideWidth) + "</p>");
+       $('div.slide').css({
+         background: "url(../images/Untitled.png)"
+       });*/
+        
       }
       
       function getViewportWidth() {
@@ -172,39 +179,22 @@ Published on:
             <div class="viewer">
               <div class="reel">
                   <div class="slide">
-                      <div class="slide-landscape" >
-                        <h1 class="center">DCCCD</h1>
-                        <br/>
-                        <h4 class="center">Health Careers Resource Center</h4>
-                        <br/>
-                        <h1 class="center">Programs and Job Outlook</h1>
-                      </div>
+                      <img src="../images/programs-and-careers.png" />
                   </div>
                   <div class="slide">
-                    <div class="slide-double-portrait">
-                      <img src="../images/HCRCOffice.jpg" />
-                    </div>
-                    <div class="slide-double-portrait">
-                      <h3 class="center">Come visit us:</h3>
-                      <div style="width:100%;height:70%;margin: 35% auto 0 auto">
-                        <h3 class="center">701 Elm St.</h3>
-                        <h3 class="center">7<sup>th</sup> floor</h3>
-                        <h3 class="center">Dallas, Texas 75202</h3>
-                        <h3 class="center">214-860-2283</h3>
-                        <h3 class="center">One-half block south of the DART West End rail station</h3>
-                      </div>
-                    </div>
+                    <img src="../images/come-visit-us.png" />
                   </div>
                   <div class="slide">
-                    <div class="slide-double-landscape">
+                    <img src="../images/programs-and-careers.png" />
+<!--                    <div class="slide-double-landscape">
                       <h4 class="center">Find out about</h4>
                       <h4 class="center">health care programs here</h4>
                     </div>
                     <div class ="slide-double-landscape">
                         <img src="../images/careers.jpg" style="width:100%; height:100%;" />
-                    </div>
-                  </div>
-                  <div class="slide">
+                    </div>-->
+                  </div> 
+                  <div class="slide slide-background">
                     <?php
 
                     // Load the XML
