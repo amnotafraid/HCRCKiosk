@@ -52,7 +52,7 @@ Published on:
 
 <body>
 
-  <div class="dark-background">
+  <div class="start-background">
    <!--[if IE]>
    <div id="IEroot">
    <![endif]-->
@@ -71,7 +71,7 @@ Published on:
 
     </div>
 
-    <h5 class="center"><span></span>Touch here to find out more about health careers</h5>
+    <h1 class="center"><span></span>Touch here to find out more about health careers</h1>
    
     <div class="startbuttonbox">
         <a href="index.php" class="startbutton">Start</a>

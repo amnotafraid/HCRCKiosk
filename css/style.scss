@@ -79,7 +79,8 @@ $font-serif:            'Droid Serif', serif;
 $font-sans:             'Droid Sans', sans-serif;
 
 $body-color:            #DCE5E8;
-$dark:                  #21515D;
+$dark:                  #1B4F6D; /*#21515D;*/
+$dark-blue:             #203344;
 $dark-contrast:         #5D2F17;
 $cool-contrast:         #A97DDE;
 $warm-contrast:         #CB1C23;
@@ -154,6 +155,19 @@ p.center, h1.center, h2.center, h3.center, h4.center, h5.center {
     font-weight: normal;
     font-style: normal;
 }
+
+/* Regular */
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../fonts/leaguegothic-regular-webfont.eot');
+    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype'),
+         url('../fonts/leaguegothic-regular-webfont.svg#league_gothicregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 .icon {
     font-family: 'pulsarjs';
     font-size: 22px;
@@ -188,7 +202,20 @@ p.center, h1.center, h2.center, h3.center, h4.center, h5.center {
     text-decoration:underline;
 }
 .dark-background {
-    background: $dark;
+    background: $dark-blue;
+    display:block;
+
+    /*set the div in the top-left corner of the screen*/
+    position:absolute;
+    top:0;
+    left:0;
+    
+    /*set the width and height to 100% of the screen*/
+    width:100%;
+    height:100%;
+}
+.start-background {
+    background: $dark-blue url(../images/20x20-tile.png) top left repeat;
     display:block;
 
     /*set the div in the top-left corner of the screen*/
@@ -246,7 +273,7 @@ header {
     padding: 3px;
     text-align: center;
     margin:0px;
-    background: $light-neutral url(../images/metallicbackground.gif) top left repeat;
+    background: $dark-blue url(../images/20x20-tile.png) top left repeat;
     border-bottom: 1px solid $neutral;
     left:0;
     top:0;
@@ -255,10 +282,10 @@ header {
 }
 h1 {
     font-size: 90px;
-    font-family: $font-sans;
+    font-family: 'League Gothic';
     line-height: 75px;
     padding: 10px;
-    color: $dark;
+    color: white;
     @include transition($transition-property, $transition-time, $method);
 }
 h1 a:hover {
@@ -269,7 +296,7 @@ h2 {
     font-family: $font-sans;
     font-size: 18px;
     padding: 10px;
-    color: $dark-contrast;
+    color: $dark-blue;
     @include transition($transition-property, $transition-time, $method);
 }
 h3 {
@@ -279,7 +306,7 @@ h3 {
 h4 {
     font-family: $font-sans;
     font-size: 4em;
-    color: $dark-contrast;
+    color: $dark-blue;
     @include transition($transition-property, $transition-time, $method);
 }
 h4 a {
@@ -375,9 +402,9 @@ hr {
 footer {
     padding: 5px;
     text-align: center;
-    background: $light-neutral url(../images/metallicbackground.gif) top left repeat;
+    background: $light-neutral url(../images/20x20-tile.png) top left repeat;
     border-top: 1px solid $neutral;
-    color: $dark;
+    color: white;
     font-weight: bold;
     left:0;
     bottom:0;
@@ -426,7 +453,7 @@ pre {
     line-height: 3em;
     text-indent: 10px;
     height: 3em;
-    color: $dark-contrast;
+    color: $dark-blue;
 }
 .certificate-table thead th {
     height: 47px;
@@ -478,7 +505,7 @@ pre {
     line-height: 3em;
     text-indent: 10px;
     height: 3em;
-    color: $dark-contrast;
+    color: $dark-blue;
 }
 .certificate-table thead th {
     height: 47px;
@@ -739,7 +766,7 @@ div.rightbuttonbox {
 }
 
 .mainbuttonbox a, .startbuttonbox a, .centerbuttonbox a, .leftbuttonbox a, .rightbuttonbox a {
-    color:$dark;
+    color:$dark-blue;
     text-decoration:none; 
 }
 .mainbuttonbox a:active, .startbuttonbox a:focus, .mainbuttonbox a:focus, .centerbuttonbox a:active, .centerbuttonbox a:focus, .leftbuttonbox a:active, .leftbuttonbox a:focus, .rightbuttonbox a:active, .rightbuttonbox a:focus {
@@ -753,8 +780,7 @@ div.rightbuttonbox {
 #swirl-wrap {
     z-index: 20;
     width: 570px;
-    margin: 100px auto;
-    background: $dark;
+    margin: 50px auto;
     padding: 20px;
     position: relative;
 }
@@ -794,6 +820,10 @@ div.rightbuttonbox {
 #slider .slide {
         padding: 2%;
         width: 100%;
+}
+
+#slider .slide-background {
+        background: $light-neutral url(../images/20x20-tile.png) top left repeat;
 }
 
 #slider .slide-double-portrait {
@@ -879,5 +909,5 @@ div.rightbuttonbox {
 }
 
 #slider .indicator span.active {
-	background: $dark-contrast;
+	background: $dark-blue;
 }
