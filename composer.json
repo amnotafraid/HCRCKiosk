@@ -1,6 +1,8 @@
 {
     "require": {
-        "doctrine/orm": "dev-master"
-    },
-    "minimum-stability": "dev"
+        "symfony/doctrine-bridge": "2.1.*",
+        "symfony/yaml": "2.1.*",
+        "doctrine/dbal": ">=2.2,<2.4-dev",
+        "doctrine/orm": ">=2.2.3,<2.4-dev"
+    }
 }

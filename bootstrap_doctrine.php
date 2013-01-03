@@ -1,14 +1,14 @@
 <?php
 // bootstrap_doctrine.php
+//   See http://docs.doctrine-project.org/en/latest/reference/configuration.html
 
-// See :doc:`Configuration <../reference/configuration>` for up to date autoloading details.
 // $path = 'C:\xampp\htdocs\WebOnData2\vendor\doctrine\orm\lib\Doctrine\ORM\Tools';
 // set_include_path(get_include_path() . PATH_SEPARATOR . $path);
 
 use Doctrine\ORM\Tools\Setup;
 
-require_once "Doctrine/ORM/Tools/Setup.php";
-Setup::registerAutoloadPEAR();
+// Include Composer Autoload
+require_once "vendor/autoload.php";
 
 // Create a simple "default" Doctrine ORM configuration for XML Mapping
 $isDevMode = true;
@@ -30,4 +30,3 @@ $conn = array(
 
 // obtaining the entity manager
 $entityManager = \Doctrine\ORM\EntityManager::create($conn, $config);
-/** @var $em \Doctrine\ORM\EntityManager */
