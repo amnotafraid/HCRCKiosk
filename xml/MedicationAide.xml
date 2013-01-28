@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Medication Aide</career_name>
+        <practicer_name>medication aide</practicer_name>
+        <typical_workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <continuing_education>true</continuing_education>
+        <certificates>
+            <certificate>
+                <continuing_education_hours>7</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Medication Aide Recertification Renewal</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Administers routine oral medications and may also give medications by inhalation or topically</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Responsible for documenting medication administration on the medication administration record, noting if the patient has adverse reactions to medications and any changes in patient condition</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Monitors patients' blood pressure, pulse, respiration, and temperature (vital signs) and any behavioral changes in their patients</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>open bottle of pills</alt_text>
+                <height>160</height>
+                <path>images/MedicationAide200x160.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Certified medication aides, or CMAs work primarily in nursing homes and assisted-living facilities</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Personal Care Aides &amp; Nursing Assistants</text>
+                </footnote>
+                <hourly_low>8.49</hourly_low>
+                <hourly_high>10.34</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>17700</yearly_low>
+                <yearly_high>21700</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Personal Care Aides &amp; Nursing Assistants</text>
+                </footnote>
+                <hourly_low>8.51</hourly_low>
+                <hourly_high>11.13</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>17700</yearly_low>
+                <yearly_high>23200</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

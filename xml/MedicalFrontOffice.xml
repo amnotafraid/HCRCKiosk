@@ -12,6 +12,7 @@
         <administrative>true</administrative>
         <clinical>false</clinical>
         <diagnostic>false</diagnostic>
+        <continuing_education>false</continuing_education>
         <certificates>
             <certificate>
                 <continuing_education_hours></continuing_education_hours>

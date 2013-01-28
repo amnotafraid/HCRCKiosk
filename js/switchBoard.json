@@ -1,0 +1,12 @@
+{"items": [
+	{
+            "text"    : "Credit Programs",
+            "href"    : "listCareer.php?credit=yes",
+            "info"    : "This is a list of careers for which certificates are offered"
+	},
+	{
+            "text"    : "Continuing Education",
+            "href"    : "listCareer.php?credit=no",
+            "info"    : "This is a list of continuing education courses"
+	} ]
+}

@@ -10,8 +10,9 @@
             </workweek>
         </typical_workweek>
         <administrative>false</administrative>
-        <clinical>true</clinical>
-        <diagnostic>false</diagnostic>
+        <clinical>false</clinical>
+        <diagnostic>true</diagnostic>
+        <continuing_education>false</continuing_education>
         <certificates>
             <certificate>
                 <continuing_education_hours></continuing_education_hours>

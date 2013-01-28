@@ -1,4 +1,4 @@
-  <?php
+<?php
 // the next time you work on this add text to media so you can display something
 use Doctrine\Common\Collections\ArrayCollection;
 require_once "bootstrap.php";
@@ -22,6 +22,17 @@ require_once "bootstrap.php";
 //$filename = 'xml/MedicalLaboratory.xml';
 //$filename = 'xml/Echocardiology.xml';
 $filename = 'xml/Paramedic.xml';
+// new
+//$filename = 'xml/DentalAssisting.xml';
+//$filename = 'xml/EKGTechnician.xml';
+//$filename = 'xml/HealthInformationTechnology.xml';
+//$filename = 'xml/HomeHealth.xml';
+//$filename = 'xml/InsuranceBilling.xml';
+//$filename = 'xml/MedicationAide.xml';
+//$filename = 'xml/NursingAssistant.xml';
+//$filename = 'xml/Phlebotomy.xml';
+//$filename = 'xml/PhysicalTherapyAide.xml';
+//$filename = 'xml/SterileProcessing.xml';
 if (file_exists($filename)) {
     $xml = simplexml_load_file($filename);
     
@@ -87,6 +98,7 @@ if (file_exists($filename)) {
       $career->setAdministrative(get_bool((string)$xmlCareer->administrative));
       $career->setClinical(get_bool((string)$xmlCareer->clinical));
       $career->setDiagnostic(get_bool((string)$xmlCareer->diagnostic));
+      $career->setContinuingEducation(get_bool((string)$xmlCareer->continuing_education))
       
     // career - loop through certificates
       $xmlCertificates = $xmlCareer->certificates->children();

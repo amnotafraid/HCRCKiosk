@@ -9,9 +9,10 @@
                 <text>standard five-day, 40-hour</text>
             </workweek>
         </typical_workweek>
-        <administrative>false</administrative>
-        <clinical>true</clinical>
+        <administrative>true</administrative>
+        <clinical>false</clinical>
         <diagnostic>false</diagnostic>
+        <continuing_education>true</continuing_education>
         <certificates>
             <certificate>
                 <continuing_education_hours>352</continuing_education_hours>
@@ -113,22 +114,6 @@
                 <corner>upper_right</corner>
                 <type>image</type>
             </media>
-            <media>
-                <alt_text>pharmacy technician at work</alt_text>
-                <height>160</height>
-                <path>images/PharmacyBackground.jpg</path>
-                <width>200</width>
-                <corner>background</corner>
-                <type>image</type>
-            </media>
-            <media>
-                <alt_text>pharmacy technician at work</alt_text>
-                <height>80</height>
-                <path>images/PharmacyThumbnail.jpg</path>
-                <width>100</width>
-                <corner>thumbnail</corner>
-                <type>image</type>
-            </media>
         </medias>
         <more_infos>
             <more_info>
@@ -138,7 +123,7 @@
             </more_info>
             <more_info>
                 <info>
-                    <text>To work as a pharmacy technician in the state of Texas, you are required to pass the Pharmacy Technician Certification exam and complete registration through the Texas State Board of Pharmacy.  For more information, visit the Texas State Board of Pharmacy website</text>
+                    <text>The PCTB Approved Admixture Technician program is designed for pharmacy technicians to increase their knowledge of aseptic techniques and the compounding and dispensing of medications and hazardous drugs; testing includes written and practical exams.</text>
                 </info>
             </more_info>
         </more_infos>
@@ -163,7 +148,7 @@
         <salarys>
             <salary>
                 <footnote>
-                    <text>America's Career Infonet 2009 data for pharmacy technicians</text>
+                    <text>America’s Career Infonet 2011 data for pharmacy technicians</text>
                 </footnote>
                 <hourly_low>14.66</hourly_low>
                 <hourly_high>14.66</hourly_high>
@@ -175,7 +160,7 @@
             </salary>
             <salary>
                 <footnote>
-                    <text>America's Career Infonet 2009 data for pharmacy technicians</text>
+                    <text>America’s Career Infonet 2011 data for pharmacy technicians</text>
                 </footnote>
                 <hourly_low>15.81</hourly_low>
                 <hourly_high>15.81</hourly_high>

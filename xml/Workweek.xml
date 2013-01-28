@@ -21,6 +21,9 @@
             <text>part-time</text>
         </workweek>
         <workweek>
+            <text>full-time</text>
+        </workweek>
+        <workweek>
             <text>weekends</text>
         </workweek>
         <workweek>

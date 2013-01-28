@@ -12,6 +12,7 @@
         <administrative>true</administrative>
         <clinical>false</clinical>
         <diagnostic>false</diagnostic>
+        <continuing_education>true</continuing_education>
         <certificates>
             <certificate>
                 <continuing_education_hours>752</continuing_education_hours>
@@ -47,7 +48,7 @@
                     <text>Texas</text>
                 </location>
                 <footnote>
-                    <text>America's Career Infonet</text>
+                    <text>America's Career Infonet Medical and Health Services Managers</text>
                 </footnote>
             </growth>
         </growths>
@@ -60,37 +61,11 @@
                 <corner>upper_right</corner>
                 <type>image</type>
             </media>
-            <media>
-                <alt_text>medical practice manager working with staff</alt_text>
-                <height>160</height>
-                <path>images/ManagementBackground.jpg</path>
-                <width>200</width>
-                <corner>background</corner>
-                <type>image</type>
-            </media>
-            <media>
-                <alt_text>medical practice manager working with staff</alt_text>
-                <height>80</height>
-                <path>images/ManagementThumbnail.jpg</path>
-                <width>100</width>
-                <corner>thumbnail</corner>
-                <type>image</type>
-            </media>
         </medias>
         <more_infos>
             <more_info>
                 <info>
                     <text>Acceptance into the Medical Practice Manager program is by proof of previous college experience or assessment of college level academic and computer skills and a minimum of three years professional business experience. </text>
-                </info>
-            </more_info>
-            <more_info>
-                <info>
-                    <text>Certification is not required to work as a Medical Practice Manager in the State of Texas.  After completion of the program, students will be eligible to take the Certified Medical Manager Apprentice examination</text>
-                </info>
-            </more_info>
-            <more_info>
-                <info>
-                    <text>Medical Practice Manager is a Continuing Education/non-credit program</text>
                 </info>
             </more_info>
         </more_infos>

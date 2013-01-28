@@ -22,6 +22,9 @@ Career:
     diagnostic:
       type: boolean
       nullable: true
+    continuing_education:
+      type: boolean
+      nullable: true
   manyToMany:
     certificates:
       targetEntity: Certificate

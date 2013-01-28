@@ -126,6 +126,7 @@ a:active {
     top: 2px;
 }
 .clearfix {
+    display: block;
     clear: both;
 }
 p.center, h1.center, h2.center, h3.center, h4.center, h5.center {
@@ -330,7 +331,31 @@ h5 span {
 div.shadow_text {
     text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
 }
-
+.switchboarditem {
+    margin: 2% auto;
+    border: 1px solid $dark-blue;
+    @include roundcorners(10px);
+    padding: 2%;
+    width: 80%;
+}
+.switchboardinfo {
+    float: left;
+    margin: 1%;
+    width: 60%;
+    position: relative;
+    padding: 5% 0;
+}
+.switchboardinfochild {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90%;
+    height: 10%;
+    margin: auto;
+    padding: 10% 0;
+}
 #IEroot div.shadow_text {
     zoom: 1;
     background-color: #cc0000;
@@ -541,6 +566,14 @@ div.mainbuttonbox {
     height: 3em;
 }
 
+div.switchboardbuttonbox {
+    margin: 2% 2% 4%;
+    text-align: center;
+    float: left;
+    width: 33%;
+    height: 3em;
+}
+
 .mainbutton {
     border-top: 1px solid #ffffff;
     background: #127f45;
@@ -592,7 +625,7 @@ div.startbuttonbox {
     background-repeat: repeat-x;
     background-position: 0 0;
     zoom: 1;
-    @include roundcorners(10px);
+    @include roundcorners(2em);
 
     @include shadow (0px, 2px, 4px, #999);
 
@@ -610,7 +643,47 @@ div.startbuttonbox {
 
 .startbutton:active {
     border-top-color: 1aba65;
-    @include roundcorners(10px);
+    @include roundcorners(2em);
+    @include shadow (0px, 2px, 4px, #999);
+    background: 169e56;
+    background-repeat: repeat-x;
+    background-position: 0 10%;
+    zoom: 1;
+    @include background-gradient(#707070, #d3d3d3);
+}
+
+div.bignavbuttonbox {
+    margin: 10px auto 25px;
+    text-align: center;
+    width: 20%;
+    height: 3em;
+}
+
+.bignavbutton {
+    border-top: 1px solid #ffffff;
+    background: #127f45;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    zoom: 1;
+    @include roundcorners(2em);
+
+    @include shadow (0px, 2px, 4px, #999);
+
+    font-weight: bold;
+    line-height: 3em;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    display: block;
+    padding: 0.5em;
+
+    @include background-gradient(#d3d3d3, #707070);
+}
+
+.bignavbutton:active {
+    border-top-color: 1aba65;
+    @include roundcorners(2em);
     @include shadow (0px, 2px, 4px, #999);
     background: 169e56;
     background-repeat: repeat-x;
@@ -765,11 +838,23 @@ div.rightbuttonbox {
     @include background-gradient(#707070, #d3d3d3);
 }
 
-.mainbuttonbox a, .startbuttonbox a, .centerbuttonbox a, .leftbuttonbox a, .rightbuttonbox a {
+.mainbuttonbox a,
+.switchboardbuttonbox a,
+.startbuttonbox a,
+.centerbuttonbox a,
+.leftbuttonbox a,
+.rightbuttonbox a,
+.bignavbuttonbox a {
     color:$dark-blue;
     text-decoration:none; 
 }
-.mainbuttonbox a:active, .startbuttonbox a:focus, .mainbuttonbox a:focus, .centerbuttonbox a:active, .centerbuttonbox a:focus, .leftbuttonbox a:active, .leftbuttonbox a:focus, .rightbuttonbox a:active, .rightbuttonbox a:focus {
+.mainbuttonbox a:active, .mainbuttonbox a:focus,
+.switchboardbuttonbox a:active, .switchboardbuttonbox a:focus,
+.startbuttonbox a:active, .startbuttonbox a:focus,
+.centerbuttonbox a:active, .centerbuttonbox a:focus,
+.leftbuttonbox a:active, .leftbuttonbox a:focus,
+.rightbuttonbox a:active, .rightbuttonbox a:focus,
+.bignavbuttonbox a:active, .bignavbuttonbox a:focus {
     outline:none;
 }
 

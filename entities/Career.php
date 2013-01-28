@@ -15,6 +15,7 @@ class Career
   protected $administrative;            // true/false administrative career
   protected $clinical;                  // true/false clinical career
   protected $diagnostic;                // true/false diagnostic career
+  protected $continuing_education;      // true/false continuing education
 
   // collections - all collections have plural names, which may be mispelled
   // (ie dutys instead of duty) to aid in search and replace when the getters and setters
@@ -55,6 +56,10 @@ class Career
   // $diagnostic;                // true/false diagnostic career
   public function getDiagnostic () { return $this->clinical; }
   public function setDiagnostic ($diagnostic) { if (!is_bool($diagnostic)) { throw new Exception("Invalid diagnostic"); } $this->diagnostic = $diagnostic; }
+  
+  // $continuing_education;      // true/false continuing education
+  public function getContinuingEducation () { return $this->continuing_education; }
+  public function setContinuingEducation ($continuing_education) { if (!is_bool($continuing_education)) { throw new Exception("Invalid continuing_education"); } $this->continuing_education = $continuing_education; }
   
   public function __construct()
   {
@@ -111,7 +116,8 @@ class Career
            "practicer_name = " . $this->practicer_name . $line_break .
            "administrative = " . strval($this->administrative) . $line_break .
            "clinical = " . strval ($this->clinical) . $line_break .
-           "diagnostic = " . strval ($this->diagnostic) . $line_break;
+           "diagnostic = " . strval ($this->diagnostic) . $line_break .
+           "continuing education = " . strval ($this->continuing_education);
 
     if (isset($this->typical_workweek)) {
       $str .= "typical workweek = " . $this->getTypicalWorkweek()->toString($line_break);

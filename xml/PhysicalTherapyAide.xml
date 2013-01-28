@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Physical Therapy Aide</career_name>
+        <practicer_name>physical therapy aide</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>varies</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <continuing_education>true</continuing_education>
+        <certificates>
+            <certificate>
+                <continuing_education_hours>50-100</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Physical Therapy Aide</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Maintains cleanliness and organizes treatment area in preparation for patients' therapy</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Performs such tasks as massages, electrical stimulation, paraffin baths, and other exercises under the direction and supervision of physical therapist</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Records and reports patients' responses to treatment and outcomes to the physical therapist</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>physical therapy aide working with patient</alt_text>
+                <height>160</height>
+                <path>images/PhysicalTherapyAide200x160.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Physical therapy aides must be able to lift and possess physical strength due to physical exertion that is required to treat patients</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+            <workweek>
+                <text>part-time</text>
+            </workweek>
+            <workweek>
+                <text>full-time</text>
+            </workweek>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Physical Therapy Aide</text>
+                </footnote>
+                <hourly_low>10.04</hourly_low>
+                <hourly_high>10.04</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>20900</yearly_low>
+                <yearly_high>20900</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Physical Therapy Aide</text>
+                </footnote>
+                <hourly_low>11.91</hourly_low>
+                <hourly_high>11.91</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>24800</yearly_low>
+                <yearly_high>24800</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

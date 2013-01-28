@@ -5,18 +5,16 @@
         <career_name>Medical Staff Services</career_name>
         <practicer_name>medical staff services coordinator</practicer_name>
         <typical_workweek>
-            <workweek>
-                <text>standard five-day, 40-hour</text>
-            </workweek>
         </typical_workweek>
         <administrative>true</administrative>
         <clinical>false</clinical>
         <diagnostic>false</diagnostic>
+        <continuing_education>true</continuing_education>
         <certificates>
             <certificate>
-                <continuing_education_hours></continuing_education_hours>
-                <credit_hours>64</credit_hours>
-                <name>Medical Staff Services Associate in Applied Sciences Degree</name>
+                <continuing_education_hours>250</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Medical Staff Services Certification</name>
                 <brookhaven>false</brookhaven>
                 <cedar_valley>false</cedar_valley>
                 <eastfield>false</eastfield>
@@ -24,20 +22,11 @@
                 <mountain_view>false</mountain_view>
                 <north_lake>false</north_lake>
                 <richland>false</richland>
-                <el_centro_effectives>
-                    <el_centro_effective>
-                        <footnote>
-                            <text>Texas Higher Education Coordinating Board, Perkins 2009-2010</text>
-                        </footnote>
-                        <measure>Employment rates for DCCCD graduates</measure>
-                        <percentage>85.71</percentage>
-                    </el_centro_effective>
-                </el_centro_effectives>
             </certificate>
             <certificate>
                 <continuing_education_hours>varied</continuing_education_hours>
                 <credit_hours></credit_hours>
-                <name>Continuing Education coursework for specific skills training</name>
+                <name>Additional Medical Staff Services courses</name>
                 <brookhaven>false</brookhaven>
                 <cedar_valley>false</cedar_valley>
                 <eastfield>false</eastfield>
@@ -75,22 +64,6 @@
                 <corner>upper_right</corner>
                 <type>image</type>
             </media>
-            <media>
-                <alt_text>medical staffing services coordinator at work</alt_text>
-                <height>160</height>
-                <path>images/StaffingBackground.jpg</path>
-                <width>200</width>
-                <corner>background</corner>
-                <type>image</type>
-            </media>
-            <media>
-                <alt_text>medical staffing services coordinator at work</alt_text>
-                <height>80</height>
-                <path>images/StaffingThumbnail.jpg</path>
-                <width>100</width>
-                <corner>thumbnail</corner>
-                <type>image</type>
-            </media>
         </medias>
         <more_infos>
             <more_info>
@@ -116,27 +89,27 @@
         <salarys>
             <salary>
                 <footnote>
-                    <text>Salary.com: medical staff credentialing manager</text>
+                    <text>America's Career Infonet 2011 data for Medical Administrative Assistant</text>
                 </footnote>
-                <hourly_low></hourly_low>
-                <hourly_high></hourly_high>
+                <hourly_low>13.77</hourly_low>
+                <hourly_high>13.77</hourly_high>
                 <location>
-                    <text>United States</text>
+                    <text>Texas</text>
                 </location>
-                <yearly_low>63387</yearly_low>
-                <yearly_high>63387</yearly_high>
+                <yearly_low>26800</yearly_low>
+                <yearly_high>26800</yearly_high>
             </salary>
             <salary>
                 <footnote>
-                    <text>Salary.com: medical staff credentialing manager</text>
+                    <text>America's Career Infonet 2011 data for Medical Administrative Assistant</text>
                 </footnote>
-                <hourly_low></hourly_low>
-                <hourly_high></hourly_high>
+                <hourly_low>15.39</hourly_low>
+                <hourly_high>15.39</hourly_high>
                 <location>
                     <text>Dallas County</text>
                 </location>
-                <yearly_low>66956</yearly_low>
-                <yearly_high>66956</yearly_high>
+                <yearly_low>32000</yearly_low>
+                <yearly_high>32000</yearly_high>
             </salary>
         </salarys>
     </career>

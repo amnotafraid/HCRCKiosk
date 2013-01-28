@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Home Health Care and Hospice Aide</career_name>
+        <practicer_name>Home Health Care, Hospice Care and Community Health Care Worker</practicer_name>
+        <typical_workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <continuing_education>true</continuing_education>
+        <certificates>
+            <certificate>
+                <continuing_education_hours>varied</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Home Health Care &amp; Hospice Aide</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>varied</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Community Health Worker</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Provides patients and families with emotional support and instruction in areas such as caring for infants, preparing healthy meals, living independently, or adapting to disability or illness</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Mobilizes patients with moving in and out of beds, baths, wheelchairs or automobiles, and dressing and grooming</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Triages and checks patients' pulse, temperature, and respiration</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Maintains records of patient care, condition, progress, or problems to report and discuss observations with supervisor or case manager</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>home health care working enjoying company of patient in a wheelchair</alt_text>
+                <height>160</height>
+                <path>images/HomeHealth200x160.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Work as a home health or hospice aide can be both physically and emotionally demanding due to the close interaction and care with patients</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Most aides work with a number of different patients each job varying in time</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Generally aides work alone and requires travel to patient homes</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Community Health Worker &amp; Home Health Aide</text>
+                </footnote>
+                <hourly_low>8.75</hourly_low>
+                <hourly_high>16.33</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>18200</yearly_low>
+                <yearly_high>34000</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Community Health Worker &amp; Home Health Aide</text>
+                </footnote>
+                <hourly_low>9.67</hourly_low>
+                <hourly_high>18.67</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>20100</yearly_low>
+                <yearly_high>38000</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

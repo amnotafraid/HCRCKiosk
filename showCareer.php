@@ -6,6 +6,11 @@ Organization:   Dallas County Community College District
 Author:         amnotafraid
 Published on:   
 -->
+<?php
+if (session_id() == '') {
+  session_start(); // start up your PHP session! 
+}
+?>
 <head>  
 	<meta charset="utf-8" />
 	<title>Career Details</title>
@@ -72,21 +77,7 @@ Published on:
 //]]></script>
 <!--[if  ie 9]>
 <style type="text/css" media="screen">
-        .centerbutton, .centerbutton:active
-        {
-                filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-                background-image: url(images/gradients.svg);
-                background-size: 100% 1100%;
-                zoom: 1;
-        }
-        .leftbutton, .leftbutton:active
-        {
-                filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
-                background-image: url(images/gradients.svg);
-                background-size: 100% 1100%;
-                zoom: 1;
-        }
-        .rightbutton, .rightbutton:active
+        .centerbutton, .centerbutton:active, .leftbutton, .leftbutton:active, .rightbutton, .rightbutton:active
         {
                 filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
                 background-image: url(images/gradients.svg);
@@ -106,19 +97,27 @@ Published on:
    // List the careers and give a link
    use Doctrine\Common\Collections\ArrayCollection;
    require_once "bootstrap.php";
-   $id = $_GET['id'];
-   $max_id = $_GET['max_id'];
-      if ($id == $max_id) {
-        $next = 1;
+   
+   if (session_id() == '') {
+     echo "session not started Shriek!";
+   }
+   $index = $_GET['index'];  // this is an index to index_array
+   $hdr_str = $_GET['hdr_str'];
+   $index_array = $_SESSION['index_array'];
+   
+   $credit =$_GET['credit'];
+   $i_count = $_GET['i_count'];
+      if ($index == $i_count - 1) {
+        $next = 0;
       } else {
-        $next = $id + 1;
+        $next = $index + 1;
       }
-      if ($id == 1) {
-        $prev = $max_id;
+      if ($index == 0) {
+        $prev = $i_count - 1;
       } else {
-        $prev = $id - 1;
+        $prev = $index - 1;
       }
-   $career = $entityManager->find("Career", (int)$id);
+   $career = $entityManager->find("Career", (int)$index_array[$index]);
    if (is_null($career)) {
      echo "Shriek!";
    } else {
@@ -131,8 +130,8 @@ Published on:
 				
 		<div id="main-content">
           <?
-          $href_prev = "showCareer.php?id=".$prev."&max_id=".$max_id;
-          $href_next = "showCareer.php?id=".$next."&max_id=".$max_id;
+          $href_prev = "showCareer.php?index=".$prev."&i_count=".$i_count."&credit=".$credit."&hdr_str=".$hdr_str;
+          $href_next = "showCareer.php?index=".$next."&i_count=".$i_count."&credit=".$credit."&hdr_str=".$hdr_str;
           ?>
            <section class="left-col"">
               <h2>What does a <?echo $career->getPracticerName();?> do?</h2>
@@ -364,7 +363,6 @@ Published on:
                   echo "<tr class=\"hidden-col\">";
                   
                   echo "<td colspan=\"$columns_cnt\">";
-/*                  echo "<h4>Additional information</h4>";*/
                   for ($i = $effective_begin; $i < $effective_end; $i++) {
                     echo $popups[$i];
                   }
@@ -483,15 +481,15 @@ Published on:
 		</div>
 		<footer>
           <?
-          $href_prev = "showCareer.php?id=".$prev."&max_id=".$max_id;
-          $href_next = "showCareer.php?id=".$next."&max_id=".$max_id;
+          $href_prev = "showCareer.php?index=".$prev."&i_count=".$i_count."&credit=".$credit."&hdr_str=".$hdr_str;
+          $href_next = "showCareer.php?index=".$next."&i_count=".$i_count."&credit=".$credit."&hdr_str=".$hdr_str;
           ?>
           <div class="buttonset">
             <div class="leftbuttonbox">
                 <a href="<?echo $href_prev?>" class="leftbutton">Previous</a>
             </div>
             <div class="centerbuttonbox">
-                <a href="index.php" class="centerbutton">Main</a>
+                <a href="listCareer.php?credit=<?php echo $credit."&hdr_str=".$hdr_str;?>" class="centerbutton">Career List</a>
             </div>
             <div class="rightbuttonbox">
                 <a href="<?echo $href_next?>" class="rightbutton">Next&nbsp;&nbsp;&nbsp;</a>

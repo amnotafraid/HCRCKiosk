@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Insurance Billing &amp; Coding</career_name>
+        <practicer_name>medical records, billing or claims technician</practicer_name>
+        <typical_workweek>
+        </typical_workweek>
+        <administrative>true</administrative>
+        <clinical>false</clinical>
+        <diagnostic>false</diagnostic>
+        <continuing_education>true</continuing_education>
+        <certificates>
+            <certificate>
+                <continuing_education_hours>varied</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Medical Records, Billing, &amp; Claims Technician</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>true</cedar_valley>
+                <eastfield>true</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Reviews physicians' notes and charts for accuracy and obtains any necessary clarification of information in the notes and charts</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Assigns appropriate medical codes to all diagnoses or services and organizes the codes into management software</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Translates codes into insurance companies' preferred coding system and prepares the appropriate claims documents required by each insurer</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Maintains records of patient care, condition, progress, or problems to report and discuss observations with supervisor or case manager</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Submits, organizes and tracks all insurance claims filed by the health care provider</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Follows-up until payments are received, and manages collection activities when necessary</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>stethoscope on insurance claim form</alt_text>
+                <height>160</height>
+                <path>images/Insurance200x160.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Medical records, billing, and claims technicians work mostly within an office setting in hospitals, physicians' offices, and medical insurance companies</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Requires strong computer skills and typing accuracy</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Medical Records &amp; Health Information Technicians</text>
+                </footnote>
+                <hourly_low>15.23</hourly_low>
+                <hourly_high>15.23</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>31700</yearly_low>
+                <yearly_high>31700</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Community Health Worker &amp; Home Health Aide</text>
+                </footnote>
+                <hourly_low>15.48</hourly_low>
+                <hourly_high>15.48</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>32200</yearly_low>
+                <yearly_high>32200</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

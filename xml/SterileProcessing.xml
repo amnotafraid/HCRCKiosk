@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Sterile Processing Technician</career_name>
+        <practicer_name>sterile processing technician</practicer_name>
+        <typical_workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <continuing_education>true</continuing_education>
+        <certificates>
+            <certificate>
+                <continuing_education_hours>24</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Sterile Processing Lecture</name>
+                <brookhaven>false</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Specializes in stocking, sterilizing, packaging, and preparing tools and equipment that are used in surgical procedures</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Takes inventory of surgical tools and accessories and obtains additional supplies when necessary</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Responsible for the cleanliness and safety of operating rooms, tables, and equipment</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>surgical instruments</alt_text>
+                <height>160</height>
+                <path>images/SterileProcess200x160.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Generally work in hospitals, public health clinics, private doctors' offices, and specialized surgical centers</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Medical Equipment Preparers</text>
+                </footnote>
+                <hourly_low>13.27</hourly_low>
+                <hourly_high>13.27</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>27600</yearly_low>
+                <yearly_high>27600</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Medical Equipment Preparers</text>
+                </footnote>
+                <hourly_low>13.61</hourly_low>
+                <hourly_high>13.61</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>28300</yearly_low>
+                <yearly_high>28300</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

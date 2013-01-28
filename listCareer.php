@@ -6,6 +6,11 @@ Organization:   Dallas County Community College District
 Author:         amnotafraid
 Published on:   
 -->
+<?php
+if (session_id() == '') {
+  session_start(); // start up your PHP session! 
+}
+?>
 <head>  
 	<meta charset="utf-8" />
 	<title>Career List</title>
@@ -92,7 +97,7 @@ Published on:
 -->
 <!--[if  ie 9]>
 <style type="text/css" media="screen">
-        .mainbutton, .mainbutton:active
+        .mainbutton, .mainbutton:active, .bignavbutton, .bignavbutton:active
         {
                 filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
                 background-image: url(images/gradients.svg);
@@ -108,36 +113,58 @@ Published on:
    <!--[if IE]>
    <div id="IEroot">
    <![endif]-->
-   
-    <header>
-        <h1 class="shadow_text">Health Careers</h1>
-    </header>
-				
-	<div id="wrapper">
-      <!-- <div class="prop"></div> this is to set a minimum height -->
       <?php
       // List the careers and give a link
       require_once "bootstrap.php";
+      $credit = $_GET['credit'];
+      // if $credit = no, then get non-credit careers
+      $continuing_education_value = FALSE;
+      if (strcasecmp($credit, 'no') == 0) {
+        $continuing_education_value = TRUE;
+      }
+      // hdr_str is passed in a URL parameter
+      $hdr_str = $_GET['hdr_str'];
+      ?>
+   
+    <header>
+        <h1 class="shadow_text"><?php echo $hdr_str;?></h1>
+    </header>
+				
+	<div id="wrapper">
+      <?php
+      $query = $entityManager->createQuery(
+          'SELECT c FROM Career c 
+            WHERE c.continuing_education = :continuing_education_value
+            ORDER BY c.career_name ASC');
 
-      $query = $entityManager->createQuery('SELECT c FROM Career c');
+      $query->setParameter('continuing_education_value', $continuing_education_value);
       $careers = $query->getResult();
       $count = count($careers);
+      $index_array = array();
 
       for ($i = 0; $i < $count; $i++) {
         $career = $careers[$i];
-        $href = "showCareer.php?id=".$career->getId()."&max_id=".$count;
+        $index_array[$i] = $career->getId();
+        $href = "showCareer.php?index=".$i."&i_count=".$count."&credit=".$credit."&hdr_str=".$hdr_str;
         ?>
         <div class="mainbuttonbox">
             <a href="<?echo $href?>" class="mainbutton"><?echo $career->getCareerName()?></a>
         </div>
         <?  
       }
+      if(isset($_SESSION['index_array'])) {
+          unset($_SESSION['index_array']);
+      }
+      $_SESSION['index_array'] = $index_array;
       ?>
       <!--<div class="clearfix"></div-->
 	</div> <!-- END Wrapper -->
    
    <footer>
-       <p>Copyright &copy; <? print(Date("Y")); ?> Health Careers Resource Center | DCCCD</p>
+      <div class="bignavbuttonbox">
+          <a href="switchboard.php" class="bignavbutton">Home</a>
+      </div>
+      <p>Copyright &copy; <? print(Date("Y")); ?> Health Careers Resource Center | DCCCD</p>
    </footer>		
    <!--[if IE]>
    </div>

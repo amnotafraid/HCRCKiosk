@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Nursing Assistant &amp; Patient Care Technician</career_name>
+        <practicer_name>nursing assistant and/or a patient care technician</practicer_name>
+        <typical_workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <continuing_education>true</continuing_education>
+        <certificates>
+            <certificate>
+                <continuing_education_hours>56-100</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Certified Nurses Aide</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>true</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+            <certificate>
+                <continuing_education_hours>234</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Patient Care Technician</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>false</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Provides basic patient care under direction of nursing staff</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Performs duties such as feed, bathe, dress, groom or move patients, change linens, or transfer or transport patients</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Performs EKGs, checks patients' vital signs, assists in medical examinations and phlebotomy</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>nursing assistants collaborating with patient coordinator</alt_text>
+                <height>160</height>
+                <path>images/NursingAssistant200x160.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Most nursing assistants/patient care technicians work in clinics, hospitals, nursing homes, or long-term care facilities and under the supervision of a registered nurse</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Generally receives training on-site and on the job and involves direct patient care</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Nursing Assistant</text>
+                </footnote>
+                <hourly_low>10.44</hourly_low>
+                <hourly_high>10.44</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>21700</yearly_low>
+                <yearly_high>21700</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Nursing Assistant</text>
+                </footnote>
+                <hourly_low>11.13</hourly_low>
+                <hourly_high>11.13</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>23200</yearly_low>
+                <yearly_high>23200</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

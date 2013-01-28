@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>EKG Technician</career_name>
+        <practicer_name>EKG Technician</practicer_name>
+        <typical_workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>false</clinical>
+        <diagnostic>true</diagnostic>
+        <continuing_education>true</continuing_education>
+        <certificates>
+            <certificate>
+                <continuing_education_hours>50</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>EKG Technician Certification</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>false</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Responsible for assisting physicians in diagnosing and treating cardiac or heart, and peripheral vascular or blood vessel ailments</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Reviews physicians' interpretations of patient files, and monitors patients' heart rates</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Operates and is responsible for the care of test equipment, explaining procedures to patients, and comparing findings to a standard to identify any problems</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>34</percentage_low>
+                <percentage_high>34</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Dental Assistant</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>echocardiogram display</alt_text>
+                <height>160</height>
+                <path>images/Echocardiology.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>EKG technicians usually work in cardiology doctors' offices, hospitals, and usually on a separate wing called the "telemetry unit"</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>Technician Salary Guide 2012 data for EKG Technician</text>
+                </footnote>
+                <hourly_low></hourly_low>
+                <hourly_high></hourly_high>
+                <location>
+                    <text>United States</text>
+                </location>
+                <yearly_low>22000</yearly_low>
+                <yearly_high>30000</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

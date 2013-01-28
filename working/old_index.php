@@ -41,6 +41,10 @@ Published on:
         // To accommodate content, the wrapper may be taller.
         // We set the minimum height.
         var wrapperMinHeight = Math.min(1024, areaHeight * 0.9);
+        $('div.prop').css({
+          "height": wrapperMinHeight
+        });
+                         
         var wrapperTopMargin = ((areaHeight - wrapperMinHeight) / 2) + headerHeight;
 
         // div#wrapper set margin-top and height
@@ -110,7 +114,7 @@ Published on:
    <![endif]-->
    
     <header>
-        <h1 class="shadow_text">Health Careers</h1>
+        <h1>Health Careers</h1>
     </header>
 				
 	<div id="wrapper">
@@ -137,7 +141,7 @@ Published on:
 	</div> <!-- END Wrapper -->
    
    <footer>
-       <p>Copyright &copy; <? print(Date("Y")); ?> Health Careers Resource Center | DCCCD</p>
+       <p>&copy; 2012 - Dallas County Community College District</p>
    </footer>		
    <!--[if IE]>
    </div>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Dental Assisting</career_name>
+        <practicer_name>Dental Assisting</practicer_name>
+        <typical_workweek>
+            <workweek>
+                <text>standard five-day, 40-hour</text>
+            </workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <continuing_education>true</continuing_education>
+        <certificates>
+            <certificate>
+                <continuing_education_hours>70-111</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Dental Assisting Certificate</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>true</cedar_valley>
+                <eastfield>false</eastfield>
+                <el_centro>false</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>false</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Sterilizes, disinfects instruments and equipment, and obtains and updates patients' dental records</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Prepares materials for impressions and restorations, and processes dental X-rays</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Prepares patients for treatment and works alongside dentist to provide assistance </text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+            <growth>
+                <percentage_low>34</percentage_low>
+                <percentage_high>34</percentage_high>
+                <through_year>2018</through_year>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Dental Assistant</text>
+                </footnote>
+            </growth>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>pointing to features of a dental X-ray</alt_text>
+                <height>160</height>
+                <path>images/DentalAssisting200x160.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Work is in offices of dentists and may include assisting other offices</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+            <workweek>
+                <text>Saturdays</text>
+            </workweek>
+            <workweek>
+                <text>evenings</text>
+            </workweek>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Dental Assistant</text>
+                </footnote>
+                <hourly_low>15.21</hourly_low>
+                <hourly_high>15.21</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>31600</yearly_low>
+                <yearly_high>31600</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

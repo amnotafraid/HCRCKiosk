@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <career>
+        <career_name>Phlebotomy</career_name>
+        <practicer_name>phlebotomist</practicer_name>
+        <typical_workweek>
+        </typical_workweek>
+        <administrative>false</administrative>
+        <clinical>true</clinical>
+        <diagnostic>false</diagnostic>
+        <continuing_education>true</continuing_education>
+        <certificates>
+            <certificate>
+                <continuing_education_hours>190-351</continuing_education_hours>
+                <credit_hours></credit_hours>
+                <name>Certified Phlebotomy Technician (ASCP approved)</name>
+                <brookhaven>true</brookhaven>
+                <cedar_valley>true</cedar_valley>
+                <eastfield>true</eastfield>
+                <el_centro>true</el_centro>
+                <mountain_view>true</mountain_view>
+                <north_lake>false</north_lake>
+                <richland>true</richland>
+            </certificate>
+        </certificates>
+        <dutys>
+            <duty>
+                <info>
+                    <text>Collects blood for donation so the blood can be analyzed in a clinical laboratory</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Evaluates the effectiveness of medications and determines whether a patient is receiving proper nutrition</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Properly sanitizes all equipment and ensures proper storage and careful transport of samples</text>
+                </info>
+            </duty>
+            <duty>
+                <info>
+                    <text>Observes strict safety protocols to avoid direct contact with the blood</text>
+                </info>
+            </duty>
+        </dutys>
+        <growths>
+        </growths>
+        <medias>
+            <media>
+                <alt_text>open bottle of pills</alt_text>
+                <height>160</height>
+                <path>images/Phlebotomy200x160.jpg</path>
+                <width>200</width>
+                <corner>upper_right</corner>
+                <type>image</type>
+            </media>
+        </medias>
+        <more_infos>
+        </more_infos>
+        <outlooks>
+            <outlook>
+                <info>
+                    <text>Phlebotomists work in clinical laboratories, hospitals, community health centers, nursing homes, doctors' offices, blood donation centers, and other health care facilities</text>
+                </info>
+            </outlook>
+            <outlook>
+                <info>
+                    <text>Phlebotomists must be extremely accurate and careful</text>
+                </info>
+            </outlook>
+        </outlooks>
+        <possible_workweeks>
+        </possible_workweeks>
+        <salarys>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Phlebotomist</text>
+                </footnote>
+                <hourly_low>13.93</hourly_low>
+                <hourly_high>13.93</hourly_high>
+                <location>
+                    <text>Texas</text>
+                </location>
+                <yearly_low>29000</yearly_low>
+                <yearly_high>29000</yearly_high>
+            </salary>
+            <salary>
+                <footnote>
+                    <text>America's Career Infonet 2011 data for Phlebotomist</text>
+                </footnote>
+                <hourly_low>14.35</hourly_low>
+                <hourly_high>14.35</hourly_high>
+                <location>
+                    <text>Dallas County</text>
+                </location>
+                <yearly_low>29800</yearly_low>
+                <yearly_high>29800</yearly_high>
+            </salary>
+        </salarys>
+    </career>
+</root>

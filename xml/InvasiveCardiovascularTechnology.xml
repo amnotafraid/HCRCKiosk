@@ -11,7 +11,8 @@
         </typical_workweek>
         <administrative>false</administrative>
         <clinical>true</clinical>
-        <diagnostic>true</diagnostic>
+        <diagnostic>false</diagnostic>
+        <continuing_education>false</continuing_education>
         <certificates>
             <certificate>
                 <continuing_education_hours></continuing_education_hours>
