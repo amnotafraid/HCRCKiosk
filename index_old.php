@@ -7,9 +7,9 @@ Author:         amnotafraid
 Published on:   
 -->
 <?php
-/*if (session_id() == '') {
+if (session_id() == '') {
   session_start(); // start up your PHP session! 
-}*/
+}
 ?>
 <head>
 	<meta charset="utf-8" />
@@ -17,22 +17,21 @@ Published on:
 	<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/style.css" />
 	<link rel="stylesheet" type="text/css" href="css/media-queries.css" />
-	<link rel="shortcut icon" type="image/x-icon" href="images/dcccd.ico">
-   <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
    <script type='text/javascript' src='js/jquery.easing.1.2.js'></script>
    <script type='text/javascript' src='js/jquery.circulate.js'></script>
    <script type='text/javascript' src='js/start.circulate.js'></script>
    <script type="text/javascript">//<![CDATA[
         $(document).ready(function() {
-//            startA();
-//            setTimeout(startB, 2000);
-//            setTimeout(startC, 4000);
-//            setTimeout(startD, 6000);
-//            setTimeout(startE, 8000);
-//            setTimeout(startF, 10000);
-//            setTimeout(startG, 12000);
+            startA();
+            setTimeout(startB, 2000);
+            setTimeout(startC, 4000);
+            setTimeout(startD, 6000);
+            setTimeout(startE, 8000);
+            setTimeout(startF, 10000);
+            setTimeout(startG, 12000);
         });
-     //]]></script>-->
+     //]]></script>
 <!--
     For help with this code, please see:
     http://abouthalf.com/2010/10/25/internet-explorer-9-gradients-with-rounded-corners/
@@ -59,17 +58,20 @@ Published on:
 <body>
 
   <div class="start-background">
+   <!--[if IE]>
+   <div id="IEroot">
+   <![endif]-->
 
     <div id="swirl-wrap">
 	
         <div id="sphere-area">
-            <!--<img src="images/MRI.jpg" id="image-a" />
+            <img src="images/MRI.jpg" id="image-a" />
             <img src="images/Echocardiology.jpg" id="image-b" />
             <img src="images/Cardiovascular.jpg" id="image-c" />
             <img src="images/Biotechnology.jpg" id="image-d" />
             <img src="images/Paramedic.jpg" id="image-e" />
-            <img src="images/Management.jpg" id="image-f" />--> 
-            <img src="images/MedicalAssisting.jpg" id="image-a" />
+            <img src="images/Management.jpg" id="image-f" />
+            <img src="images/MedicalAssisting.jpg" id="image-g" />
         </div>
 
     </div>
@@ -80,6 +82,10 @@ Published on:
         <a href="switchboard.php" class="startbutton">Start</a>
     </div>
    
+	
+   <!--[if IE]>
+   </div>
+   <![endif]-->	
   </div>
 </body>
 </html>

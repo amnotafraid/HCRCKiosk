@@ -8,5 +8,10 @@
             "text"    : "Continuing Education",
             "href"    : "listCareer.php?credit=no",
             "info"    : "This is a list of continuing education courses"
+	},
+	{
+            "text"    : "Career Quiz",
+            "href"    : "quiz.php?param=no",
+            "info"    : "This is a quiz that will help you determine what career choice would be good for your personality"
 	} ]
 }

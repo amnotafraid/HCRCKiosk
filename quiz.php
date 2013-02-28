@@ -6,11 +6,6 @@ Organization:   Dallas County Community College District
 Author:         amnotafraid
 Published on:   
 -->
-<?php
-if (session_id() == '') {
-  session_start(); // start up your PHP session! 
-}
-?>
 <head>  
 	<meta charset="utf-8" />
 	<title>Career List</title>
@@ -19,7 +14,7 @@ if (session_id() == '') {
 	<link rel="stylesheet" type="text/css" href="css/media-queries.css" />
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/x-icon" href="images/dcccd.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:700,400,400italic,700italic' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:700,400,400italic,700italic' rel='stylesheet' type='text/css'>
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
@@ -32,6 +27,28 @@ if (session_id() == '') {
           resizeWrapper();
         });
         
+        $.getJSON("js/switchboard.json", function(data) {
+          $.each(data.items, function(i, item) {
+            $('div#wrapper').append(
+                  "<div class='switchboarditem'>" +
+                    "<div class='switchboardbuttonbox'>" +
+                      "<a href='" + 
+                        item.href + "&hdr_str=" + item.text +
+                        "' class='mainbutton'>" + 
+                        item.text +
+                        "</a>" +
+                    "</div>" +
+                    "<div class='switchboardinfo'>" +
+                      "<div class='switchboardinfochild'>" +
+                        item.info +
+                      "</div>" +
+                    "</div>" +
+                  "<div class='clearfix'></div>" +
+                "</div>"
+            );
+          });
+        });
+
         });
         
       function resizeWrapper() {
@@ -97,7 +114,7 @@ if (session_id() == '') {
 -->
 <!--[if  ie 9]>
 <style type="text/css" media="screen">
-        .mainbutton, .mainbutton:active, .bignavbutton, .bignavbutton:active
+        .mainbutton, .mainbutton:active
         {
                 filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
                 background-image: url(images/gradients.svg);
@@ -113,58 +130,17 @@ if (session_id() == '') {
    <!--[if IE]>
    <div id="IEroot">
    <![endif]-->
-      <?php
-      // List the careers and give a link
-      require_once "bootstrap.php";
-      $credit = $_GET['credit'];
-      // if $credit = no, then get non-credit careers
-      $continuing_education_value = FALSE;
-      if (strcasecmp($credit, 'no') == 0) {
-        $continuing_education_value = TRUE;
-      }
-      // hdr_str is passed in a URL parameter
-      $hdr_str = $_GET['hdr_str'];
-      ?>
    
     <header>
-        <h1 class="shadow_text"><?php echo $hdr_str;?></h1>
+        <h1 class="shadow_text">Health Careers</h1>
     </header>
 				
 	<div id="wrapper">
-      <?php
-      $query = $entityManager->createQuery(
-          'SELECT c FROM Career c 
-            WHERE c.continuing_education = :continuing_education_value
-            ORDER BY c.career_name ASC');
-
-      $query->setParameter('continuing_education_value', $continuing_education_value);
-      $careers = $query->getResult();
-      $count = count($careers);
-      $index_array = array();
-
-      for ($i = 0; $i < $count; $i++) {
-        $career = $careers[$i];
-        $index_array[$i] = $career->getId();
-        $href = "showCareer.php?index=".$i."&i_count=".$count."&credit=".$credit."&hdr_str=".$hdr_str;
-        ?>
-        <div class="mainbuttonbox">
-            <a href="<?echo $href?>" class="mainbutton"><?echo $career->getCareerName()?></a>
-        </div>
-        <?  
-      }
-      if(isset($_SESSION['index_array'])) {
-          unset($_SESSION['index_array']);
-      }
-      $_SESSION['index_array'] = $index_array;
-      ?>
-      <!--<div class="clearfix"></div-->
+      
 	</div> <!-- END Wrapper -->
    
    <footer>
-      <div class="bignavbuttonbox">
-          <a href="switchboard.php" class="bignavbutton">Home</a>
-      </div>
-      <p>Copyright &copy; <? print(Date("Y")); ?> Health Careers Resource Center | DCCCD</p>
+       <p>Copyright &copy; <? print(Date("Y")); ?> Health Careers Resource Center | DCCCD</p>
    </footer>		
    <!--[if IE]>
    </div>

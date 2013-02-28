@@ -19,7 +19,7 @@ if (session_id() == '') {
 	<link rel="stylesheet" type="text/css" href="css/media-queries.css" />
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" type="image/x-icon" href="images/dcccd.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<link href='http://fonts.googleapis.com/css?family=Droid+Serif:700,400,400italic,700italic' rel='stylesheet' type='text/css'>
    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
@@ -218,7 +218,7 @@ if (session_id() == '') {
               
               echo "<th>Credit hours</th>";
               echo "<th>Continuing Education contact hours</th>";
-              //echo "<th>Effectiveness</th>";
+              echo "<th>Effectiveness</th>";
               echo "</tr>";
 
               $shaded_row = 0; // if zero, not shaded
@@ -326,11 +326,11 @@ if (session_id() == '') {
                 $cell_string .= "<td>".$certificate->getContinuingEducationHours()."</td>";
                 $columns_cnt++;
 
-                //if ($effective == 0){
-                //  $cell_string .= "<td></td>";
-                //} else {
-                //  $cell_string .= "<td><div class=\"arrow\"></div></td>";
-                //}
+                if ($effective == 0){
+                  $cell_string .= "<td></td>";
+                } else {
+                  $cell_string .= "<td><div class=\"arrow\"></div></td>";
+                }
                 
                 $columns_cnt++;
                 // $cell_string is the string that appears between <tr></tr>
@@ -341,35 +341,35 @@ if (session_id() == '') {
                 
                 switch ($shaded_row) {
                   case 0:
-                    //if ($effective == 0) {
+                    if ($effective == 0) {
                       echo "<tr>";
-                    //} else {
-                    //  echo "<tr class=\"expandable-row\">";
-                    //}
+                    } else {
+                      echo "<tr class=\"expandable-row\">";
+                    }
                     $shaded_row = 1;
                     break;
                   case 1:
-                    //if ($effective == 0) {
+                    if ($effective == 0) {
                       echo "<tr class=\"certificate-shaded-row\">";
-                    //} else {
-                    //  echo "<tr class=\"certificate-shaded-row expandable-row\">";
-                    //}
+                    } else {
+                      echo "<tr class=\"certificate-shaded-row expandable-row\">";
+                    }
                     $shaded_row = 0;
                     break;
                 }
 
                 echo $cell_string."</tr>";
-                //if ($effective > 0) {
-                //  echo "<tr class=\"hidden-col\">";
+                if ($effective > 0) {
+                  echo "<tr class=\"hidden-col\">";
                   
-                //  echo "<td colspan=\"$columns_cnt\">";
-                //  for ($i = $effective_begin; $i < $effective_end; $i++) {
-                //    echo $popups[$i];
-                //  }
-                //  $effective_begin = $effective_end;
-                //  echo "</td>";
-                //  echo "</tr>";
-                //}
+                  echo "<td colspan=\"$columns_cnt\">";
+                  for ($i = $effective_begin; $i < $effective_end; $i++) {
+                    echo $popups[$i];
+                  }
+                  $effective_begin = $effective_end;
+                  echo "</td>";
+                  echo "</tr>";
+                }
               }
               echo "</table>";
               ?>
@@ -432,21 +432,19 @@ if (session_id() == '') {
                   echo generate_footnote_symbol($footnote);
                 }
                 echo "</p>";
-                if ($salary->getHourlyLow() == 0 & $salary->getHourlyHigh() == 0) {
-                  $hourly_wage = "data unavailable";
-                } else if ($salary->getHourlyLow() == $salary->getHourlyHigh()) {
-                  $hourly_wage = "$".sprintf("%01.2f", $salary->getHourlyLow());
+                if ($salary->getHourlyLow() == $salary->getHourlyHigh()) {
+                  $hourly_wage = sprintf("%01.2f", $salary->getHourlyLow());
                 } else {
-                  $hourly_wage = "$".sprintf("%01.2f - %01.2f", $salary->getHourlyLow(), $salary->getHourlyHigh());
+                  $hourly_wage = sprintf("%01.2f - %01.2f", $salary->getHourlyLow(), $salary->getHourlyHigh());
                 }
                 if ($salary->getYearlyLow() == $salary->getYearlyHigh()) {
-                  $yearly_wage = "$".number_format($salary->getYearlyLow());
+                  $yearly_wage = number_format($salary->getYearlyLow());
                 } else {
-                  $yearly_wage = "$".number_format($salary->getYearlyLow())." - ".number_format($salary->getYearlyHigh());
+                  $yearly_wage = number_format($salary->getYearlyLow())." - ".number_format($salary->getYearlyHigh());
                 }
                 
-                echo "<p>Hourly: ".$hourly_wage."</p>";
-                echo "<p>Yearly: ".$yearly_wage."</p>";
+                echo "<p>Hourly: $".$hourly_wage."</p>";
+                echo "<p>Yearly: $".$yearly_wage."</p>";
               }
             }
 

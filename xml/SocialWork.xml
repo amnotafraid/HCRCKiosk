@@ -191,7 +191,8 @@
                 <location>
                     <text>Texas</text>
                 </location>
-                <yearly>30200</yearly>
+                <yearly_low>30200</yearly_low>
+                <yearly_high>30200</yearly_high>
             </salary>
             <salary>
                 <footnote>

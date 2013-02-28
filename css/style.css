@@ -1,5 +1,5 @@
 /*
-Project:        Overhead kiosk website
+Project:        Kiosk website
 Organization:   Dallas County Community College District
                 Health Careers Resource Center
 Author:         amnotafraid
@@ -167,6 +167,48 @@ body {
   background: #f6f7f3;
   border: solid 1px #7e7e7e;
   /*@include roundcorners(5px);*/ }
+
+#wrapper-fixed {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1152px;
+  margin-top: 180px;
+  min-height: 728px;
+  width: 90%;
+  background: #f6f7f3;
+  border: solid 1px #7e7e7e; }
+
+#overhead-image {
+  margin: 45px; }
+
+#overhead-time-temp {
+  margin: 45px;
+  background: #7e7e7e url(../images/time-temp.png) top left;
+  min-height: 664px; }
+
+.temperature-fixed {
+  left: 50px;
+  top: 200px;
+  width: 40%;
+  float: left;
+  position: relative; }
+
+.temperature-fixed-p {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 400px;
+  font-family: 'League Gothic';
+  line-height: 400px;
+  padding: 10px;
+  color: white; }
+
+.time-date-fixed {
+  top: 155px;
+  left: 75px;
+  float: left;
+  width: 40%;
+  margin: 45px;
+  position: relative; }
 
 #content {
   background: #f6f7f3;
@@ -946,9 +988,14 @@ div.rightbuttonbox {
 
 .date-p {
   text-align: center;
-  font-size: 50px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
+  font-size: 90px;
+  font-family: 'League Gothic';
+  color: white;
+  -webkit-transition: font-size 0.5s ease-in-out;
+  -moz-transition: font-size 0.5s ease-in-out;
+  -ms-transition: font-size 0.5s ease-in-out;
+  -o-transition: font-size 0.5s ease-in-out;
+  transition: font-size 0.5s ease-in-out;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden; }
@@ -979,3 +1026,6 @@ div.rightbuttonbox {
 
 #slider .indicator span.active {
   background: #203344; }
+
+.slide img {
+  max-width: 100%; }
